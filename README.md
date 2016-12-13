@@ -2,10 +2,10 @@
 ![title_image](https://s19.postimg.org/wjucxfp0j/banner1.png)
 <br>
 
-# About
+# Overview
 
 <br>
-<p>Virus is a single player game project based on the classic Laberynth 3D game with the plus that players can learn about the body and have fun at the same time.</p>
+<p>Virus is a single player game project based on the classic Laberynth 3D game with the plus that players can learn about the body and have fun at the same time. </p>
 <br>
 
 # Story
@@ -18,7 +18,7 @@
 
 # Gameplay
 <br>
-<p>The game was thought to be played in tablets and phones</p>
+<p>Using the phone or tablet as the controller the player will have to move it in different directions to make the virus move around the field and take from the start point to the other side of the screen dodging different obstacles that will kill when touched and make you start all over again</p>
 <br>
 
 # Version
