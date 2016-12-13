@@ -46,14 +46,14 @@
 # iOS Installation Guide
 
 <br>
-<p>1. Open the project in Unity</p>
-<p>2. Go to File -> Build Settings</p>
-<p>3. Set: Run in Xcode as Debug</p>
-<p>4. Check: Symlink Unity libraries, Development Build, Autoconnect Profiler</p>
-<p>5. Select Build and set destination folder</p>
-<p>6. Open the exported project in Xcode</p>
-<p>7. Set some developer profile in project settings</p>
-<p>8. Finally run</p>
+<p>1. Open the project in Unity.</p>
+<p>2. Go to File -> Build Settings.</p>
+<p>3. Set: Run in Xcode as Debug.</p>
+<p>4. Check: Symlink Unity libraries, Development Build, Autoconnect Profiler.</p>
+<p>5. Select Build and set destination folder.</p>
+<p>6. Open the exported project in Xcode.</p>
+<p>7. Set some developer profile in project settings.</p>
+<p>8. Finally run.</p>
 <br> 
 
 # Created by 
