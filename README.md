@@ -34,6 +34,11 @@
 <p>As bonus screens we will use different situations in a body that will make the game a lot more fun. For example you can find the "In love" bonus or the "Stomach ache" bonus screen that will make you laught and enjoy the game.</p>
 <br>
 
+# Powerups
+
+<br>
+<p>To encrease the fun we incuded powerups that will differ from each other with different colors. But be careful cause they can harm you instead so you have to find the way to dodge them.</p>
+<br>
 
 # Physics
 
