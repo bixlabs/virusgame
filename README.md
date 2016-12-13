@@ -47,7 +47,7 @@
 
 <br>
 1. Open the project in Unity
-2. Go to File -> Build Settings
+\n2. Go to File -> Build Settings
 3. Set: Run in Xcode as Debug
 4. Check: Symlink Unity libraries, Development Build, Autoconnect Profiler
 5. Select Build and set destination folder
