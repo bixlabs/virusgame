@@ -20,6 +20,16 @@
 ![game_in_process_image](https://s19.postimg.org/vedbvcjmr/remake.png)
 <br>
 
+# Technology
+
+<br>
+* Unity
+*C#
+* Maya
+
+
+<br> 
+
 # Created by 
 
 <br>
