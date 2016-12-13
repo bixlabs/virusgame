@@ -24,7 +24,7 @@
 
 <br>
 * Unity
-*C#
+* C#
 * Maya
 
 
