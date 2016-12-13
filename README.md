@@ -1,6 +1,10 @@
 
 ![title_image](https://s19.postimg.org/wjucxfp0j/banner1.png)
 <br>
+
+# About
+
+<br>
 <p>Virus is a single player game project based on the classic Laberynth 3D game with the plus that players can learn about the body and have fun at the same time.</p>
 <br>
 
