@@ -5,7 +5,7 @@
 <br>
 # Story
 <br>
-<p>You are a virus that enters the body system and starts travelling around the body. Each screen will show different body organs where the virus will have to collect as much antybodies as possible. 
+<p>You are a virus that enters the body system and starts travelling around the body. Each screen will show different organs where you will have to collect as much antybodies as possible.  
 But the system will try to deffend itself attacking it and making the field more and more difficult.  </p>
 <br>
 ![game_image](https://s19.postimg.org/wa57x23xf/piso.png)
