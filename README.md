@@ -41,8 +41,19 @@
 * Unity
 * C#
 * Maya
+<br> 
 
+# iOS Installation Guide
 
+<br>
+1. Open the project in Unity
+2. Go to File -> Build Settings
+3. Set: Run in Xcode as Debug
+4. Check: Symlink Unity libraries, Development Build, Autoconnect Profiler
+5. Select Build and set destination folder
+6. Open the exported project in Xcode
+7. Set some developer profile in project settings
+8. Finally run
 <br> 
 
 # Created by 
