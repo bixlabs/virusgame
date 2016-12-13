@@ -28,6 +28,13 @@
 <p>Using the phone or tablet as the controller the player will have to move it in different directions to make the virus move around the field and take from the start point to the other side of the screen dodging different obstacles that will kill when touched and make you start all over again.<br>The core mechanic is simple and intuitive, and have an easy learning curve, introducing more advanced mechanics little by little. </p>
 <br>
 
+# Bonus
+
+<br>
+<p>As bonus screens we will use different situations in a body that will make the game a lot more fun. For example you can find the "In love" bonus or the "Stomach ache" bonus screen that will make you laught and enjoy the game.</p>
+<br>
+
+
 # Physics
 
 <br>
