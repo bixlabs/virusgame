@@ -34,6 +34,9 @@
 <p>We will have to dodge different obstacles that will influene our character some how. We ill find fat stuck on the walls that will reduce our speed and glue us a little while others will make us bounce to make our path more difficult. </p>
 <br>
 
+![title_image](https://s19.postimg.org/yqgolrhpf/dev.png)
+<br>
+
 # Version
 
 <br>
