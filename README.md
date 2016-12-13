@@ -28,6 +28,12 @@
 <p>Using the phone or tablet as the controller the player will have to move it in different directions to make the virus move around the field and take from the start point to the other side of the screen dodging different obstacles that will kill when touched and make you start all over again.<br>The core mechanic is simple and intuitive, and have an easy learning curve, introducing more advanced mechanics little by little. </p>
 <br>
 
+# Physics
+
+<br>
+<p>We will have to dodge different obstacles that will influene our character some how. We ill find fat stuck on the walls that will reduce our speed and glue us a little while others will make us bounce to make our path more difficult. </p>
+<br>
+
 # Version
 
 <br>
