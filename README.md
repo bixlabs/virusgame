@@ -20,7 +20,7 @@
 <p>You are a virus that enters the body system and starts travelling around the body. Each screen will show different organs where you will have to collect as much antibodies as possible. But the system will try to defend itself attacking it and making the field more and more difficult.  </p>
 <br>
 ![game_image](https://s19.postimg.org/wa57x23xf/piso.png)
-<br>
+<br><br>
 
 # Game structure
 
@@ -67,7 +67,7 @@
 <p>V1 - December 2016</p>
 <br>
 ![game_in_process_image](https://s19.postimg.org/vedbvcjmr/remake.png)
-<br>
+<br><br>
 
 # Target Device
 
