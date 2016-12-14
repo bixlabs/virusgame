@@ -69,6 +69,12 @@
 ![game_in_process_image](https://s19.postimg.org/vedbvcjmr/remake.png)
 <br>
 
+# Target Device
+
+<br>
+<p>First stage: iOS Phones</p>
+<br>
+
 # Technology
 
 <br>
