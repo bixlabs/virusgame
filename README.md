@@ -2,6 +2,26 @@
 ![title_image](https://s19.postimg.org/e8iv7mzc3/gdd.png)
 <br>
 
+# Content
+
+<br>
+####  Overview
+<p>1. Concept</p>
+<p>2. Storyline</p>
+<p>3. Game structure</p>
+<p>4. Gameplay</p>
+<p>5. Bonus</p>
+<p>6. Powerups</p>
+<p>7. Physics</p>
+<p>8. Music and Sound</p>
+#### Development 
+<p>1. Version</p>
+<p>2. Target device</p>
+<p>3. Technology</p>
+<p>4. Installation guide</p>
+<p>5. Creators</p>
+<br> 
+
 # Overview
 
 <br>
