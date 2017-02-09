@@ -14,20 +14,22 @@
 
 // System.Reflection.Emit.TypeBuilder
 struct TypeBuilder_t1918497079;
-// System.Reflection.Assembly
-struct Assembly_t1418687608;
+// System.Reflection.Emit.ModuleBuilder
+struct ModuleBuilder_t595214213;
 // System.String
 struct String_t;
 // System.Type
 struct Type_t;
+// System.Type[]
+struct TypeU5BU5D_t3339007067;
+// System.Reflection.Assembly
+struct Assembly_t1418687608;
 // System.Reflection.Module
 struct Module_t1394482686;
 // System.Reflection.ConstructorInfo
 struct ConstructorInfo_t4136801618;
 // System.Reflection.Binder
 struct Binder_t1074302268;
-// System.Type[]
-struct TypeU5BU5D_t3339007067;
 // System.Reflection.ParameterModifier[]
 struct ParameterModifierU5BU5D_t3896472559;
 // System.Object[]
@@ -36,6 +38,10 @@ struct ObjectU5BU5D_t1108656482;
 struct ConstructorBuilder_t3217839941;
 // System.Type[][]
 struct TypeU5BU5DU5BU5D_t2708692954;
+// System.Reflection.Emit.MethodBuilder
+struct MethodBuilder_t302405488;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
 // System.Reflection.ConstructorInfo[]
 struct ConstructorInfoU5BU5D_t2079826215;
 // System.Reflection.EventInfo
@@ -46,8 +52,6 @@ struct FieldInfo_t;
 struct FieldInfoU5BU5D_t2567562023;
 // System.Reflection.MethodInfo[]
 struct MethodInfoU5BU5D_t2824366364;
-// System.Reflection.MethodInfo
-struct MethodInfo_t;
 // System.Reflection.PropertyInfo
 struct PropertyInfo_t;
 // System.Object
@@ -60,18 +64,26 @@ struct StringU5BU5D_t4054002952;
 struct Exception_t3991598821;
 
 #include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Reflection_Emit_ModuleBuilder595214213.h"
 #include "mscorlib_System_Reflection_TypeAttributes1370933187.h"
+#include "mscorlib_System_String7231557.h"
+#include "mscorlib_System_Type2863145774.h"
+#include "mscorlib_System_Reflection_Emit_PackingSize581671168.h"
 #include "mscorlib_System_Reflection_Emit_TypeBuilder1918497079.h"
 #include "mscorlib_System_Reflection_BindingFlags1523912596.h"
 #include "mscorlib_System_Reflection_Binder1074302268.h"
 #include "mscorlib_System_Reflection_CallingConventions2863034704.h"
-#include "mscorlib_System_Type2863145774.h"
 #include "mscorlib_System_Reflection_MethodAttributes1709777834.h"
-#include "mscorlib_System_String7231557.h"
+#include "mscorlib_System_Reflection_Emit_MethodBuilder302405488.h"
+#include "mscorlib_System_Reflection_MethodInfo318736065.h"
 #include "mscorlib_System_Object4170816371.h"
 #include "mscorlib_System_Globalization_CultureInfo1065375142.h"
 #include "mscorlib_System_RuntimeTypeHandle2669177232.h"
 
+// System.Void System.Reflection.Emit.TypeBuilder::.ctor(System.Reflection.Emit.ModuleBuilder,System.Reflection.TypeAttributes,System.Int32)
+extern "C"  void TypeBuilder__ctor_m2701930902 (TypeBuilder_t1918497079 * __this, ModuleBuilder_t595214213 * ___mb0, int32_t ___attr1, int32_t ___table_idx2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Reflection.Emit.TypeBuilder::.ctor(System.Reflection.Emit.ModuleBuilder,System.String,System.Reflection.TypeAttributes,System.Type,System.Type[],System.Reflection.Emit.PackingSize,System.Int32,System.Type)
+extern "C"  void TypeBuilder__ctor_m2838836864 (TypeBuilder_t1918497079 * __this, ModuleBuilder_t595214213 * ___mb0, String_t* ___name1, int32_t ___attr2, Type_t * ___parent3, TypeU5BU5D_t3339007067* ___interfaces4, int32_t ___packing_size5, int32_t ___type_size6, Type_t * ___nesting_type7, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.TypeAttributes System.Reflection.Emit.TypeBuilder::GetAttributeFlagsImpl()
 extern "C"  int32_t TypeBuilder_GetAttributeFlagsImpl_m2415994065 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.Emit.TypeBuilder::setup_internal_class(System.Reflection.Emit.TypeBuilder)
@@ -88,6 +100,8 @@ extern "C"  Type_t * TypeBuilder_get_BaseType_m1785398826 (TypeBuilder_t19184970
 extern "C"  Type_t * TypeBuilder_get_DeclaringType_m1033527492 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type System.Reflection.Emit.TypeBuilder::get_UnderlyingSystemType()
 extern "C"  Type_t * TypeBuilder_get_UnderlyingSystemType_m301071877 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Reflection.Emit.TypeBuilder::GetFullName()
+extern "C"  String_t* TypeBuilder_GetFullName_m2368980531 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Reflection.Emit.TypeBuilder::get_FullName()
 extern "C"  String_t* TypeBuilder_get_FullName_m1311381250 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Module System.Reflection.Emit.TypeBuilder::get_Module()
@@ -112,6 +126,16 @@ extern "C"  ConstructorBuilder_t3217839941 * TypeBuilder_DefineConstructor_m2901
 extern "C"  ConstructorBuilder_t3217839941 * TypeBuilder_DefineConstructor_m467278373 (TypeBuilder_t1918497079 * __this, int32_t ___attributes0, int32_t ___callingConvention1, TypeU5BU5D_t3339007067* ___parameterTypes2, TypeU5BU5DU5BU5D_t2708692954* ___requiredCustomModifiers3, TypeU5BU5DU5BU5D_t2708692954* ___optionalCustomModifiers4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Emit.ConstructorBuilder System.Reflection.Emit.TypeBuilder::DefineDefaultConstructor(System.Reflection.MethodAttributes)
 extern "C"  ConstructorBuilder_t3217839941 * TypeBuilder_DefineDefaultConstructor_m4180060431 (TypeBuilder_t1918497079 * __this, int32_t ___attributes0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Reflection.Emit.TypeBuilder::append_method(System.Reflection.Emit.MethodBuilder)
+extern "C"  void TypeBuilder_append_method_m2404188841 (TypeBuilder_t1918497079 * __this, MethodBuilder_t302405488 * ___mb0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Emit.MethodBuilder System.Reflection.Emit.TypeBuilder::DefineMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])
+extern "C"  MethodBuilder_t302405488 * TypeBuilder_DefineMethod_m1271641900 (TypeBuilder_t1918497079 * __this, String_t* ___name0, int32_t ___attributes1, Type_t * ___returnType2, TypeU5BU5D_t3339007067* ___parameterTypes3, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Emit.MethodBuilder System.Reflection.Emit.TypeBuilder::DefineMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[])
+extern "C"  MethodBuilder_t302405488 * TypeBuilder_DefineMethod_m1021339424 (TypeBuilder_t1918497079 * __this, String_t* ___name0, int32_t ___attributes1, int32_t ___callingConvention2, Type_t * ___returnType3, TypeU5BU5D_t3339007067* ___parameterTypes4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Emit.MethodBuilder System.Reflection.Emit.TypeBuilder::DefineMethod(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[],System.Type[],System.Type[][],System.Type[][])
+extern "C"  MethodBuilder_t302405488 * TypeBuilder_DefineMethod_m775963488 (TypeBuilder_t1918497079 * __this, String_t* ___name0, int32_t ___attributes1, int32_t ___callingConvention2, Type_t * ___returnType3, TypeU5BU5D_t3339007067* ___returnTypeRequiredCustomModifiers4, TypeU5BU5D_t3339007067* ___returnTypeOptionalCustomModifiers5, TypeU5BU5D_t3339007067* ___parameterTypes6, TypeU5BU5DU5BU5D_t2708692954* ___parameterTypeRequiredCustomModifiers7, TypeU5BU5DU5BU5D_t2708692954* ___parameterTypeOptionalCustomModifiers8, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Reflection.Emit.TypeBuilder::DefineMethodOverride(System.Reflection.MethodInfo,System.Reflection.MethodInfo)
+extern "C"  void TypeBuilder_DefineMethodOverride_m608613282 (TypeBuilder_t1918497079 * __this, MethodInfo_t * ___methodInfoBody0, MethodInfo_t * ___methodInfoDeclaration1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type System.Reflection.Emit.TypeBuilder::create_runtime_class(System.Reflection.Emit.TypeBuilder)
 extern "C"  Type_t * TypeBuilder_create_runtime_class_m3021676378 (TypeBuilder_t1918497079 * __this, TypeBuilder_t1918497079 * ___tb0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.Emit.TypeBuilder::is_nested_in(System.Type)
@@ -174,6 +198,8 @@ extern "C"  Exception_t3991598821 * TypeBuilder_not_supported_m2004582477 (TypeB
 extern "C"  void TypeBuilder_check_not_created_m4283406443 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.Emit.TypeBuilder::check_created()
 extern "C"  void TypeBuilder_check_created_m3022374359 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Reflection.Emit.TypeBuilder::check_name(System.String,System.String)
+extern "C"  void TypeBuilder_check_name_m566175072 (TypeBuilder_t1918497079 * __this, String_t* ___argName0, String_t* ___name1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Reflection.Emit.TypeBuilder::ToString()
 extern "C"  String_t* TypeBuilder_ToString_m3882393003 (TypeBuilder_t1918497079 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.Emit.TypeBuilder::IsAssignableFrom(System.Type)

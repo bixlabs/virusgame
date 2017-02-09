@@ -184,6 +184,8 @@ extern "C"  double Convert_ToDouble_m3920053607 (Il2CppObject * __this /* static
 extern "C"  double Convert_ToDouble_m4165920249 (Il2CppObject * __this /* static, unused */, int8_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Convert::ToDouble(System.Int16)
 extern "C"  double Convert_ToDouble_m3920048864 (Il2CppObject * __this /* static, unused */, int16_t ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Double System.Convert::ToDouble(System.String)
+extern "C"  double Convert_ToDouble_m1719184653 (Il2CppObject * __this /* static, unused */, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Convert::ToDouble(System.String,System.IFormatProvider)
 extern "C"  double Convert_ToDouble_m4191850823 (Il2CppObject * __this /* static, unused */, String_t* ___value0, Il2CppObject * ___provider1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Convert::ToDouble(System.UInt32)

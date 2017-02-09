@@ -26,6 +26,8 @@ struct SerializationInfo_t2185721892;
 
 // System.Void System.IO.FileNotFoundException::.ctor()
 extern "C"  void FileNotFoundException__ctor_m1040614905 (FileNotFoundException_t451627778 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.IO.FileNotFoundException::.ctor(System.String)
+extern "C"  void FileNotFoundException__ctor_m4237579689 (FileNotFoundException_t451627778 * __this, String_t* ___message0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.FileNotFoundException::.ctor(System.String,System.String)
 extern "C"  void FileNotFoundException__ctor_m2788024869 (FileNotFoundException_t451627778 * __this, String_t* ___message0, String_t* ___fileName1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.FileNotFoundException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)

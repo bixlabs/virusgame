@@ -18,17 +18,23 @@ struct AppDomain_t3575612635;
 struct UnhandledExceptionEventHandler_t2544755120;
 // System.String
 struct String_t;
+// System.Reflection.Emit.AssemblyBuilder
+struct AssemblyBuilder_t1002978443;
+// System.Reflection.AssemblyName
+struct AssemblyName_t2915647011;
+// System.Object
+struct Il2CppObject;
 // System.Reflection.Assembly
 struct Assembly_t1418687608;
 // System.Security.Policy.Evidence
 struct Evidence_t4141397151;
 // System.Runtime.Remoting.Contexts.Context
 struct Context_t515654137;
-// System.Object
-struct Il2CppObject;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_UnhandledExceptionEventHandler2544755120.h"
+#include "mscorlib_System_Reflection_AssemblyName2915647011.h"
+#include "mscorlib_System_Reflection_Emit_AssemblyBuilderAcc2771074959.h"
 #include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Security_Policy_Evidence4141397151.h"
 #include "mscorlib_System_Runtime_Remoting_Contexts_Context515654137.h"
@@ -44,6 +50,10 @@ extern "C"  String_t* AppDomain_getFriendlyName_m290133299 (AppDomain_t357561263
 extern "C"  AppDomain_t3575612635 * AppDomain_getCurDomain_m2514231979 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.AppDomain System.AppDomain::get_CurrentDomain()
 extern "C"  AppDomain_t3575612635 * AppDomain_get_CurrentDomain_m3448347417 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Emit.AssemblyBuilder System.AppDomain::DefineInternalDynamicAssembly(System.Reflection.AssemblyName,System.Reflection.Emit.AssemblyBuilderAccess)
+extern "C"  AssemblyBuilder_t1002978443 * AppDomain_DefineInternalDynamicAssembly_m2942189295 (AppDomain_t3575612635 * __this, AssemblyName_t2915647011 * ___name0, int32_t ___access1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.AppDomain::InitializeLifetimeService()
+extern "C"  Il2CppObject * AppDomain_InitializeLifetimeService_m3976192241 (AppDomain_t3575612635 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Assembly System.AppDomain::LoadAssembly(System.String,System.Security.Policy.Evidence,System.Boolean)
 extern "C"  Assembly_t1418687608 * AppDomain_LoadAssembly_m4215712056 (AppDomain_t3575612635 * __this, String_t* ___assemblyRef0, Evidence_t4141397151 * ___securityEvidence1, bool ___refOnly2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Assembly System.AppDomain::Load(System.String)

@@ -31,6 +31,8 @@ struct Il2CppObject;
 extern "C"  void LogicalCallContext__ctor_m122858570 (LogicalCallContext_t3949483042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.LogicalCallContext::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void LogicalCallContext__ctor_m2483628683 (LogicalCallContext_t3949483042 * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Runtime.Remoting.Messaging.LogicalCallContext::get_HasInfo()
+extern "C"  bool LogicalCallContext_get_HasInfo_m172784805 (LogicalCallContext_t3949483042 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.LogicalCallContext::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void LogicalCallContext_GetObjectData_m3064510184 (LogicalCallContext_t3949483042 * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.LogicalCallContext::SetData(System.String,System.Object)

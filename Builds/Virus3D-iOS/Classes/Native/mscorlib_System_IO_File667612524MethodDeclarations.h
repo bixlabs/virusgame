@@ -12,10 +12,10 @@
 #include <assert.h>
 #include <exception>
 
-// System.String
-struct String_t;
 // System.IO.FileStream
 struct FileStream_t2141505868;
+// System.String
+struct String_t;
 // System.IO.StreamReader
 struct StreamReader_t2549717843;
 
@@ -23,6 +23,10 @@ struct StreamReader_t2549717843;
 #include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_IO_FileMode3233790127.h"
 
+// System.IO.FileStream System.IO.File::Create(System.String)
+extern "C"  FileStream_t2141505868 * File_Create_m3497726217 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.IO.FileStream System.IO.File::Create(System.String,System.Int32)
+extern "C"  FileStream_t2141505868 * File_Create_m2847392366 (Il2CppObject * __this /* static, unused */, String_t* ___path0, int32_t ___bufferSize1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.IO.File::Delete(System.String)
 extern "C"  void File_Delete_m760984832 (Il2CppObject * __this /* static, unused */, String_t* ___path0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.File::Exists(System.String)

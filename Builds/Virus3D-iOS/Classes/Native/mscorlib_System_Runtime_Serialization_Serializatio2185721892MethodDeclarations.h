@@ -33,6 +33,12 @@ struct SerializationInfoEnumerator_t2904781384;
 
 // System.Void System.Runtime.Serialization.SerializationInfo::.ctor(System.Type,System.Runtime.Serialization.IFormatterConverter)
 extern "C"  void SerializationInfo__ctor_m2583224808 (SerializationInfo_t2185721892 * __this, Type_t * ___type0, Il2CppObject * ___converter1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Runtime.Serialization.SerializationInfo::get_AssemblyName()
+extern "C"  String_t* SerializationInfo_get_AssemblyName_m2611339962 (SerializationInfo_t2185721892 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Runtime.Serialization.SerializationInfo::get_FullTypeName()
+extern "C"  String_t* SerializationInfo_get_FullTypeName_m3001564413 (SerializationInfo_t2185721892 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Runtime.Serialization.SerializationInfo::get_MemberCount()
+extern "C"  int32_t SerializationInfo_get_MemberCount_m3387713493 (SerializationInfo_t2185721892 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Object,System.Type)
 extern "C"  void SerializationInfo_AddValue_m3341936982 (SerializationInfo_t2185721892 * __this, String_t* ___name0, Il2CppObject * ___value1, Type_t * ___type2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Serialization.SerializationInfo::GetValue(System.String,System.Type)

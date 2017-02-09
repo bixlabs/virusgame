@@ -20,6 +20,8 @@ struct ArrayList_t3948406897;
 struct Il2CppObject;
 // System.String
 struct String_t;
+// System.Type
+struct Type_t;
 
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Collections_ArrayList3948406897.h"
@@ -33,6 +35,8 @@ extern "C"  Il2CppObject * SerializationInfoEnumerator_System_Collections_IEnume
 extern "C"  SerializationEntry_t1918496398  SerializationInfoEnumerator_get_Current_m1674825235 (SerializationInfoEnumerator_t2904781384 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Runtime.Serialization.SerializationInfoEnumerator::get_Name()
 extern "C"  String_t* SerializationInfoEnumerator_get_Name_m4156977240 (SerializationInfoEnumerator_t2904781384 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type System.Runtime.Serialization.SerializationInfoEnumerator::get_ObjectType()
+extern "C"  Type_t * SerializationInfoEnumerator_get_ObjectType_m1119292125 (SerializationInfoEnumerator_t2904781384 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Serialization.SerializationInfoEnumerator::get_Value()
 extern "C"  Il2CppObject * SerializationInfoEnumerator_get_Value_m4259496148 (SerializationInfoEnumerator_t2904781384 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Runtime.Serialization.SerializationInfoEnumerator::MoveNext()

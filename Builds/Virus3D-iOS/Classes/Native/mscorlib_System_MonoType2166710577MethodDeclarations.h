@@ -156,6 +156,8 @@ extern "C"  Type_t * MonoType_get_DeclaringType_m3073537512 (MonoType_t * __this
 extern "C"  Type_t * MonoType_get_ReflectedType_m2303984285 (MonoType_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.RuntimeTypeHandle System.MonoType::get_TypeHandle()
 extern "C"  RuntimeTypeHandle_t2669177232  MonoType_get_TypeHandle_m2428845255 (MonoType_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.MonoType::GetArrayRank()
+extern "C"  int32_t MonoType_GetArrayRank_m1675113855 (MonoType_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.MonoType::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void MonoType_GetObjectData_m2425175414 (MonoType_t * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.MonoType::ToString()

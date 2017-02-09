@@ -24,6 +24,10 @@ struct Il2CppObject;
 struct Stream_t1561764144;
 // System.Runtime.Remoting.Messaging.HeaderHandler
 struct HeaderHandler_t53887223;
+// System.Runtime.Remoting.Messaging.Header[]
+struct HeaderU5BU5D_t856208126;
+// System.IO.BinaryWriter
+struct BinaryWriter_t4146364100;
 // System.IO.BinaryReader
 struct BinaryReader_t3990958868;
 
@@ -33,6 +37,8 @@ struct BinaryReader_t3990958868;
 #include "mscorlib_System_Runtime_Serialization_Formatters_T1936244052.h"
 #include "mscorlib_System_IO_Stream1561764144.h"
 #include "mscorlib_System_Runtime_Remoting_Messaging_HeaderHan53887223.h"
+#include "mscorlib_System_Object4170816371.h"
+#include "mscorlib_System_IO_BinaryWriter4146364100.h"
 #include "mscorlib_System_IO_BinaryReader3990958868.h"
 
 // System.Void System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::.ctor()
@@ -55,5 +61,11 @@ extern "C"  int32_t BinaryFormatter_get_FilterLevel_m123523474 (BinaryFormatter_
 extern "C"  Il2CppObject * BinaryFormatter_Deserialize_m3942088227 (BinaryFormatter_t1638665103 * __this, Stream_t1561764144 * ___serializationStream0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::NoCheckDeserialize(System.IO.Stream,System.Runtime.Remoting.Messaging.HeaderHandler)
 extern "C"  Il2CppObject * BinaryFormatter_NoCheckDeserialize_m2451994899 (BinaryFormatter_t1638665103 * __this, Stream_t1561764144 * ___serializationStream0, HeaderHandler_t53887223 * ___handler1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::Serialize(System.IO.Stream,System.Object)
+extern "C"  void BinaryFormatter_Serialize_m2138605799 (BinaryFormatter_t1638665103 * __this, Stream_t1561764144 * ___serializationStream0, Il2CppObject * ___graph1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::Serialize(System.IO.Stream,System.Object,System.Runtime.Remoting.Messaging.Header[])
+extern "C"  void BinaryFormatter_Serialize_m982420848 (BinaryFormatter_t1638665103 * __this, Stream_t1561764144 * ___serializationStream0, Il2CppObject * ___graph1, HeaderU5BU5D_t856208126* ___headers2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::WriteBinaryHeader(System.IO.BinaryWriter,System.Boolean)
+extern "C"  void BinaryFormatter_WriteBinaryHeader_m244536491 (BinaryFormatter_t1638665103 * __this, BinaryWriter_t4146364100 * ___writer0, bool ___hasHeaders1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Serialization.Formatters.Binary.BinaryFormatter::ReadBinaryHeader(System.IO.BinaryReader,System.Boolean&)
 extern "C"  void BinaryFormatter_ReadBinaryHeader_m258242310 (BinaryFormatter_t1638665103 * __this, BinaryReader_t3990958868 * ___reader0, bool* ___hasHeaders1, const MethodInfo* method) IL2CPP_METHOD_ATTR;

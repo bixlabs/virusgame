@@ -40,6 +40,7 @@ struct SerializationInfo_t2185721892;
 #include "mscorlib_System_Reflection_BindingFlags1523912596.h"
 #include "mscorlib_System_Reflection_Binder1074302268.h"
 #include "mscorlib_System_Globalization_CultureInfo1065375142.h"
+#include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Runtime_Serialization_Serializatio2185721892.h"
 #include "mscorlib_System_Runtime_Serialization_StreamingCon2761351129.h"
 
@@ -77,6 +78,8 @@ extern "C"  String_t* MonoField_ToString_m4218032780 (MonoField_t * __this, cons
 extern "C"  void MonoField_SetValueInternal_m1841098555 (Il2CppObject * __this /* static, unused */, FieldInfo_t * ___fi0, Il2CppObject * ___obj1, Il2CppObject * ___value2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.MonoField::SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)
 extern "C"  void MonoField_SetValue_m1189993934 (MonoField_t * __this, Il2CppObject * ___obj0, Il2CppObject * ___val1, int32_t ___invokeAttr2, Binder_t1074302268 * ___binder3, CultureInfo_t1065375142 * ___culture4, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.MonoField System.Reflection.MonoField::Clone(System.String)
+extern "C"  MonoField_t * MonoField_Clone_m2100853670 (MonoField_t * __this, String_t* ___newName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.MonoField::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void MonoField_GetObjectData_m2261672671 (MonoField_t * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.MonoField::CheckGeneric()

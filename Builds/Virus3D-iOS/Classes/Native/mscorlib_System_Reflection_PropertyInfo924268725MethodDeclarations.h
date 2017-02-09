@@ -14,6 +14,8 @@
 
 // System.Reflection.PropertyInfo
 struct PropertyInfo_t;
+// System.Reflection.MethodInfo
+struct MethodInfo_t;
 // System.Object
 struct Il2CppObject;
 // System.Object[]
@@ -29,6 +31,8 @@ struct TypeU5BU5D_t3339007067;
 extern "C"  void PropertyInfo__ctor_m539791979 (PropertyInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MemberTypes System.Reflection.PropertyInfo::get_MemberType()
 extern "C"  int32_t PropertyInfo_get_MemberType_m3698268270 (PropertyInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.MethodInfo System.Reflection.PropertyInfo::GetGetMethod()
+extern "C"  MethodInfo_t * PropertyInfo_GetGetMethod_m1125167762 (PropertyInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Reflection.PropertyInfo::GetValue(System.Object,System.Object[])
 extern "C"  Il2CppObject * PropertyInfo_GetValue_m396207607 (PropertyInfo_t * __this, Il2CppObject * ___obj0, ObjectU5BU5D_t1108656482* ___index1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.PropertyInfo::SetValue(System.Object,System.Object,System.Object[])

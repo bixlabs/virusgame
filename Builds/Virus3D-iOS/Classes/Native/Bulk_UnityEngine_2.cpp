@@ -13,10 +13,12 @@
 #include <limits>
 #include <assert.h>
 
-// UnityEngine.ScriptableObject
-struct ScriptableObject_t2970544072;
 // System.String
 struct String_t;
+// UnityEngine.AsyncOperation
+struct AsyncOperation_t3699081103;
+// UnityEngine.ScriptableObject
+struct ScriptableObject_t2970544072;
 // System.Type
 struct Type_t;
 // UnityEngine.Scripting.RequiredByNativeCodeAttribute
@@ -181,9 +183,13 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "mscorlib_System_Array1146569071.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag2940962239.h"
 #include "UnityEngine_UnityEngine_SceneManagement_SceneManag2940962239MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_SceneManagement_Scene1080795294.h"
-#include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM3067001883.h"
+#include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Void2863195528.h"
+#include "UnityEngine_UnityEngine_SceneManagement_LoadSceneM3067001883.h"
+#include "UnityEngine_UnityEngine_AsyncOperation3699081103.h"
+#include "mscorlib_System_Int321153838500.h"
+#include "mscorlib_System_Boolean476798718.h"
+#include "UnityEngine_UnityEngine_SceneManagement_Scene1080795294.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen1937996761MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen1937996761.h"
 #include "UnityEngine_UnityEngine_Events_UnityAction_1_gen974975297MethodDeclarations.h"
@@ -192,12 +198,10 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "UnityEngine_UnityEngine_Events_UnityAction_2_gen4246757468.h"
 #include "UnityEngine_UnityEngine_Screen3187157168.h"
 #include "UnityEngine_UnityEngine_Screen3187157168MethodDeclarations.h"
-#include "mscorlib_System_Int321153838500.h"
 #include "mscorlib_System_Single4291918972.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072.h"
 #include "UnityEngine_UnityEngine_ScriptableObject2970544072MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Object3071478659MethodDeclarations.h"
-#include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Type2863145774.h"
 #include "UnityEngine_UnityEngine_Scripting_RequiredByNative3165457172.h"
 #include "UnityEngine_UnityEngine_Scripting_RequiredByNative3165457172MethodDeclarations.h"
@@ -211,7 +215,6 @@ struct TypeInferenceRuleAttribute_t1657757719;
 #include "UnityEngine_UnityEngine_SendMouseEvents3965481900.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents3965481900MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_SendMouseEvents_HitInfo3209134097.h"
-#include "mscorlib_System_Boolean476798718.h"
 #include "UnityEngine_ArrayTypes.h"
 #include "UnityEngine_UnityEngine_Input4200062272MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Camera2727095145MethodDeclarations.h"
@@ -506,6 +509,69 @@ extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gsh
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
+extern "C"  void SceneManager_LoadScene_m2167814033 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName0, const MethodInfo* method)
+{
+	int32_t V_0 = 0;
+	{
+		V_0 = 0;
+		String_t* L_0 = ___sceneName0;
+		int32_t L_1 = V_0;
+		SceneManager_LoadScene_m3907168970(NULL /*static, unused*/, L_0, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+extern "C"  void SceneManager_LoadScene_m3907168970 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName0, int32_t ___mode1, const MethodInfo* method)
+{
+	int32_t G_B2_0 = 0;
+	String_t* G_B2_1 = NULL;
+	int32_t G_B1_0 = 0;
+	String_t* G_B1_1 = NULL;
+	int32_t G_B3_0 = 0;
+	int32_t G_B3_1 = 0;
+	String_t* G_B3_2 = NULL;
+	{
+		String_t* L_0 = ___sceneName0;
+		int32_t L_1 = ___mode1;
+		G_B1_0 = (-1);
+		G_B1_1 = L_0;
+		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
+		{
+			G_B2_0 = (-1);
+			G_B2_1 = L_0;
+			goto IL_000f;
+		}
+	}
+	{
+		G_B3_0 = 1;
+		G_B3_1 = G_B1_0;
+		G_B3_2 = G_B1_1;
+		goto IL_0010;
+	}
+
+IL_000f:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+		G_B3_2 = G_B2_1;
+	}
+
+IL_0010:
+	{
+		SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569(NULL /*static, unused*/, G_B3_2, G_B3_1, (bool)G_B3_0, (bool)1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal(System.String,System.Int32,System.Boolean,System.Boolean)
+extern "C"  AsyncOperation_t3699081103 * SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569 (Il2CppObject * __this /* static, unused */, String_t* ___sceneName0, int32_t ___sceneBuildIndex1, bool ___isAdditive2, bool ___mustCompleteNextFrame3, const MethodInfo* method)
+{
+	typedef AsyncOperation_t3699081103 * (*SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569_ftn) (String_t*, int32_t, bool, bool);
+	static SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SceneManagement.SceneManager::LoadSceneAsyncNameIndexInternal(System.String,System.Int32,System.Boolean,System.Boolean)");
+	return _il2cpp_icall_func(___sceneName0, ___sceneBuildIndex1, ___isAdditive2, ___mustCompleteNextFrame3);
+}
 // System.Void UnityEngine.SceneManagement.SceneManager::Internal_SceneLoaded(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)
 extern Il2CppClass* SceneManager_t2940962239_il2cpp_TypeInfo_var;
 extern const MethodInfo* UnityAction_2_Invoke_m1664755053_MethodInfo_var;
@@ -1804,7 +1870,7 @@ IL_0013:
 		Il2CppObject * L_6 = ___behaviour0;
 		ObjectU5BU5D_t1108656482* L_7 = V_0;
 		NullCheck(L_4);
-		Il2CppObject * L_8 = VirtFuncInvoker8< Il2CppObject *, String_t*, int32_t, Binder_t1074302268 *, Il2CppObject *, ObjectU5BU5D_t1108656482*, ParameterModifierU5BU5D_t3896472559*, CultureInfo_t1065375142 *, StringU5BU5D_t4054002952* >::Invoke(71 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_4, L_5, ((int32_t)308), (Binder_t1074302268 *)NULL, L_6, L_7, (ParameterModifierU5BU5D_t3896472559*)(ParameterModifierU5BU5D_t3896472559*)NULL, (CultureInfo_t1065375142 *)NULL, (StringU5BU5D_t4054002952*)(StringU5BU5D_t4054002952*)NULL);
+		Il2CppObject * L_8 = VirtFuncInvoker8< Il2CppObject *, String_t*, int32_t, Binder_t1074302268 *, Il2CppObject *, ObjectU5BU5D_t1108656482*, ParameterModifierU5BU5D_t3896472559*, CultureInfo_t1065375142 *, StringU5BU5D_t4054002952* >::Invoke(75 /* System.Object System.Type::InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[]) */, L_4, L_5, ((int32_t)308), (Binder_t1074302268 *)NULL, L_6, L_7, (ParameterModifierU5BU5D_t3896472559*)(ParameterModifierU5BU5D_t3896472559*)NULL, (CultureInfo_t1065375142 *)NULL, (StringU5BU5D_t4054002952*)(StringU5BU5D_t4054002952*)NULL);
 		return L_8;
 	}
 }
@@ -4544,7 +4610,7 @@ extern "C"  void Achievement__ctor_m2960680429 (Achievement_t344600729 * __this,
 		__this->set_m_Hidden_1((bool)0);
 		__this->set_m_Completed_0((bool)0);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t4283661327_il2cpp_TypeInfo_var);
-		DateTime_t4283661327  L_2 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t4283661327  L_2 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_m_LastReportedDate_2(L_2);
 		return;
 	}

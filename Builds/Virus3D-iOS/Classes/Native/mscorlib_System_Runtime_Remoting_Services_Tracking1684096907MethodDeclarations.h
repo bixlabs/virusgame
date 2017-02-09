@@ -23,5 +23,9 @@ struct ObjRef_t2484604634;
 
 // System.Void System.Runtime.Remoting.Services.TrackingServices::.cctor()
 extern "C"  void TrackingServices__cctor_m1041791976 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Services.TrackingServices::NotifyMarshaledObject(System.Object,System.Runtime.Remoting.ObjRef)
+extern "C"  void TrackingServices_NotifyMarshaledObject_m2408179062 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, ObjRef_t2484604634 * ___or1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Services.TrackingServices::NotifyUnmarshaledObject(System.Object,System.Runtime.Remoting.ObjRef)
 extern "C"  void TrackingServices_NotifyUnmarshaledObject_m1221428029 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, ObjRef_t2484604634 * ___or1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Services.TrackingServices::NotifyDisconnectedObject(System.Object)
+extern "C"  void TrackingServices_NotifyDisconnectedObject_m3316648914 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___obj0, const MethodInfo* method) IL2CPP_METHOD_ATTR;

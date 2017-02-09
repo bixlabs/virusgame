@@ -42,6 +42,7 @@ struct SerializationInfo_t2185721892;
 struct TypeU5BU5D_t3339007067;
 
 #include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_RuntimeMethodHandle2199484343.h"
 #include "mscorlib_System_Reflection_MethodBase318515428.h"
 #include "mscorlib_System_Reflection_MonoMethod2798466870.h"
 #include "mscorlib_System_Object4170816371.h"
@@ -49,7 +50,6 @@ struct TypeU5BU5D_t3339007067;
 #include "mscorlib_System_Reflection_BindingFlags1523912596.h"
 #include "mscorlib_System_Reflection_Binder1074302268.h"
 #include "mscorlib_System_Globalization_CultureInfo1065375142.h"
-#include "mscorlib_System_RuntimeMethodHandle2199484343.h"
 #include "mscorlib_System_Reflection_MethodAttributes1709777834.h"
 #include "mscorlib_System_Reflection_CallingConventions2863034704.h"
 #include "mscorlib_System_Type2863145774.h"
@@ -59,6 +59,8 @@ struct TypeU5BU5D_t3339007067;
 
 // System.Void System.Reflection.MonoMethod::.ctor()
 extern "C"  void MonoMethod__ctor_m370255050 (MonoMethod_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Reflection.MonoMethod::.ctor(System.RuntimeMethodHandle)
+extern "C"  void MonoMethod__ctor_m2200429992 (MonoMethod_t * __this, RuntimeMethodHandle_t2199484343  ___mhandle0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Reflection.MonoMethod::get_name(System.Reflection.MethodBase)
 extern "C"  String_t* MonoMethod_get_name_m439428219 (Il2CppObject * __this /* static, unused */, MethodBase_t318515428 * ___method0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.MonoMethod System.Reflection.MonoMethod::get_base_definition(System.Reflection.MonoMethod)

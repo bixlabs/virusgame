@@ -18,7 +18,10 @@ struct LabelData_t3207823784_marshaled_pinvoke;
 struct LabelData_t3207823784_marshaled_com;
 
 #include "codegen/il2cpp-codegen.h"
+#include "mscorlib_System_Reflection_Emit_ILGenerator_LabelD3207823784.h"
 
+// System.Void System.Reflection.Emit.ILGenerator/LabelData::.ctor(System.Int32,System.Int32)
+extern "C"  void LabelData__ctor_m3230547036 (LabelData_t3207823784 * __this, int32_t ___addr0, int32_t ___maxStack1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 
 // Methods for marshaling
 struct LabelData_t3207823784;

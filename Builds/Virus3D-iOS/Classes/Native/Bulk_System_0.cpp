@@ -3861,7 +3861,7 @@ extern "C"  void FileWebRequest_System_Runtime_Serialization_ISerializable_GetOb
 	{
 		SerializationInfo_t2185721892 * L_0 = ___serializationInfo0;
 		StreamingContext_t2761351129  L_1 = ___streamingContext1;
-		VirtActionInvoker2< SerializationInfo_t2185721892 *, StreamingContext_t2761351129  >::Invoke(5 /* System.Void System.Net.FileWebRequest::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext) */, __this, L_0, L_1);
+		VirtActionInvoker2< SerializationInfo_t2185721892 *, StreamingContext_t2761351129  >::Invoke(7 /* System.Void System.Net.FileWebRequest::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext) */, __this, L_0, L_1);
 		return;
 	}
 }
@@ -4500,7 +4500,7 @@ extern "C"  void HttpWebRequest_System_Runtime_Serialization_ISerializable_GetOb
 	{
 		SerializationInfo_t2185721892 * L_0 = ___serializationInfo0;
 		StreamingContext_t2761351129  L_1 = ___streamingContext1;
-		VirtActionInvoker2< SerializationInfo_t2185721892 *, StreamingContext_t2761351129  >::Invoke(5 /* System.Void System.Net.HttpWebRequest::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext) */, __this, L_0, L_1);
+		VirtActionInvoker2< SerializationInfo_t2185721892 *, StreamingContext_t2761351129  >::Invoke(7 /* System.Void System.Net.HttpWebRequest::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext) */, __this, L_0, L_1);
 		return;
 	}
 }
@@ -17292,7 +17292,7 @@ IL_0011:
 		V_1 = L_3;
 		V_2 = 0;
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t4283661327_il2cpp_TypeInfo_var);
-		DateTime_t4283661327  L_4 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t4283661327  L_4 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		V_3 = L_4;
 		int32_t L_5 = ___findType0;
 		V_23 = L_5;
@@ -22566,7 +22566,7 @@ extern "C"  void X509ChainPolicy_Reset_m3900463811 (X509ChainPolicy_t676713451 *
 		__this->set_rflag_3(2);
 		__this->set_mode_4(1);
 		IL2CPP_RUNTIME_CLASS_INIT(TimeSpan_t413522987_il2cpp_TypeInfo_var);
-		TimeSpan_t413522987  L_3 = ((TimeSpan_t413522987_StaticFields*)TimeSpan_t413522987_il2cpp_TypeInfo_var->static_fields)->get_Zero_2();
+		TimeSpan_t413522987  L_3 = ((TimeSpan_t413522987_StaticFields*)TimeSpan_t413522987_il2cpp_TypeInfo_var->static_fields)->get_Zero_7();
 		__this->set_timeout_5(L_3);
 		__this->set_vflags_6(0);
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t4283661327_il2cpp_TypeInfo_var);

@@ -54,6 +54,8 @@ extern "C"  void MethodCall_System_Runtime_Remoting_Messaging_IInternalMessage_s
 extern "C"  void MethodCall_InitMethodProperty_m2379029369 (MethodCall_t1612026201 * __this, String_t* ___key0, Il2CppObject * ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.MethodCall::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void MethodCall_GetObjectData_m3092930065 (MethodCall_t1612026201 * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Int32 System.Runtime.Remoting.Messaging.MethodCall::get_ArgCount()
+extern "C"  int32_t MethodCall_get_ArgCount_m4283522991 (MethodCall_t1612026201 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object[] System.Runtime.Remoting.Messaging.MethodCall::get_Args()
 extern "C"  ObjectU5BU5D_t1108656482* MethodCall_get_Args_m2777349738 (MethodCall_t1612026201 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Runtime.Remoting.Messaging.LogicalCallContext System.Runtime.Remoting.Messaging.MethodCall::get_LogicalCallContext()
@@ -74,6 +76,8 @@ extern "C"  String_t* MethodCall_get_TypeName_m2818536578 (MethodCall_t161202620
 extern "C"  String_t* MethodCall_get_Uri_m110584337 (MethodCall_t1612026201 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.MethodCall::set_Uri(System.String)
 extern "C"  void MethodCall_set_Uri_m3629049250 (MethodCall_t1612026201 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Object System.Runtime.Remoting.Messaging.MethodCall::GetArg(System.Int32)
+extern "C"  Il2CppObject * MethodCall_GetArg_m1395351319 (MethodCall_t1612026201 * __this, int32_t ___argNum0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.MethodCall::Init()
 extern "C"  void MethodCall_Init_m1334986753 (MethodCall_t1612026201 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Messaging.MethodCall::ResolveMethod()

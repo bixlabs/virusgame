@@ -24,10 +24,13 @@ struct Il2CppObject;
 struct Exception_t3991598821;
 // System.String
 struct String_t;
+// System.Runtime.Remoting.Messaging.MethodCallDictionary
+struct MethodCallDictionary_t3091374927;
 // System.Type[]
 struct TypeU5BU5D_t3339007067;
 
 #include "mscorlib_System_Object4170816371.h"
+#include "mscorlib_System_Runtime_Remoting_Messaging_CallTyp3791321394.h"
 
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -51,10 +54,14 @@ public:
 	Il2CppObject * ___rval_4;
 	// System.Exception System.Runtime.Remoting.Messaging.MonoMethodMessage::exc
 	Exception_t3991598821 * ___exc_5;
+	// System.Runtime.Remoting.Messaging.CallType System.Runtime.Remoting.Messaging.MonoMethodMessage::call_type
+	int32_t ___call_type_6;
 	// System.String System.Runtime.Remoting.Messaging.MonoMethodMessage::uri
-	String_t* ___uri_6;
+	String_t* ___uri_7;
+	// System.Runtime.Remoting.Messaging.MethodCallDictionary System.Runtime.Remoting.Messaging.MonoMethodMessage::properties
+	MethodCallDictionary_t3091374927 * ___properties_8;
 	// System.Type[] System.Runtime.Remoting.Messaging.MonoMethodMessage::methodSignature
-	TypeU5BU5D_t3339007067* ___methodSignature_7;
+	TypeU5BU5D_t3339007067* ___methodSignature_9;
 
 public:
 	inline static int32_t get_offset_of_method_0() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___method_0)); }
@@ -111,22 +118,39 @@ public:
 		Il2CppCodeGenWriteBarrier(&___exc_5, value);
 	}
 
-	inline static int32_t get_offset_of_uri_6() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___uri_6)); }
-	inline String_t* get_uri_6() const { return ___uri_6; }
-	inline String_t** get_address_of_uri_6() { return &___uri_6; }
-	inline void set_uri_6(String_t* value)
+	inline static int32_t get_offset_of_call_type_6() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___call_type_6)); }
+	inline int32_t get_call_type_6() const { return ___call_type_6; }
+	inline int32_t* get_address_of_call_type_6() { return &___call_type_6; }
+	inline void set_call_type_6(int32_t value)
 	{
-		___uri_6 = value;
-		Il2CppCodeGenWriteBarrier(&___uri_6, value);
+		___call_type_6 = value;
 	}
 
-	inline static int32_t get_offset_of_methodSignature_7() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___methodSignature_7)); }
-	inline TypeU5BU5D_t3339007067* get_methodSignature_7() const { return ___methodSignature_7; }
-	inline TypeU5BU5D_t3339007067** get_address_of_methodSignature_7() { return &___methodSignature_7; }
-	inline void set_methodSignature_7(TypeU5BU5D_t3339007067* value)
+	inline static int32_t get_offset_of_uri_7() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___uri_7)); }
+	inline String_t* get_uri_7() const { return ___uri_7; }
+	inline String_t** get_address_of_uri_7() { return &___uri_7; }
+	inline void set_uri_7(String_t* value)
 	{
-		___methodSignature_7 = value;
-		Il2CppCodeGenWriteBarrier(&___methodSignature_7, value);
+		___uri_7 = value;
+		Il2CppCodeGenWriteBarrier(&___uri_7, value);
+	}
+
+	inline static int32_t get_offset_of_properties_8() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___properties_8)); }
+	inline MethodCallDictionary_t3091374927 * get_properties_8() const { return ___properties_8; }
+	inline MethodCallDictionary_t3091374927 ** get_address_of_properties_8() { return &___properties_8; }
+	inline void set_properties_8(MethodCallDictionary_t3091374927 * value)
+	{
+		___properties_8 = value;
+		Il2CppCodeGenWriteBarrier(&___properties_8, value);
+	}
+
+	inline static int32_t get_offset_of_methodSignature_9() { return static_cast<int32_t>(offsetof(MonoMethodMessage_t1666929341, ___methodSignature_9)); }
+	inline TypeU5BU5D_t3339007067* get_methodSignature_9() const { return ___methodSignature_9; }
+	inline TypeU5BU5D_t3339007067** get_address_of_methodSignature_9() { return &___methodSignature_9; }
+	inline void set_methodSignature_9(TypeU5BU5D_t3339007067* value)
+	{
+		___methodSignature_9 = value;
+		Il2CppCodeGenWriteBarrier(&___methodSignature_9, value);
 	}
 };
 

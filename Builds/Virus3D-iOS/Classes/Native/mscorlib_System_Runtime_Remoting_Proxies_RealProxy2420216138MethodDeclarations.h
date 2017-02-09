@@ -20,6 +20,8 @@ struct Type_t;
 struct ClientIdentity_t2516200039;
 // System.Object
 struct Il2CppObject;
+// System.Runtime.Serialization.SerializationInfo
+struct SerializationInfo_t2185721892;
 // System.Runtime.Remoting.Identity
 struct Identity_t3943038460;
 // System.String
@@ -30,6 +32,9 @@ struct String_t;
 #include "mscorlib_System_Runtime_Remoting_ClientIdentity2516200039.h"
 #include "mscorlib_System_IntPtr4010401971.h"
 #include "mscorlib_System_Object4170816371.h"
+#include "mscorlib_System_Runtime_Serialization_Serializatio2185721892.h"
+#include "mscorlib_System_Runtime_Serialization_StreamingCon2761351129.h"
+#include "mscorlib_System_Runtime_Remoting_Identity3943038460.h"
 #include "mscorlib_System_String7231557.h"
 
 // System.Void System.Runtime.Remoting.Proxies.RealProxy::.ctor(System.Type)
@@ -42,8 +47,12 @@ extern "C"  void RealProxy__ctor_m3053042265 (RealProxy_t2420216138 * __this, Ty
 extern "C"  Type_t * RealProxy_InternalGetProxyType_m1321633559 (Il2CppObject * __this /* static, unused */, Il2CppObject * ___transparentProxy0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type System.Runtime.Remoting.Proxies.RealProxy::GetProxiedType()
 extern "C"  Type_t * RealProxy_GetProxiedType_m3786182287 (RealProxy_t2420216138 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Proxies.RealProxy::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern "C"  void RealProxy_GetObjectData_m3219256218 (RealProxy_t2420216138 * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Runtime.Remoting.Identity System.Runtime.Remoting.Proxies.RealProxy::get_ObjectIdentity()
 extern "C"  Identity_t3943038460 * RealProxy_get_ObjectIdentity_m347429559 (RealProxy_t2420216138 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Proxies.RealProxy::set_ObjectIdentity(System.Runtime.Remoting.Identity)
+extern "C"  void RealProxy_set_ObjectIdentity_m3694655214 (RealProxy_t2420216138 * __this, Identity_t3943038460 * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Remoting.Proxies.RealProxy::InternalGetTransparentProxy(System.String)
 extern "C"  Il2CppObject * RealProxy_InternalGetTransparentProxy_m1628758334 (RealProxy_t2420216138 * __this, String_t* ___className0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Remoting.Proxies.RealProxy::GetTransparentProxy()

@@ -28,5 +28,7 @@ struct ISurrogateSelector_t2300150170;
 
 // System.Void System.Runtime.Remoting.Messaging.RemotingSurrogate::.ctor()
 extern "C"  void RemotingSurrogate__ctor_m1724131135 (RemotingSurrogate_t971316111 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Messaging.RemotingSurrogate::GetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+extern "C"  void RemotingSurrogate_GetObjectData_m1763816655 (RemotingSurrogate_t971316111 * __this, Il2CppObject * ___obj0, SerializationInfo_t2185721892 * ___si1, StreamingContext_t2761351129  ___sc2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Runtime.Remoting.Messaging.RemotingSurrogate::SetObjectData(System.Object,System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext,System.Runtime.Serialization.ISurrogateSelector)
 extern "C"  Il2CppObject * RemotingSurrogate_SetObjectData_m3663110203 (RemotingSurrogate_t971316111 * __this, Il2CppObject * ___obj0, SerializationInfo_t2185721892 * ___si1, StreamingContext_t2761351129  ___sc2, Il2CppObject * ___selector3, const MethodInfo* method) IL2CPP_METHOD_ATTR;

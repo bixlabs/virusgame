@@ -20097,7 +20097,7 @@ extern "C"  void ClientSessionInfo_Dispose_m3809547065 (ClientSessionInfo_t13800
 	}
 	{
 		IL2CPP_RUNTIME_CLASS_INIT(DateTime_t4283661327_il2cpp_TypeInfo_var);
-		DateTime_t4283661327  L_1 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_3();
+		DateTime_t4283661327  L_1 = ((DateTime_t4283661327_StaticFields*)DateTime_t4283661327_il2cpp_TypeInfo_var->static_fields)->get_MinValue_13();
 		__this->set_validuntil_2(L_1);
 		__this->set_host_3((String_t*)NULL);
 		__this->set_sid_4((ByteU5BU5D_t4260760469*)NULL);
@@ -25938,7 +25938,7 @@ IL_0018:
 		NullCheck(L_5);
 		WaitHandle_t1661568373 * L_6 = ReceiveRecordAsyncResult_get_AsyncWaitHandle_m1089809952(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_6);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_6);
 	}
 
 IL_002f:
@@ -26884,7 +26884,7 @@ extern "C"  void RecordProtocol_EndSendRecord_m1779126194 (RecordProtocol_t13319
 		NullCheck(L_4);
 		WaitHandle_t1661568373 * L_5 = SendRecordAsyncResult_get_AsyncWaitHandle_m1260948317(L_4, /*hidden argument*/NULL);
 		NullCheck(L_5);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_5);
 	}
 
 IL_0029:
@@ -31526,7 +31526,7 @@ extern "C"  void SslStreamBase_NegotiateHandshake_m4275951676 (SslStreamBase_t65
 	{
 		ManualResetEvent_t924017833 * L_4 = __this->get_negotiationComplete_13();
 		NullCheck(L_4);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_4);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_4);
 		goto IL_003c;
 	}
 
@@ -32047,7 +32047,7 @@ extern "C"  void SslStreamBase_EndNegotiateHandshake_m2402424015 (SslStreamBase_
 		NullCheck(L_2);
 		WaitHandle_t1661568373 * L_3 = InternalAsyncResult_get_AsyncWaitHandle_m2858026241(L_2, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_3);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_3);
 	}
 
 IL_0017:
@@ -32193,7 +32193,7 @@ IL_0065:
 	{
 		ManualResetEvent_t924017833 * L_22 = __this->get_negotiationComplete_13();
 		NullCheck(L_22);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_22);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_22);
 		InternalAsyncResult_t2363113060 * L_23 = V_0;
 		SslStreamBase_InternalBeginRead_m2665365405(__this, L_23, /*hidden argument*/NULL);
 	}
@@ -33307,7 +33307,7 @@ IL_0065:
 	{
 		ManualResetEvent_t924017833 * L_22 = __this->get_negotiationComplete_13();
 		NullCheck(L_22);
-		VirtFuncInvoker0< bool >::Invoke(8 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_22);
+		VirtFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.Threading.WaitHandle::WaitOne() */, L_22);
 		InternalAsyncResult_t2363113060 * L_23 = V_0;
 		SslStreamBase_InternalBeginWrite_m3259256466(__this, L_23, /*hidden argument*/NULL);
 	}
@@ -33377,7 +33377,7 @@ IL_001e:
 		NullCheck(L_5);
 		WaitHandle_t1661568373 * L_6 = InterfaceFuncInvoker0< WaitHandle_t1661568373 * >::Invoke(1 /* System.Threading.WaitHandle System.IAsyncResult::get_AsyncWaitHandle() */, IAsyncResult_t2754620036_il2cpp_TypeInfo_var, L_5);
 		NullCheck(L_6);
-		bool L_7 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_6, ((int32_t)300000), (bool)0);
+		bool L_7 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(11 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_6, ((int32_t)300000), (bool)0);
 		if (L_7)
 		{
 			goto IL_004c;
@@ -33462,7 +33462,7 @@ IL_001e:
 		NullCheck(L_5);
 		WaitHandle_t1661568373 * L_6 = InternalAsyncResult_get_AsyncWaitHandle_m2858026241(L_5, /*hidden argument*/NULL);
 		NullCheck(L_6);
-		bool L_7 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(9 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_6, ((int32_t)300000), (bool)0);
+		bool L_7 = VirtFuncInvoker2< bool, int32_t, bool >::Invoke(11 /* System.Boolean System.Threading.WaitHandle::WaitOne(System.Int32,System.Boolean) */, L_6, ((int32_t)300000), (bool)0);
 		if (L_7)
 		{
 			goto IL_004c;

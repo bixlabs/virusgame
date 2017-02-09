@@ -18,6 +18,8 @@ struct Thread_t1973216770;
 struct ThreadStart_t124146534;
 // System.Runtime.Remoting.Contexts.Context
 struct Context_t515654137;
+// System.AppDomain
+struct AppDomain_t3575612635;
 // System.MulticastDelegate
 struct MulticastDelegate_t3389745971;
 // System.Globalization.CultureInfo
@@ -51,6 +53,8 @@ extern "C"  Thread_t1973216770 * Thread_CurrentThread_internal_m3803103476 (Il2C
 extern "C"  Thread_t1973216770 * Thread_get_CurrentThread_m1523593825 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.Thread::FreeLocalSlotValues(System.Int32,System.Boolean)
 extern "C"  void Thread_FreeLocalSlotValues_m3189496250 (Il2CppObject * __this /* static, unused */, int32_t ___slot0, bool ___thread_local1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.AppDomain System.Threading.Thread::GetDomain()
+extern "C"  AppDomain_t3575612635 * Thread_GetDomain_m1860535634 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Threading.Thread::GetDomainID()
 extern "C"  int32_t Thread_GetDomainID_m3584395396 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IntPtr System.Threading.Thread::Thread_internal(System.MulticastDelegate)

@@ -32,6 +32,10 @@ extern "C"  Il2CppObject * Identity_get_ChannelSink_m1983774607 (Identity_t39430
 extern "C"  void Identity_set_ChannelSink_m3130847940 (Identity_t3943038460 * __this, Il2CppObject * ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Runtime.Remoting.Identity::get_ObjectUri()
 extern "C"  String_t* Identity_get_ObjectUri_m2443444253 (Identity_t3943038460 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void System.Runtime.Remoting.Identity::set_ObjectUri(System.String)
+extern "C"  void Identity_set_ObjectUri_m3325545942 (Identity_t3943038460 * __this, String_t* ___value0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Runtime.Remoting.Identity::get_IsConnected()
+extern "C"  bool Identity_get_IsConnected_m3070245296 (Identity_t3943038460 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Runtime.Remoting.Identity::get_Disposed()
 extern "C"  bool Identity_get_Disposed_m1911726198 (Identity_t3943038460 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Identity::set_Disposed(System.Boolean)

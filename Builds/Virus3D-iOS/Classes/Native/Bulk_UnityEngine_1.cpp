@@ -10633,6 +10633,15 @@ extern "C"  void Input__cctor_m1327041086 (Il2CppObject * __this /* static, unus
 		return;
 	}
 }
+// System.Single UnityEngine.Input::GetAxis(System.String)
+extern "C"  float Input_GetAxis_m2027668530 (Il2CppObject * __this /* static, unused */, String_t* ___axisName0, const MethodInfo* method)
+{
+	typedef float (*Input_GetAxis_m2027668530_ftn) (String_t*);
+	static Input_GetAxis_m2027668530_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_GetAxis_m2027668530_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::GetAxis(System.String)");
+	return _il2cpp_icall_func(___axisName0);
+}
 // System.Single UnityEngine.Input::GetAxisRaw(System.String)
 extern "C"  float Input_GetAxisRaw_m1900207208 (Il2CppObject * __this /* static, unused */, String_t* ___axisName0, const MethodInfo* method)
 {
@@ -10744,35 +10753,6 @@ extern "C"  bool Input_get_mousePresent_m3235491246 (Il2CppObject * __this /* st
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Input_get_mousePresent_m3235491246_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::get_mousePresent()");
 	return _il2cpp_icall_func();
-}
-// UnityEngine.Vector3 UnityEngine.Input::get_acceleration()
-extern Il2CppClass* Input_t4200062272_il2cpp_TypeInfo_var;
-extern const uint32_t Input_get_acceleration_m3697865796_MetadataUsageId;
-extern "C"  Vector3_t4282066566  Input_get_acceleration_m3697865796 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (Input_get_acceleration_m3697865796_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Vector3_t4282066566  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t4200062272_il2cpp_TypeInfo_var);
-		Input_INTERNAL_get_acceleration_m3372612331(NULL /*static, unused*/, (&V_0), /*hidden argument*/NULL);
-		Vector3_t4282066566  L_0 = V_0;
-		return L_0;
-	}
-}
-// System.Void UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)
-extern "C"  void Input_INTERNAL_get_acceleration_m3372612331 (Il2CppObject * __this /* static, unused */, Vector3_t4282066566 * ___value0, const MethodInfo* method)
-{
-	typedef void (*Input_INTERNAL_get_acceleration_m3372612331_ftn) (Vector3_t4282066566 *);
-	static Input_INTERNAL_get_acceleration_m3372612331_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Input_INTERNAL_get_acceleration_m3372612331_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::INTERNAL_get_acceleration(UnityEngine.Vector3&)");
-	_il2cpp_icall_func(___value0);
 }
 // UnityEngine.Touch UnityEngine.Input::GetTouch(System.Int32)
 extern Il2CppClass* Input_t4200062272_il2cpp_TypeInfo_var;
@@ -23815,6 +23795,15 @@ extern "C"  Vector2_t4282066565  RectTransformUtility_GetTransposed_m2060823533 
 		Vector2__ctor_m1517109030(&L_2, L_0, L_1, /*hidden argument*/NULL);
 		return L_2;
 	}
+}
+// System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
+extern "C"  void Renderer_set_enabled_m2514140131 (Renderer_t3076687687 * __this, bool ___value0, const MethodInfo* method)
+{
+	typedef void (*Renderer_set_enabled_m2514140131_ftn) (Renderer_t3076687687 *, bool);
+	static Renderer_set_enabled_m2514140131_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Renderer_set_enabled_m2514140131_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Renderer::set_enabled(System.Boolean)");
+	_il2cpp_icall_func(__this, ___value0);
 }
 // System.Int32 UnityEngine.Renderer::get_sortingLayerID()
 extern "C"  int32_t Renderer_get_sortingLayerID_m1954594923 (Renderer_t3076687687 * __this, const MethodInfo* method)

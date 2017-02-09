@@ -26,6 +26,8 @@ struct Module_t1394482686;
 struct TypeU5BU5D_t3339007067;
 // System.Reflection.AssemblyName
 struct AssemblyName_t2915647011;
+// System.Security.Policy.Evidence
+struct Evidence_t4141397151;
 // System.Reflection.Module[]
 struct ModuleU5BU5D_t1003119691;
 
@@ -36,6 +38,7 @@ struct ModuleU5BU5D_t1003119691;
 #include "mscorlib_System_Reflection_Module1394482686.h"
 #include "mscorlib_System_Reflection_Assembly1418687608.h"
 #include "mscorlib_System_Reflection_AssemblyName2915647011.h"
+#include "mscorlib_System_Security_Policy_Evidence4141397151.h"
 
 // System.Void System.Reflection.Assembly::.ctor()
 extern "C"  void Assembly__ctor_m3527373192 (Assembly_t1418687608 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
@@ -81,6 +84,14 @@ extern "C"  AssemblyName_t2915647011 * Assembly_UnprotectedGetName_m1786225822 (
 extern "C"  String_t* Assembly_ToString_m395441739 (Assembly_t1418687608 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Assembly System.Reflection.Assembly::Load(System.String)
 extern "C"  Assembly_t1418687608 * Assembly_Load_m4081902495 (Il2CppObject * __this /* static, unused */, String_t* ___assemblyString0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String)
+extern "C"  Assembly_t1418687608 * Assembly_LoadWithPartialName_m3055769661 (Il2CppObject * __this /* static, unused */, String_t* ___partialName0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Assembly System.Reflection.Assembly::load_with_partial_name(System.String,System.Security.Policy.Evidence)
+extern "C"  Assembly_t1418687608 * Assembly_load_with_partial_name_m4063128548 (Il2CppObject * __this /* static, unused */, String_t* ___name0, Evidence_t4141397151 * ___e1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String,System.Security.Policy.Evidence)
+extern "C"  Assembly_t1418687608 * Assembly_LoadWithPartialName_m2365700389 (Il2CppObject * __this /* static, unused */, String_t* ___partialName0, Evidence_t4141397151 * ___securityEvidence1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Reflection.Assembly System.Reflection.Assembly::LoadWithPartialName(System.String,System.Security.Policy.Evidence,System.Boolean)
+extern "C"  Assembly_t1418687608 * Assembly_LoadWithPartialName_m3213527992 (Il2CppObject * __this /* static, unused */, String_t* ___partialName0, Evidence_t4141397151 * ___securityEvidence1, bool ___oldBehavior2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Module System.Reflection.Assembly::GetModule(System.String)
 extern "C"  Module_t1394482686 * Assembly_GetModule_m2523306005 (Assembly_t1418687608 * __this, String_t* ___name0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Module[] System.Reflection.Assembly::GetModulesInternal()

@@ -131,9 +131,15 @@ extern "C" void LabelFixup_t660379442_marshal_pinvoke_cleanup ();
 extern "C" void ILTokenInfo_t1354080954_marshal_pinvoke ();
 extern "C" void ILTokenInfo_t1354080954_marshal_pinvoke_back ();
 extern "C" void ILTokenInfo_t1354080954_marshal_pinvoke_cleanup ();
+extern "C" void Label_t2268465130_marshal_pinvoke ();
+extern "C" void Label_t2268465130_marshal_pinvoke_back ();
+extern "C" void Label_t2268465130_marshal_pinvoke_cleanup ();
 extern "C" void MethodToken_t23137230_marshal_pinvoke ();
 extern "C" void MethodToken_t23137230_marshal_pinvoke_back ();
 extern "C" void MethodToken_t23137230_marshal_pinvoke_cleanup ();
+extern "C" void MonoResource_t1505432149_marshal_pinvoke ();
+extern "C" void MonoResource_t1505432149_marshal_pinvoke_back ();
+extern "C" void MonoResource_t1505432149_marshal_pinvoke_cleanup ();
 extern "C" void OpCode_t3389331186_marshal_pinvoke ();
 extern "C" void OpCode_t3389331186_marshal_pinvoke_back ();
 extern "C" void OpCode_t3389331186_marshal_pinvoke_cleanup ();
@@ -536,7 +542,7 @@ extern "C" void Navigation_t1108456480_marshal_pinvoke_cleanup ();
 extern "C" void SpriteState_t2895308594_marshal_pinvoke ();
 extern "C" void SpriteState_t2895308594_marshal_pinvoke_back ();
 extern "C" void SpriteState_t2895308594_marshal_pinvoke_cleanup ();
-extern const Il2CppMarshalingFunctions g_MarshalingFunctions[176] = 
+extern const Il2CppMarshalingFunctions g_MarshalingFunctions[178] = 
 {
 	{ U24ArrayTypeU241024_t435478332_marshal_pinvoke, U24ArrayTypeU241024_t435478332_marshal_pinvoke_back, U24ArrayTypeU241024_t435478332_marshal_pinvoke_cleanup },
 	{ U24ArrayTypeU2412_t3379220348_marshal_pinvoke, U24ArrayTypeU2412_t3379220348_marshal_pinvoke_back, U24ArrayTypeU2412_t3379220348_marshal_pinvoke_cleanup },
@@ -578,7 +584,9 @@ extern const Il2CppMarshalingFunctions g_MarshalingFunctions[176] =
 	{ LabelData_t3207823784_marshal_pinvoke, LabelData_t3207823784_marshal_pinvoke_back, LabelData_t3207823784_marshal_pinvoke_cleanup },
 	{ LabelFixup_t660379442_marshal_pinvoke, LabelFixup_t660379442_marshal_pinvoke_back, LabelFixup_t660379442_marshal_pinvoke_cleanup },
 	{ ILTokenInfo_t1354080954_marshal_pinvoke, ILTokenInfo_t1354080954_marshal_pinvoke_back, ILTokenInfo_t1354080954_marshal_pinvoke_cleanup },
+	{ Label_t2268465130_marshal_pinvoke, Label_t2268465130_marshal_pinvoke_back, Label_t2268465130_marshal_pinvoke_cleanup },
 	{ MethodToken_t23137230_marshal_pinvoke, MethodToken_t23137230_marshal_pinvoke_back, MethodToken_t23137230_marshal_pinvoke_cleanup },
+	{ MonoResource_t1505432149_marshal_pinvoke, MonoResource_t1505432149_marshal_pinvoke_back, MonoResource_t1505432149_marshal_pinvoke_cleanup },
 	{ OpCode_t3389331186_marshal_pinvoke, OpCode_t3389331186_marshal_pinvoke_back, OpCode_t3389331186_marshal_pinvoke_cleanup },
 	{ MonoEventInfo_t3743085391_marshal_pinvoke, MonoEventInfo_t3743085391_marshal_pinvoke_back, MonoEventInfo_t3743085391_marshal_pinvoke_cleanup },
 	{ MonoMethodInfo_t1372150788_marshal_pinvoke, MonoMethodInfo_t1372150788_marshal_pinvoke_back, MonoMethodInfo_t1372150788_marshal_pinvoke_cleanup },

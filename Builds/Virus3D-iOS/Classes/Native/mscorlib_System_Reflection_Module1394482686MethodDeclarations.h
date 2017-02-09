@@ -33,6 +33,7 @@ struct Il2CppObject;
 #include "mscorlib_System_Type2863145774.h"
 #include "mscorlib_System_Runtime_Serialization_Serializatio2185721892.h"
 #include "mscorlib_System_Runtime_Serialization_StreamingCon2761351129.h"
+#include "mscorlib_System_String7231557.h"
 #include "mscorlib_System_Object4170816371.h"
 
 // System.Void System.Reflection.Module::.ctor()
@@ -41,12 +42,18 @@ extern "C"  void Module__ctor_m1944669826 (Module_t1394482686 * __this, const Me
 extern "C"  void Module__cctor_m3968093547 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Reflection.Assembly System.Reflection.Module::get_Assembly()
 extern "C"  Assembly_t1418687608 * Module_get_Assembly_m4154223570 (Module_t1394482686 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.String System.Reflection.Module::get_Name()
+extern "C"  String_t* Module_get_Name_m2964298041 (Module_t1394482686 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Reflection.Module::get_ScopeName()
 extern "C"  String_t* Module_get_ScopeName_m724946931 (Module_t1394482686 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object[] System.Reflection.Module::GetCustomAttributes(System.Type,System.Boolean)
 extern "C"  ObjectU5BU5D_t1108656482* Module_GetCustomAttributes_m2375287279 (Module_t1394482686 * __this, Type_t * ___attributeType0, bool ___inherit1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.Module::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 extern "C"  void Module_GetObjectData_m8314144 (Module_t1394482686 * __this, SerializationInfo_t2185721892 * ___info0, StreamingContext_t2761351129  ___context1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type System.Reflection.Module::GetType(System.String)
+extern "C"  Type_t * Module_GetType_m461877388 (Module_t1394482686 * __this, String_t* ___className0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Type System.Reflection.Module::GetType(System.String,System.Boolean,System.Boolean)
+extern "C"  Type_t * Module_GetType_m1969891820 (Module_t1394482686 * __this, String_t* ___className0, bool ___throwOnError1, bool ___ignoreCase2, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type[] System.Reflection.Module::InternalGetTypes()
 extern "C"  TypeU5BU5D_t3339007067* Module_InternalGetTypes_m2940532442 (Module_t1394482686 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type[] System.Reflection.Module::GetTypes()

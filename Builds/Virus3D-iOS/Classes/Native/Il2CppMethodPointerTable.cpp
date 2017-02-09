@@ -228,7 +228,10 @@ extern "C" void ASN1Convert_ToInt32_m3294327310 ();
 extern "C" void ASN1Convert_ToOid_m1584150353 ();
 extern "C" void ASN1Convert_ToDateTime_m1541196208 ();
 extern "C" void BitConverterLE_GetUIntBytes_m2711216227 ();
+extern "C" void BitConverterLE_GetULongBytes_m2225593860 ();
 extern "C" void BitConverterLE_GetBytes_m3726708497 ();
+extern "C" void BitConverterLE_GetBytes_m3996835819 ();
+extern "C" void BitConverterLE_GetBytes_m3747273090 ();
 extern "C" void BitConverterLE_UShortFromBytes_m2244877436 ();
 extern "C" void BitConverterLE_UIntFromBytes_m318761967 ();
 extern "C" void BitConverterLE_ULongFromBytes_m2716396614 ();
@@ -245,10 +248,14 @@ extern "C" void BlockProcessor_Final_m2868771374 ();
 extern "C" void CryptoConvert_ToInt32LE_m2023521787 ();
 extern "C" void CryptoConvert_ToUInt32LE_m558101659 ();
 extern "C" void CryptoConvert_GetBytesLE_m62772046 ();
+extern "C" void CryptoConvert_Trim_m4105167672 ();
+extern "C" void CryptoConvert_FromCapiPrivateKeyBlob_m1079413163 ();
 extern "C" void CryptoConvert_ToCapiPrivateKeyBlob_m1139689325 ();
 extern "C" void CryptoConvert_FromCapiPublicKeyBlob_m2773702008 ();
 extern "C" void CryptoConvert_FromCapiPublicKeyBlob_m1285057119 ();
 extern "C" void CryptoConvert_ToCapiPublicKeyBlob_m4141543943 ();
+extern "C" void CryptoConvert_FromCapiKeyBlob_m3062702575 ();
+extern "C" void CryptoConvert_FromCapiKeyBlob_m2059589448 ();
 extern "C" void CryptoConvert_ToCapiKeyBlob_m2611438349 ();
 extern "C" void DSAManaged__ctor_m1342239545 ();
 extern "C" void DSAManaged_add_KeyGenerated_m1677002343 ();
@@ -385,7 +392,11 @@ extern "C" void EncryptedData__ctor_m3201940140 ();
 extern "C" void EncryptedData__ctor_m816185204 ();
 extern "C" void EncryptedData_get_EncryptionAlgorithm_m2635090815 ();
 extern "C" void EncryptedData_get_EncryptedContent_m1390437900 ();
+extern "C" void StrongName__ctor_m2367078620 ();
+extern "C" void StrongName__ctor_m3580701056 ();
 extern "C" void StrongName__cctor_m1937985856 ();
+extern "C" void StrongName_InvalidateCache_m757934578 ();
+extern "C" void StrongName_set_RSA_m2703412289 ();
 extern "C" void StrongName_get_PublicKey_m4163536910 ();
 extern "C" void StrongName_get_PublicKeyToken_m1378294189 ();
 extern "C" void StrongName_get_TokenAlgorithm_m1030232697 ();
@@ -537,6 +548,8 @@ extern "C" void AppDomain_remove_UnhandledException_m1873750054 ();
 extern "C" void AppDomain_getFriendlyName_m290133299 ();
 extern "C" void AppDomain_getCurDomain_m2514231979 ();
 extern "C" void AppDomain_get_CurrentDomain_m3448347417 ();
+extern "C" void AppDomain_DefineInternalDynamicAssembly_m2942189295 ();
+extern "C" void AppDomain_InitializeLifetimeService_m3976192241 ();
 extern "C" void AppDomain_LoadAssembly_m4215712056 ();
 extern "C" void AppDomain_Load_m3534527363 ();
 extern "C" void AppDomain_Load_m2577869746 ();
@@ -1114,6 +1127,26 @@ extern "C" void SyncHashtable_GetEnumerator_m1352826924 ();
 extern "C" void SyncHashtable_Remove_m1658619584 ();
 extern "C" void SyncHashtable_ContainsKey_m3017313540 ();
 extern "C" void SyncHashtable_Clone_m1874575834 ();
+extern "C" void Queue__ctor_m1954446073 ();
+extern "C" void Queue__ctor_m748061386 ();
+extern "C" void Queue__ctor_m3810010794 ();
+extern "C" void Queue__ctor_m3198641199 ();
+extern "C" void Queue_get_Count_m626402273 ();
+extern "C" void Queue_get_IsSynchronized_m219192020 ();
+extern "C" void Queue_get_SyncRoot_m109028870 ();
+extern "C" void Queue_CopyTo_m3860803222 ();
+extern "C" void Queue_GetEnumerator_m2695541627 ();
+extern "C" void Queue_Clone_m2633244255 ();
+extern "C" void Queue_Clear_m3655546660 ();
+extern "C" void Queue_Dequeue_m1667531058 ();
+extern "C" void Queue_Enqueue_m643439957 ();
+extern "C" void Queue_Peek_m727449659 ();
+extern "C" void Queue_grow_m3648280158 ();
+extern "C" void QueueEnumerator__ctor_m12538362 ();
+extern "C" void QueueEnumerator_Clone_m4107858841 ();
+extern "C" void QueueEnumerator_get_Current_m1929476812 ();
+extern "C" void QueueEnumerator_MoveNext_m913793047 ();
+extern "C" void QueueEnumerator_Reset_m1352298720 ();
 extern "C" void SortedList__ctor_m3703218657 ();
 extern "C" void SortedList__ctor_m3028782514 ();
 extern "C" void SortedList__ctor_m690679828 ();
@@ -1257,6 +1290,7 @@ extern "C" void Convert_ToDouble_m3920050662 ();
 extern "C" void Convert_ToDouble_m3920053607 ();
 extern "C" void Convert_ToDouble_m4165920249 ();
 extern "C" void Convert_ToDouble_m3920048864 ();
+extern "C" void Convert_ToDouble_m1719184653 ();
 extern "C" void Convert_ToDouble_m4191850823 ();
 extern "C" void Convert_ToDouble_m2259713797 ();
 extern "C" void Convert_ToDouble_m2259716742 ();
@@ -1445,6 +1479,7 @@ extern "C" void DateTime_Compare_m1646075697 ();
 extern "C" void DateTime_CompareTo_m246114144_AdjustorThunk ();
 extern "C" void DateTime_CompareTo_m1522800900_AdjustorThunk ();
 extern "C" void DateTime_Equals_m1479384337_AdjustorThunk ();
+extern "C" void DateTime_ToBinary_m1940170345_AdjustorThunk ();
 extern "C" void DateTime_FromBinary_m1447091502 ();
 extern "C" void DateTime_SpecifyKind_m2123544880 ();
 extern "C" void DateTime_DaysInMonth_m1394183022 ();
@@ -1481,6 +1516,7 @@ extern "C" void DateTime_op_GreaterThanOrEqual_m717787228 ();
 extern "C" void DateTime_op_Inequality_m3446449971 ();
 extern "C" void DateTime_op_LessThan_m35073816 ();
 extern "C" void DateTime_op_LessThanOrEqual_m354447689 ();
+extern "C" void DateTime_op_Subtraction_m3612355463 ();
 extern "C" void DateTime_op_Subtraction_m3609021319 ();
 extern "C" void DateTimeOffset__ctor_m206991153_AdjustorThunk ();
 extern "C" void DateTimeOffset__ctor_m2612619655_AdjustorThunk ();
@@ -1764,6 +1800,7 @@ extern "C" void Environment_get_NewLine_m1034655108 ();
 extern "C" void Environment_get_Platform_m977128040 ();
 extern "C" void Environment_GetOSVersionString_m2885926456 ();
 extern "C" void Environment_get_OSVersion_m2506362029 ();
+extern "C" void Environment_get_TickCount_m2991349545 ();
 extern "C" void Environment_internalGetEnvironmentVariable_m1433380067 ();
 extern "C" void Environment_GetEnvironmentVariable_m3419218304 ();
 extern "C" void Environment_GetWindowsFolderPath_m274642490 ();
@@ -1795,6 +1832,7 @@ extern "C" void Exception_ToString_m1076460401 ();
 extern "C" void Exception_GetFullNameForStackTrace_m130874526 ();
 extern "C" void Exception_GetType_m913902486 ();
 extern "C" void ExecutionEngineException__ctor_m303736736 ();
+extern "C" void ExecutionEngineException__ctor_m1470913378 ();
 extern "C" void ExecutionEngineException__ctor_m2979248353 ();
 extern "C" void FieldAccessException__ctor_m4068849444 ();
 extern "C" void FieldAccessException__ctor_m843948638 ();
@@ -2017,6 +2055,7 @@ extern "C" void Guid_Equals_m2229489973_AdjustorThunk ();
 extern "C" void Guid_GetHashCode_m885349207_AdjustorThunk ();
 extern "C" void Guid_ToHex_m1518905113 ();
 extern "C" void Guid_NewGuid_m3560729310 ();
+extern "C" void Guid_FastNewGuidArray_m3654390746 ();
 extern "C" void Guid_AppendInt_m60474956 ();
 extern "C" void Guid_AppendShort_m2766674707 ();
 extern "C" void Guid_AppendByte_m1375613333 ();
@@ -2181,6 +2220,31 @@ extern "C" void BinaryReader_ReadUInt16_m3403093289 ();
 extern "C" void BinaryReader_ReadUInt32_m3616500457 ();
 extern "C" void BinaryReader_ReadUInt64_m4114149001 ();
 extern "C" void BinaryReader_CheckBuffer_m244572668 ();
+extern "C" void BinaryWriter__ctor_m3320479349 ();
+extern "C" void BinaryWriter__ctor_m3820043020 ();
+extern "C" void BinaryWriter__ctor_m3271046021 ();
+extern "C" void BinaryWriter__cctor_m3668515800 ();
+extern "C" void BinaryWriter_System_IDisposable_Dispose_m3902299210 ();
+extern "C" void BinaryWriter_Dispose_m1210247017 ();
+extern "C" void BinaryWriter_Flush_m3404426647 ();
+extern "C" void BinaryWriter_Write_m3041269161 ();
+extern "C" void BinaryWriter_Write_m1743996025 ();
+extern "C" void BinaryWriter_Write_m942985559 ();
+extern "C" void BinaryWriter_Write_m748689399 ();
+extern "C" void BinaryWriter_Write_m1744395243 ();
+extern "C" void BinaryWriter_Write_m1326634057 ();
+extern "C" void BinaryWriter_Write_m1600738208 ();
+extern "C" void BinaryWriter_Write_m2432552144 ();
+extern "C" void BinaryWriter_Write_m2714465021 ();
+extern "C" void BinaryWriter_Write_m2714466819 ();
+extern "C" void BinaryWriter_Write_m2714469764 ();
+extern "C" void BinaryWriter_Write_m2960336406 ();
+extern "C" void BinaryWriter_Write_m2682114873 ();
+extern "C" void BinaryWriter_Write_m3000791184 ();
+extern "C" void BinaryWriter_Write_m3541318530 ();
+extern "C" void BinaryWriter_Write_m3541320328 ();
+extern "C" void BinaryWriter_Write_m3541323273 ();
+extern "C" void BinaryWriter_Write7BitEncodedInt_m1552112122 ();
 extern "C" void Directory_CreateDirectory_m677877474 ();
 extern "C" void Directory_CreateDirectoriesInternal_m1545778887 ();
 extern "C" void Directory_Exists_m4117375188 ();
@@ -2200,12 +2264,15 @@ extern "C" void DirectoryNotFoundException__ctor_m1548643788 ();
 extern "C" void DirectoryNotFoundException__ctor_m2829292855 ();
 extern "C" void EndOfStreamException__ctor_m2858794028 ();
 extern "C" void EndOfStreamException__ctor_m1615815533 ();
+extern "C" void File_Create_m3497726217 ();
+extern "C" void File_Create_m2847392366 ();
 extern "C" void File_Delete_m760984832 ();
 extern "C" void File_Exists_m1326262381 ();
 extern "C" void File_Open_m1918038371 ();
 extern "C" void File_OpenRead_m3104031109 ();
 extern "C" void File_OpenText_m396847893 ();
 extern "C" void FileNotFoundException__ctor_m1040614905 ();
+extern "C" void FileNotFoundException__ctor_m4237579689 ();
 extern "C" void FileNotFoundException__ctor_m2788024869 ();
 extern "C" void FileNotFoundException__ctor_m3117006778 ();
 extern "C" void FileNotFoundException_get_Message_m1881278936 ();
@@ -2214,6 +2281,7 @@ extern "C" void FileNotFoundException_ToString_m1456954068 ();
 extern "C" void FileStream__ctor_m3655381520 ();
 extern "C" void FileStream__ctor_m3377505172 ();
 extern "C" void FileStream__ctor_m3657053030 ();
+extern "C" void FileStream__ctor_m3371310897 ();
 extern "C" void FileStream__ctor_m3446221265 ();
 extern "C" void FileStream__ctor_m1468472351 ();
 extern "C" void FileStream_get_CanRead_m3703756390 ();
@@ -2342,6 +2410,7 @@ extern "C" void Path__cctor_m952127721 ();
 extern "C" void Path_Combine_m4122812896 ();
 extern "C" void Path_CleanPath_m233704309 ();
 extern "C" void Path_GetDirectoryName_m1772680861 ();
+extern "C" void Path_GetExtension_m2722066454 ();
 extern "C" void Path_GetFileName_m26786182 ();
 extern "C" void Path_GetFullPath_m435799225 ();
 extern "C" void Path_WindowsDriveAdjustment_m578050859 ();
@@ -2350,6 +2419,7 @@ extern "C" void Path_IsDsc_m2558771155 ();
 extern "C" void Path_GetPathRoot_m2659954950 ();
 extern "C" void Path_IsPathRooted_m3347626992 ();
 extern "C" void Path_GetInvalidPathChars_m737233085 ();
+extern "C" void Path_findExtension_m3495715222 ();
 extern "C" void Path_GetServerAndShare_m2796958082 ();
 extern "C" void Path_SameRoot_m1004668564 ();
 extern "C" void Path_CanonicalizePath_m3829459706 ();
@@ -2502,6 +2572,9 @@ extern "C" void LocalDataStoreSlot__cctor_m1991429794 ();
 extern "C" void LocalDataStoreSlot_Finalize_m2044082711 ();
 extern "C" void MarshalByRefObject__ctor_m2306543480 ();
 extern "C" void MarshalByRefObject_get_ObjectIdentity_m426029982 ();
+extern "C" void MarshalByRefObject_set_ObjectIdentity_m3718301103 ();
+extern "C" void MarshalByRefObject_CreateObjRef_m574784494 ();
+extern "C" void MarshalByRefObject_InitializeLifetimeService_m3037236935 ();
 extern "C" void Math_Abs_m4017239106 ();
 extern "C" void Math_Abs_m2633004394 ();
 extern "C" void Math_Abs_m651703468 ();
@@ -2574,6 +2647,7 @@ extern "C" void SByteComparer_Compare_m1473836669 ();
 extern "C" void ShortComparer__ctor_m2202587209 ();
 extern "C" void ShortComparer_Compare_m2284602042 ();
 extern "C" void ShortComparer_Compare_m2275424446 ();
+extern "C" void MonoLimitationAttribute__ctor_m947459152 ();
 extern "C" void MonoTODOAttribute__ctor_m3523127742 ();
 extern "C" void MonoTODOAttribute__ctor_m3185129988 ();
 extern "C" void MonoTouchAOTHelper__cctor_m2104929136 ();
@@ -2618,6 +2692,7 @@ extern "C" void MonoType_get_Module_m3779621798 ();
 extern "C" void MonoType_get_DeclaringType_m3073537512 ();
 extern "C" void MonoType_get_ReflectedType_m2303984285 ();
 extern "C" void MonoType_get_TypeHandle_m2428845255 ();
+extern "C" void MonoType_GetArrayRank_m1675113855 ();
 extern "C" void MonoType_GetObjectData_m2425175414 ();
 extern "C" void MonoType_ToString_m4069763221 ();
 extern "C" void MonoType_GetGenericArguments_m3677840611 ();
@@ -2806,6 +2881,10 @@ extern "C" void Assembly_GetName_m253695441 ();
 extern "C" void Assembly_UnprotectedGetName_m1786225822 ();
 extern "C" void Assembly_ToString_m395441739 ();
 extern "C" void Assembly_Load_m4081902495 ();
+extern "C" void Assembly_LoadWithPartialName_m3055769661 ();
+extern "C" void Assembly_load_with_partial_name_m4063128548 ();
+extern "C" void Assembly_LoadWithPartialName_m2365700389 ();
+extern "C" void Assembly_LoadWithPartialName_m3213527992 ();
 extern "C" void Assembly_GetModule_m2523306005 ();
 extern "C" void Assembly_GetModulesInternal_m1897302435 ();
 extern "C" void Assembly_GetModules_m3104205309 ();
@@ -2823,11 +2902,15 @@ extern "C" void AssemblyKeyFileAttribute__ctor_m3089249851 ();
 extern "C" void AssemblyName__ctor_m2021574845 ();
 extern "C" void AssemblyName__ctor_m1431164030 ();
 extern "C" void AssemblyName_get_Name_m1123490526 ();
+extern "C" void AssemblyName_set_Name_m3808734003 ();
+extern "C" void AssemblyName_get_CultureInfo_m1466641171 ();
 extern "C" void AssemblyName_get_Flags_m841716984 ();
 extern "C" void AssemblyName_get_FullName_m2880072013 ();
+extern "C" void AssemblyName_get_KeyPair_m1615351883 ();
 extern "C" void AssemblyName_get_Version_m700434552 ();
 extern "C" void AssemblyName_set_Version_m1560254941 ();
 extern "C" void AssemblyName_ToString_m485215606 ();
+extern "C" void AssemblyName_GetPublicKey_m511710865 ();
 extern "C" void AssemblyName_get_IsPublicKeyValid_m65110050 ();
 extern "C" void AssemblyName_InternalGetPublicKeyToken_m1116912397 ();
 extern "C" void AssemblyName_ComputePublicKeyToken_m1248936939 ();
@@ -2883,11 +2966,19 @@ extern "C" void CustomAttributeTypedArgument_Equals_m464286849_AdjustorThunk ();
 extern "C" void CustomAttributeTypedArgument_GetHashCode_m1079175269_AdjustorThunk ();
 extern "C" void DefaultMemberAttribute__ctor_m66421301 ();
 extern "C" void DefaultMemberAttribute_get_MemberName_m2366986664 ();
+extern "C" void AssemblyBuilder__ctor_m558768500 ();
+extern "C" void AssemblyBuilder_basic_init_m2666501043 ();
 extern "C" void AssemblyBuilder_get_Location_m2002209681 ();
+extern "C" void AssemblyBuilder_DefineDynamicModule_m1810872554 ();
+extern "C" void AssemblyBuilder_DefineDynamicModule_m3735477071 ();
 extern "C" void AssemblyBuilder_GetModulesInternal_m2718782039 ();
 extern "C" void AssemblyBuilder_GetTypes_m3461115874 ();
 extern "C" void AssemblyBuilder_get_IsCompilerContext_m332025933 ();
+extern "C" void AssemblyBuilder_get_IsSave_m1537194370 ();
+extern "C" void AssemblyBuilder_get_IsRun_m1296175624 ();
+extern "C" void AssemblyBuilder_get_AssemblyDir_m1726853645 ();
 extern "C" void AssemblyBuilder_not_supported_m186391929 ();
+extern "C" void AssemblyBuilder_check_name_and_filename_m153452157 ();
 extern "C" void AssemblyBuilder_UnprotectedGetName_m3388533202 ();
 extern "C" void ConstructorBuilder__ctor_m3776339611 ();
 extern "C" void ConstructorBuilder_get_CallingConvention_m1759375919 ();
@@ -2915,6 +3006,25 @@ extern "C" void ConstructorBuilder_get_next_table_index_m4060451216 ();
 extern "C" void ConstructorBuilder_get_IsCompilerContext_m884160345 ();
 extern "C" void ConstructorBuilder_not_supported_m993826647 ();
 extern "C" void ConstructorBuilder_not_created_m1839318289 ();
+extern "C" void DynamicMethod_create_dynamic_method_m1649915426 ();
+extern "C" void DynamicMethod_destroy_dynamic_method_m1269513496 ();
+extern "C" void DynamicMethod_CreateDynMethod_m3438208709 ();
+extern "C" void DynamicMethod_Finalize_m2361736761 ();
+extern "C" void DynamicMethod_GetBaseDefinition_m1000253417 ();
+extern "C" void DynamicMethod_GetCustomAttributes_m885664777 ();
+extern "C" void DynamicMethod_GetCustomAttributes_m1932918 ();
+extern "C" void DynamicMethod_GetParameters_m4076757737 ();
+extern "C" void DynamicMethod_Invoke_m1504415078 ();
+extern "C" void DynamicMethod_IsDefined_m1520191624 ();
+extern "C" void DynamicMethod_ToString_m1996022506 ();
+extern "C" void DynamicMethod_get_Attributes_m2374936618 ();
+extern "C" void DynamicMethod_get_CallingConvention_m3873003882 ();
+extern "C" void DynamicMethod_get_DeclaringType_m1927904293 ();
+extern "C" void DynamicMethod_get_MethodHandle_m88284214 ();
+extern "C" void DynamicMethod_get_Module_m1463487787 ();
+extern "C" void DynamicMethod_get_Name_m2634297426 ();
+extern "C" void DynamicMethod_get_ReflectedType_m1158351066 ();
+extern "C" void DynamicMethod_get_ReturnType_m2140318216 ();
 extern "C" void EnumBuilder_get_Assembly_m953263493 ();
 extern "C" void EnumBuilder_get_AssemblyQualifiedName_m4073403554 ();
 extern "C" void EnumBuilder_get_BaseType_m1867673731 ();
@@ -3015,10 +3125,31 @@ extern "C" void ILGenerator_add_token_fixup_m1030891159 ();
 extern "C" void ILGenerator_make_room_m3150005908 ();
 extern "C" void ILGenerator_emit_int_m1452131359 ();
 extern "C" void ILGenerator_ll_emit_m2322068804 ();
+extern "C" void ILGenerator_target_len_m3025186431 ();
+extern "C" void ILGenerator_DeclareLocal_m431075649 ();
+extern "C" void ILGenerator_DeclareLocal_m1507842076 ();
+extern "C" void ILGenerator_DefineLabel_m2892013666 ();
 extern "C" void ILGenerator_Emit_m1513421455 ();
+extern "C" void ILGenerator_Emit_m1177588532 ();
 extern "C" void ILGenerator_Emit_m726728631 ();
+extern "C" void ILGenerator_Emit_m899075895 ();
+extern "C" void ILGenerator_Emit_m2335703720 ();
+extern "C" void ILGenerator_Emit_m628373050 ();
+extern "C" void ILGenerator_Emit_m3548472916 ();
+extern "C" void ILGenerator_Emit_m1087212740 ();
+extern "C" void ILGenerator_Emit_m1535602323 ();
+extern "C" void ILGenerator_Emit_m4144037003 ();
+extern "C" void ILGenerator_Emit_m1194208066 ();
+extern "C" void ILGenerator_EmitCall_m3720990163 ();
+extern "C" void ILGenerator_MarkLabel_m2628862049 ();
 extern "C" void ILGenerator_label_fixup_m2969084380 ();
 extern "C" void ILGenerator_Mono_GetCurrentOffset_m436459828 ();
+extern "C" void LabelData__ctor_m3230547036_AdjustorThunk ();
+extern "C" void Label__ctor_m1931948774_AdjustorThunk ();
+extern "C" void Label_Equals_m383261700_AdjustorThunk ();
+extern "C" void Label_GetHashCode_m4062306408_AdjustorThunk ();
+extern "C" void LocalBuilder__ctor_m639159553 ();
+extern "C" void MethodBuilder__ctor_m531243935 ();
 extern "C" void MethodBuilder_get_ContainsGenericParameters_m3420227972 ();
 extern "C" void MethodBuilder_get_MethodHandle_m1281364144 ();
 extern "C" void MethodBuilder_get_ReturnType_m1886811394 ();
@@ -3027,6 +3158,7 @@ extern "C" void MethodBuilder_get_DeclaringType_m258676459 ();
 extern "C" void MethodBuilder_get_Name_m3413262028 ();
 extern "C" void MethodBuilder_get_Attributes_m2121429796 ();
 extern "C" void MethodBuilder_get_CallingConvention_m3756269872 ();
+extern "C" void MethodBuilder_GetToken_m920069858 ();
 extern "C" void MethodBuilder_GetBaseDefinition_m3625992879 ();
 extern "C" void MethodBuilder_GetParameters_m1297633455 ();
 extern "C" void MethodBuilder_GetParameterCount_m1078755501 ();
@@ -3034,12 +3166,15 @@ extern "C" void MethodBuilder_Invoke_m1851679456 ();
 extern "C" void MethodBuilder_IsDefined_m3379756494 ();
 extern "C" void MethodBuilder_GetCustomAttributes_m1111063247 ();
 extern "C" void MethodBuilder_GetCustomAttributes_m3294549052 ();
+extern "C" void MethodBuilder_GetILGenerator_m2927401921 ();
+extern "C" void MethodBuilder_GetILGenerator_m281130898 ();
 extern "C" void MethodBuilder_check_override_m3740987736 ();
 extern "C" void MethodBuilder_fixup_m526432253 ();
 extern "C" void MethodBuilder_ToString_m2774987108 ();
 extern "C" void MethodBuilder_Equals_m341293246 ();
 extern "C" void MethodBuilder_GetHashCode_m2330513698 ();
 extern "C" void MethodBuilder_get_next_table_index_m3631261195 ();
+extern "C" void MethodBuilder_set_override_m3395137323 ();
 extern "C" void MethodBuilder_NotSupported_m538712043 ();
 extern "C" void MethodBuilder_MakeGenericMethod_m3048833464 ();
 extern "C" void MethodBuilder_get_IsGenericMethodDefinition_m2676161411 ();
@@ -3051,28 +3186,55 @@ extern "C" void MethodToken__cctor_m2370742108 ();
 extern "C" void MethodToken_Equals_m1986642400_AdjustorThunk ();
 extern "C" void MethodToken_GetHashCode_m1919356356_AdjustorThunk ();
 extern "C" void MethodToken_get_Token_m1317996739_AdjustorThunk ();
+extern "C" void ModuleBuilder__ctor_m2747545556 ();
 extern "C" void ModuleBuilder__cctor_m1218472467 ();
+extern "C" void ModuleBuilder_basic_init_m2717692595 ();
+extern "C" void ModuleBuilder_set_wrappers_type_m3721446447 ();
+extern "C" void ModuleBuilder_IsTransient_m233883382 ();
+extern "C" void ModuleBuilder_DefineType_m1318627618 ();
+extern "C" void ModuleBuilder_AddType_m2719739433 ();
+extern "C" void ModuleBuilder_DefineType_m913734295 ();
+extern "C" void ModuleBuilder_DefineType_m4205468467 ();
+extern "C" void ModuleBuilder_GetType_m624865332 ();
+extern "C" void ModuleBuilder_search_in_array_m695084018 ();
+extern "C" void ModuleBuilder_search_nested_in_array_m2114996452 ();
+extern "C" void ModuleBuilder_create_modified_type_m337888899 ();
+extern "C" void ModuleBuilder_GetMaybeNested_m2935224806 ();
+extern "C" void ModuleBuilder_GetType_m3034338196 ();
 extern "C" void ModuleBuilder_get_next_table_index_m3600803990 ();
 extern "C" void ModuleBuilder_GetTypes_m2017043429 ();
+extern "C" void ModuleBuilder_getUSIndex_m2438061448 ();
 extern "C" void ModuleBuilder_getToken_m242473055 ();
+extern "C" void ModuleBuilder_getMethodToken_m628227796 ();
+extern "C" void ModuleBuilder_GetToken_m2742869337 ();
 extern "C" void ModuleBuilder_GetToken_m1580574749 ();
+extern "C" void ModuleBuilder_GetToken_m1483830599 ();
 extern "C" void ModuleBuilder_RegisterToken_m2593402065 ();
 extern "C" void ModuleBuilder_GetTokenGenerator_m4211747974 ();
+extern "C" void ModuleBuilder_get_FileName_m1846030717 ();
+extern "C" void ModuleBuilder_CreateGlobalType_m3592496387 ();
 extern "C" void ModuleBuilderTokenGenerator__ctor_m3538557064 ();
+extern "C" void ModuleBuilderTokenGenerator_GetToken_m1745023583 ();
 extern "C" void ModuleBuilderTokenGenerator_GetToken_m2106467927 ();
+extern "C" void ModuleBuilderTokenGenerator_GetToken_m399214081 ();
 extern "C" void OpCode__ctor_m742870391_AdjustorThunk ();
 extern "C" void OpCode_GetHashCode_m1885918234_AdjustorThunk ();
 extern "C" void OpCode_Equals_m3328690754_AdjustorThunk ();
 extern "C" void OpCode_ToString_m4043065278_AdjustorThunk ();
 extern "C" void OpCode_get_Name_m386372902_AdjustorThunk ();
 extern "C" void OpCode_get_Size_m2313922819_AdjustorThunk ();
+extern "C" void OpCode_get_OperandType_m1363502342_AdjustorThunk ();
 extern "C" void OpCode_get_StackBehaviourPop_m4109383719_AdjustorThunk ();
 extern "C" void OpCode_get_StackBehaviourPush_m2842535718_AdjustorThunk ();
+extern "C" void OpCode_get_Value_m440952459_AdjustorThunk ();
+extern "C" void OpCode_op_Equality_m1885827501 ();
 extern "C" void OpCodeNames__cctor_m1465031614 ();
 extern "C" void OpCodes__cctor_m1331312969 ();
 extern "C" void ParameterBuilder_get_Attributes_m2640139997 ();
 extern "C" void ParameterBuilder_get_Name_m1429816234 ();
 extern "C" void ParameterBuilder_get_Position_m388196207 ();
+extern "C" void TypeBuilder__ctor_m2701930902 ();
+extern "C" void TypeBuilder__ctor_m2838836864 ();
 extern "C" void TypeBuilder_GetAttributeFlagsImpl_m2415994065 ();
 extern "C" void TypeBuilder_setup_internal_class_m1841540458 ();
 extern "C" void TypeBuilder_create_generic_class_m1633445577 ();
@@ -3081,6 +3243,7 @@ extern "C" void TypeBuilder_get_AssemblyQualifiedName_m750470747 ();
 extern "C" void TypeBuilder_get_BaseType_m1785398826 ();
 extern "C" void TypeBuilder_get_DeclaringType_m1033527492 ();
 extern "C" void TypeBuilder_get_UnderlyingSystemType_m301071877 ();
+extern "C" void TypeBuilder_GetFullName_m2368980531 ();
 extern "C" void TypeBuilder_get_FullName_m1311381250 ();
 extern "C" void TypeBuilder_get_Module_m1380149676 ();
 extern "C" void TypeBuilder_get_Name_m225700627 ();
@@ -3093,6 +3256,11 @@ extern "C" void TypeBuilder_GetCustomAttributes_m3833453653 ();
 extern "C" void TypeBuilder_DefineConstructor_m2901130055 ();
 extern "C" void TypeBuilder_DefineConstructor_m467278373 ();
 extern "C" void TypeBuilder_DefineDefaultConstructor_m4180060431 ();
+extern "C" void TypeBuilder_append_method_m2404188841 ();
+extern "C" void TypeBuilder_DefineMethod_m1271641900 ();
+extern "C" void TypeBuilder_DefineMethod_m1021339424 ();
+extern "C" void TypeBuilder_DefineMethod_m775963488 ();
+extern "C" void TypeBuilder_DefineMethodOverride_m608613282 ();
 extern "C" void TypeBuilder_create_runtime_class_m3021676378 ();
 extern "C" void TypeBuilder_is_nested_in_m2129219235 ();
 extern "C" void TypeBuilder_has_ctor_method_m2530448875 ();
@@ -3124,6 +3292,7 @@ extern "C" void TypeBuilder_get_is_created_m695624602 ();
 extern "C" void TypeBuilder_not_supported_m2004582477 ();
 extern "C" void TypeBuilder_check_not_created_m4283406443 ();
 extern "C" void TypeBuilder_check_created_m3022374359 ();
+extern "C" void TypeBuilder_check_name_m566175072 ();
 extern "C" void TypeBuilder_ToString_m3882393003 ();
 extern "C" void TypeBuilder_IsAssignableFrom_m2834740190 ();
 extern "C" void TypeBuilder_IsSubclassOf_m919862466 ();
@@ -3146,6 +3315,7 @@ extern "C" void FieldInfo__ctor_m1830395376 ();
 extern "C" void FieldInfo_get_MemberType_m1921984537 ();
 extern "C" void FieldInfo_get_IsLiteral_m2099153292 ();
 extern "C" void FieldInfo_get_IsStatic_m24721619 ();
+extern "C" void FieldInfo_get_IsPublic_m2574 ();
 extern "C" void FieldInfo_get_IsNotSerialized_m3868603028 ();
 extern "C" void FieldInfo_SetValue_m1669444927 ();
 extern "C" void FieldInfo_internal_from_handle_type_m449136039 ();
@@ -3154,6 +3324,8 @@ extern "C" void FieldInfo_GetFieldOffset_m3781007919 ();
 extern "C" void FieldInfo_GetUnmanagedMarshal_m3736180640 ();
 extern "C" void FieldInfo_get_UMarshal_m3592475906 ();
 extern "C" void FieldInfo_GetPseudoCustomAttributes_m3219838173 ();
+extern "C" void LocalVariableInfo__ctor_m2779200515 ();
+extern "C" void LocalVariableInfo_ToString_m1214843402 ();
 extern "C" void MemberFilter__ctor_m1519003110 ();
 extern "C" void MemberFilter_Invoke_m1252503396 ();
 extern "C" void MemberFilter_BeginInvoke_m1668252761 ();
@@ -3196,9 +3368,12 @@ extern "C" void Missing_System_Runtime_Serialization_ISerializable_GetObjectData
 extern "C" void Module__ctor_m1944669826 ();
 extern "C" void Module__cctor_m3968093547 ();
 extern "C" void Module_get_Assembly_m4154223570 ();
+extern "C" void Module_get_Name_m2964298041 ();
 extern "C" void Module_get_ScopeName_m724946931 ();
 extern "C" void Module_GetCustomAttributes_m2375287279 ();
 extern "C" void Module_GetObjectData_m8314144 ();
+extern "C" void Module_GetType_m461877388 ();
+extern "C" void Module_GetType_m1969891820 ();
 extern "C" void Module_InternalGetTypes_m2940532442 ();
 extern "C" void Module_GetTypes_m134489405 ();
 extern "C" void Module_IsDefined_m3759276225 ();
@@ -3252,6 +3427,7 @@ extern "C" void MonoField_GetValue_m496927467 ();
 extern "C" void MonoField_ToString_m4218032780 ();
 extern "C" void MonoField_SetValueInternal_m1841098555 ();
 extern "C" void MonoField_SetValue_m1189993934 ();
+extern "C" void MonoField_Clone_m2100853670 ();
 extern "C" void MonoField_GetObjectData_m2261672671 ();
 extern "C" void MonoField_CheckGeneric_m3068937042 ();
 extern "C" void MonoGenericCMethod__ctor_m673538526 ();
@@ -3259,6 +3435,7 @@ extern "C" void MonoGenericCMethod_get_ReflectedType_m1976633775 ();
 extern "C" void MonoGenericMethod__ctor_m883290339 ();
 extern "C" void MonoGenericMethod_get_ReflectedType_m162977832 ();
 extern "C" void MonoMethod__ctor_m370255050 ();
+extern "C" void MonoMethod__ctor_m2200429992 ();
 extern "C" void MonoMethod_get_name_m439428219 ();
 extern "C" void MonoMethod_get_base_definition_m1389391157 ();
 extern "C" void MonoMethod_GetBaseDefinition_m3877450154 ();
@@ -3344,6 +3521,7 @@ extern "C" void Pointer__ctor_m226191707 ();
 extern "C" void Pointer_System_Runtime_Serialization_ISerializable_GetObjectData_m448849360 ();
 extern "C" void PropertyInfo__ctor_m539791979 ();
 extern "C" void PropertyInfo_get_MemberType_m3698268270 ();
+extern "C" void PropertyInfo_GetGetMethod_m1125167762 ();
 extern "C" void PropertyInfo_GetValue_m396207607 ();
 extern "C" void PropertyInfo_SetValue_m3226288870 ();
 extern "C" void PropertyInfo_GetOptionalCustomModifiers_m1611882438 ();
@@ -3351,14 +3529,48 @@ extern "C" void PropertyInfo_GetRequiredCustomModifiers_m3981387111 ();
 extern "C" void StrongNameKeyPair__ctor_m583813794 ();
 extern "C" void StrongNameKeyPair_System_Runtime_Serialization_ISerializable_GetObjectData_m285619594 ();
 extern "C" void StrongNameKeyPair_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m3690645877 ();
+extern "C" void StrongNameKeyPair_GetRSA_m987209039 ();
+extern "C" void StrongNameKeyPair_StrongName_m2125236127 ();
 extern "C" void TargetException__ctor_m983503354 ();
 extern "C" void TargetException__ctor_m1662849864 ();
 extern "C" void TargetException__ctor_m1050912827 ();
 extern "C" void TargetInvocationException__ctor_m2876037082 ();
+extern "C" void TargetInvocationException__ctor_m534921246 ();
 extern "C" void TargetInvocationException__ctor_m706824555 ();
 extern "C" void TargetParameterCountException__ctor_m2437752064 ();
 extern "C" void TargetParameterCountException__ctor_m2555943426 ();
 extern "C" void TargetParameterCountException__ctor_m2385733185 ();
+extern "C" void TypeDelegator__ctor_m3978235567 ();
+extern "C" void TypeDelegator_get_Assembly_m793822499 ();
+extern "C" void TypeDelegator_get_AssemblyQualifiedName_m1620996616 ();
+extern "C" void TypeDelegator_get_BaseType_m2734895567 ();
+extern "C" void TypeDelegator_get_FullName_m3758650933 ();
+extern "C" void TypeDelegator_get_Module_m945912623 ();
+extern "C" void TypeDelegator_get_Name_m2498747334 ();
+extern "C" void TypeDelegator_get_Namespace_m767650018 ();
+extern "C" void TypeDelegator_get_TypeHandle_m2316493264 ();
+extern "C" void TypeDelegator_get_UnderlyingSystemType_m3809794602 ();
+extern "C" void TypeDelegator_GetAttributeFlagsImpl_m239890692 ();
+extern "C" void TypeDelegator_GetConstructorImpl_m1507578863 ();
+extern "C" void TypeDelegator_GetConstructors_m1969957987 ();
+extern "C" void TypeDelegator_GetCustomAttributes_m1964226805 ();
+extern "C" void TypeDelegator_GetCustomAttributes_m2738817378 ();
+extern "C" void TypeDelegator_GetElementType_m3058042619 ();
+extern "C" void TypeDelegator_GetEvent_m939809480 ();
+extern "C" void TypeDelegator_GetField_m967065480 ();
+extern "C" void TypeDelegator_GetFields_m4208158627 ();
+extern "C" void TypeDelegator_GetInterfaces_m1212899157 ();
+extern "C" void TypeDelegator_GetMethodImpl_m1514695301 ();
+extern "C" void TypeDelegator_GetMethods_m3579300117 ();
+extern "C" void TypeDelegator_GetPropertyImpl_m162740912 ();
+extern "C" void TypeDelegator_HasElementTypeImpl_m454977167 ();
+extern "C" void TypeDelegator_InvokeMember_m4150481760 ();
+extern "C" void TypeDelegator_IsArrayImpl_m3068003486 ();
+extern "C" void TypeDelegator_IsByRefImpl_m598031553 ();
+extern "C" void TypeDelegator_IsDefined_m2954211570 ();
+extern "C" void TypeDelegator_IsPointerImpl_m3273979010 ();
+extern "C" void TypeDelegator_IsPrimitiveImpl_m951679660 ();
+extern "C" void TypeDelegator_IsValueTypeImpl_m1433978640 ();
 extern "C" void TypeFilter__ctor_m3304815558 ();
 extern "C" void TypeFilter_Invoke_m3691842469 ();
 extern "C" void TypeFilter_BeginInvoke_m1184564418 ();
@@ -3493,6 +3705,7 @@ extern "C" void ActivationServices_EnableProxyActivation_m2068301505 ();
 extern "C" void AppDomainLevelActivator__ctor_m1573275682 ();
 extern "C" void ConstructionLevelActivator__ctor_m1053422160 ();
 extern "C" void ContextLevelActivator__ctor_m1237745936 ();
+extern "C" void RemoteActivator_InitializeLifetimeService_m2396507050 ();
 extern "C" void UrlAttribute_get_UrlValue_m2943225223 ();
 extern "C" void UrlAttribute_Equals_m3166584024 ();
 extern "C" void UrlAttribute_GetHashCode_m1694018096 ();
@@ -3531,7 +3744,9 @@ extern "C" void CrossAppDomainSink_get_TargetDomainId_m1065872077 ();
 extern "C" void SinkProviderData__ctor_m1196460420 ();
 extern "C" void SinkProviderData_get_Children_m2238346578 ();
 extern "C" void SinkProviderData_get_Properties_m3058815806 ();
+extern "C" void ClientActivatedIdentity__ctor_m3634684463 ();
 extern "C" void ClientActivatedIdentity_GetServerObject_m1626506643 ();
+extern "C" void ClientActivatedIdentity_OnLifetimeExpired_m1622186081 ();
 extern "C" void ClientIdentity__ctor_m3595127653 ();
 extern "C" void ClientIdentity_get_ClientProxy_m4126686292 ();
 extern "C" void ClientIdentity_set_ClientProxy_m12327679 ();
@@ -3635,21 +3850,49 @@ extern "C" void Identity__ctor_m4099304260 ();
 extern "C" void Identity_get_ChannelSink_m1983774607 ();
 extern "C" void Identity_set_ChannelSink_m3130847940 ();
 extern "C" void Identity_get_ObjectUri_m2443444253 ();
+extern "C" void Identity_set_ObjectUri_m3325545942 ();
+extern "C" void Identity_get_IsConnected_m3070245296 ();
 extern "C" void Identity_get_Disposed_m1911726198 ();
 extern "C" void Identity_set_Disposed_m1071218783 ();
 extern "C" void Identity_get_ClientDynamicProperties_m2301648525 ();
 extern "C" void Identity_get_ServerDynamicProperties_m841334805 ();
 extern "C" void InternalRemotingServices__cctor_m2124821007 ();
 extern "C" void InternalRemotingServices_GetCachedSoapAttribute_m1251902514 ();
+extern "C" void Lease__ctor_m3651721351 ();
+extern "C" void Lease_get_CurrentLeaseTime_m2209505713 ();
+extern "C" void Lease_get_CurrentState_m2238924555 ();
+extern "C" void Lease_Activate_m904773136 ();
+extern "C" void Lease_set_InitialLeaseTime_m3110663295 ();
+extern "C" void Lease_set_RenewOnCallTime_m2263653821 ();
+extern "C" void Lease_set_SponsorshipTimeout_m2163989751 ();
+extern "C" void Lease_Renew_m235269479 ();
+extern "C" void Lease_Unregister_m2597910745 ();
+extern "C" void Lease_UpdateState_m2503061997 ();
+extern "C" void Lease_CheckNextSponsor_m4694172 ();
+extern "C" void Lease_ProcessSponsorResponse_m1073931474 ();
+extern "C" void RenewalDelegate__ctor_m3640898857 ();
+extern "C" void RenewalDelegate_Invoke_m2399620050 ();
+extern "C" void RenewalDelegate_BeginInvoke_m3159291988 ();
+extern "C" void RenewalDelegate_EndInvoke_m331344822 ();
 extern "C" void LeaseManager__ctor_m2522116882 ();
 extern "C" void LeaseManager_SetPollTime_m4066717374 ();
+extern "C" void LeaseManager_TrackLifetime_m1439053293 ();
+extern "C" void LeaseManager_StartManager_m4134605085 ();
+extern "C" void LeaseManager_StopManager_m1415465851 ();
+extern "C" void LeaseManager_ManageLeases_m1070826756 ();
 extern "C" void LeaseSink__ctor_m1766448707 ();
 extern "C" void LifetimeServices__cctor_m2116108847 ();
+extern "C" void LifetimeServices_get_LeaseManagerPollTime_m1057706673 ();
 extern "C" void LifetimeServices_set_LeaseManagerPollTime_m511253658 ();
+extern "C" void LifetimeServices_get_LeaseTime_m2300863223 ();
 extern "C" void LifetimeServices_set_LeaseTime_m1820419926 ();
+extern "C" void LifetimeServices_get_RenewOnCallTime_m2356100903 ();
 extern "C" void LifetimeServices_set_RenewOnCallTime_m3204084838 ();
+extern "C" void LifetimeServices_get_SponsorshipTimeout_m536018909 ();
 extern "C" void LifetimeServices_set_SponsorshipTimeout_m2472745390 ();
+extern "C" void LifetimeServices_TrackLifetime_m3270280985 ();
 extern "C" void ArgInfo__ctor_m2209263080 ();
+extern "C" void ArgInfo_GetInOutArgCount_m691975428 ();
 extern "C" void ArgInfo_GetInOutArgs_m2515374049 ();
 extern "C" void AsyncResult__ctor_m4145929563 ();
 extern "C" void AsyncResult_get_AsyncState_m1982026226 ();
@@ -3700,6 +3943,7 @@ extern "C" void HeaderHandler_BeginInvoke_m2880476263 ();
 extern "C" void HeaderHandler_EndInvoke_m4263089894 ();
 extern "C" void LogicalCallContext__ctor_m122858570 ();
 extern "C" void LogicalCallContext__ctor_m2483628683 ();
+extern "C" void LogicalCallContext_get_HasInfo_m172784805 ();
 extern "C" void LogicalCallContext_GetObjectData_m3064510184 ();
 extern "C" void LogicalCallContext_SetData_m91070972 ();
 extern "C" void LogicalCallContext_Clone_m3487936816 ();
@@ -3709,6 +3953,7 @@ extern "C" void MethodCall__ctor_m4232248307 ();
 extern "C" void MethodCall_System_Runtime_Remoting_Messaging_IInternalMessage_set_Uri_m75118319 ();
 extern "C" void MethodCall_InitMethodProperty_m2379029369 ();
 extern "C" void MethodCall_GetObjectData_m3092930065 ();
+extern "C" void MethodCall_get_ArgCount_m4283522991 ();
 extern "C" void MethodCall_get_Args_m2777349738 ();
 extern "C" void MethodCall_get_LogicalCallContext_m3758703237 ();
 extern "C" void MethodCall_get_MethodBase_m1563575745 ();
@@ -3719,6 +3964,7 @@ extern "C" void MethodCall_InitDictionary_m1823571767 ();
 extern "C" void MethodCall_get_TypeName_m2818536578 ();
 extern "C" void MethodCall_get_Uri_m110584337 ();
 extern "C" void MethodCall_set_Uri_m3629049250 ();
+extern "C" void MethodCall_GetArg_m1395351319 ();
 extern "C" void MethodCall_Init_m1334986753 ();
 extern "C" void MethodCall_ResolveMethod_m2191435710 ();
 extern "C" void MethodCall_CastTo_m2140135600 ();
@@ -3753,6 +3999,8 @@ extern "C" void DictionaryEnumerator_get_Key_m2050366763 ();
 extern "C" void DictionaryEnumerator_get_Value_m60906749 ();
 extern "C" void MethodReturnDictionary__ctor_m1989303198 ();
 extern "C" void MethodReturnDictionary__cctor_m131783842 ();
+extern "C" void MonoMethodMessage_get_Properties_m3514695691 ();
+extern "C" void MonoMethodMessage_get_ArgCount_m4260271705 ();
 extern "C" void MonoMethodMessage_get_Args_m2372385990 ();
 extern "C" void MonoMethodMessage_get_LogicalCallContext_m4081651649 ();
 extern "C" void MonoMethodMessage_get_MethodBase_m1950873241 ();
@@ -3761,13 +4009,17 @@ extern "C" void MonoMethodMessage_get_MethodSignature_m1148728082 ();
 extern "C" void MonoMethodMessage_get_TypeName_m2637395646 ();
 extern "C" void MonoMethodMessage_get_Uri_m2730617429 ();
 extern "C" void MonoMethodMessage_set_Uri_m1005536772 ();
+extern "C" void MonoMethodMessage_GetArg_m2012069871 ();
 extern "C" void MonoMethodMessage_get_Exception_m1373061008 ();
 extern "C" void MonoMethodMessage_get_OutArgCount_m1218080105 ();
 extern "C" void MonoMethodMessage_get_OutArgs_m754565220 ();
 extern "C" void MonoMethodMessage_get_ReturnValue_m2245026524 ();
+extern "C" void MonoMethodMessage_get_CallType_m4294813921 ();
 extern "C" void ObjRefSurrogate__ctor_m2681375704 ();
+extern "C" void ObjRefSurrogate_GetObjectData_m413440296 ();
 extern "C" void ObjRefSurrogate_SetObjectData_m1124693972 ();
 extern "C" void RemotingSurrogate__ctor_m1724131135 ();
+extern "C" void RemotingSurrogate_GetObjectData_m1763816655 ();
 extern "C" void RemotingSurrogate_SetObjectData_m3663110203 ();
 extern "C" void RemotingSurrogateSelector__ctor_m1480647200 ();
 extern "C" void RemotingSurrogateSelector__cctor_m2468294029 ();
@@ -3775,6 +4027,7 @@ extern "C" void RemotingSurrogateSelector_GetSurrogate_m2656182773 ();
 extern "C" void ReturnMessage__ctor_m1311493117 ();
 extern "C" void ReturnMessage__ctor_m3758991866 ();
 extern "C" void ReturnMessage_System_Runtime_Remoting_Messaging_IInternalMessage_set_Uri_m1208934489 ();
+extern "C" void ReturnMessage_get_ArgCount_m3659914957 ();
 extern "C" void ReturnMessage_get_Args_m1415412666 ();
 extern "C" void ReturnMessage_get_LogicalCallContext_m2558823349 ();
 extern "C" void ReturnMessage_get_MethodBase_m1896590733 ();
@@ -3784,7 +4037,9 @@ extern "C" void ReturnMessage_get_Properties_m3370534783 ();
 extern "C" void ReturnMessage_get_TypeName_m3911062450 ();
 extern "C" void ReturnMessage_get_Uri_m1363018977 ();
 extern "C" void ReturnMessage_set_Uri_m4046194808 ();
+extern "C" void ReturnMessage_GetArg_m3031162083 ();
 extern "C" void ReturnMessage_get_Exception_m564038940 ();
+extern "C" void ReturnMessage_get_OutArgCount_m234020981 ();
 extern "C" void ReturnMessage_get_OutArgs_m1555180784 ();
 extern "C" void ReturnMessage_get_ReturnValue_m4052519528 ();
 extern "C" void ServerContextTerminatorSink__ctor_m1506077966 ();
@@ -3838,7 +4093,9 @@ extern "C" void RealProxy__ctor_m353424490 ();
 extern "C" void RealProxy__ctor_m3053042265 ();
 extern "C" void RealProxy_InternalGetProxyType_m1321633559 ();
 extern "C" void RealProxy_GetProxiedType_m3786182287 ();
+extern "C" void RealProxy_GetObjectData_m3219256218 ();
 extern "C" void RealProxy_get_ObjectIdentity_m347429559 ();
+extern "C" void RealProxy_set_ObjectIdentity_m3694655214 ();
 extern "C" void RealProxy_InternalGetTransparentProxy_m1628758334 ();
 extern "C" void RealProxy_GetTransparentProxy_m1295804673 ();
 extern "C" void RealProxy_SetTargetDomain_m1954293026 ();
@@ -3873,10 +4130,16 @@ extern "C" void RemotingServices_IsTransparentProxy_m3544746083 ();
 extern "C" void RemotingServices_GetServerTypeForUri_m2370855021 ();
 extern "C" void RemotingServices_Unmarshal_m3453424695 ();
 extern "C" void RemotingServices_Unmarshal_m3493161574 ();
+extern "C" void RemotingServices_Marshal_m164736248 ();
+extern "C" void RemotingServices_Marshal_m1652368487 ();
+extern "C" void RemotingServices_NewUri_m1542850328 ();
 extern "C" void RemotingServices_GetRealProxy_m469180406 ();
 extern "C" void RemotingServices_GetMethodBaseFromMethodMessage_m589251925 ();
 extern "C" void RemotingServices_GetMethodBaseFromName_m1109362245 ();
 extern "C" void RemotingServices_FindInterfaceMethod_m1641296449 ();
+extern "C" void RemotingServices_GetObjectData_m3187488043 ();
+extern "C" void RemotingServices_IsMethodOverloaded_m3152869778 ();
+extern "C" void RemotingServices_IsOneWay_m1063600040 ();
 extern "C" void RemotingServices_CreateClientProxy_m1188122341 ();
 extern "C" void RemotingServices_CreateClientProxy_m1887308374 ();
 extern "C" void RemotingServices_CreateClientProxyForContextBound_m9934294 ();
@@ -3884,6 +4147,7 @@ extern "C" void RemotingServices_GetIdentityForUri_m1730131113 ();
 extern "C" void RemotingServices_RemoveAppNameFromUri_m1113505532 ();
 extern "C" void RemotingServices_GetOrCreateClientIdentity_m3862611826 ();
 extern "C" void RemotingServices_GetClientChannelSinkChain_m3823167339 ();
+extern "C" void RemotingServices_CreateClientActivatedServerIdentity_m1542292198 ();
 extern "C" void RemotingServices_CreateWellKnownServerIdentity_m2420008897 ();
 extern "C" void RemotingServices_RegisterServerIdentity_m3253238710 ();
 extern "C" void RemotingServices_GetProxyForRemoteObject_m1565953531 ();
@@ -3893,9 +4157,16 @@ extern "C" void RemotingServices_DisposeIdentity_m167351746 ();
 extern "C" void RemotingServices_GetNormalizedUri_m2995472567 ();
 extern "C" void ServerIdentity__ctor_m2878147351 ();
 extern "C" void ServerIdentity_get_ObjectType_m2513984357 ();
+extern "C" void ServerIdentity_StartTrackingLifetime_m3780129911 ();
+extern "C" void ServerIdentity_OnLifetimeExpired_m3354721750 ();
 extern "C" void ServerIdentity_CreateObjRef_m4237980959 ();
+extern "C" void ServerIdentity_AttachServerObject_m3921472677 ();
+extern "C" void ServerIdentity_get_Lease_m1464633578 ();
+extern "C" void ServerIdentity_DisposeServerObject_m1713667002 ();
 extern "C" void TrackingServices__cctor_m1041791976 ();
+extern "C" void TrackingServices_NotifyMarshaledObject_m2408179062 ();
 extern "C" void TrackingServices_NotifyUnmarshaledObject_m1221428029 ();
+extern "C" void TrackingServices_NotifyDisconnectedObject_m3316648914 ();
 extern "C" void SingleCallIdentity__ctor_m4127814196 ();
 extern "C" void SingletonIdentity__ctor_m2376592061 ();
 extern "C" void SoapServices__cctor_m3438713338 ();
@@ -3949,7 +4220,9 @@ extern "C" void FormatterConverter_ToInt64_m1777417340 ();
 extern "C" void FormatterConverter_ToString_m1400688178 ();
 extern "C" void BinaryCommon__cctor_m1035902784 ();
 extern "C" void BinaryCommon_IsPrimitive_m1612386671 ();
+extern "C" void BinaryCommon_GetTypeCode_m4280837317 ();
 extern "C" void BinaryCommon_GetTypeFromCode_m4044019293 ();
+extern "C" void BinaryCommon_CheckSerializable_m2938012638 ();
 extern "C" void BinaryCommon_SwapBytes_m2472266694 ();
 extern "C" void BinaryFormatter__ctor_m1913171908 ();
 extern "C" void BinaryFormatter__ctor_m203421689 ();
@@ -3961,9 +4234,33 @@ extern "C" void BinaryFormatter_get_SurrogateSelector_m862097470 ();
 extern "C" void BinaryFormatter_get_FilterLevel_m123523474 ();
 extern "C" void BinaryFormatter_Deserialize_m3942088227 ();
 extern "C" void BinaryFormatter_NoCheckDeserialize_m2451994899 ();
+extern "C" void BinaryFormatter_Serialize_m2138605799 ();
+extern "C" void BinaryFormatter_Serialize_m982420848 ();
+extern "C" void BinaryFormatter_WriteBinaryHeader_m244536491 ();
 extern "C" void BinaryFormatter_ReadBinaryHeader_m258242310 ();
+extern "C" void ClrTypeMetadata__ctor_m3683396926 ();
+extern "C" void ClrTypeMetadata_get_RequiresTypes_m3923820025 ();
+extern "C" void CodeGenerator__cctor_m2748236614 ();
+extern "C" void CodeGenerator_GenerateMetadataType_m706666128 ();
+extern "C" void CodeGenerator_GenerateMetadataTypeInternal_m697276819 ();
+extern "C" void CodeGenerator_LoadFromPtr_m1949607997 ();
+extern "C" void CodeGenerator_EmitWriteTypeSpec_m3895903836 ();
+extern "C" void CodeGenerator_EmitLoadTypeAssembly_m1819466316 ();
+extern "C" void CodeGenerator_EmitWrite_m2268787179 ();
+extern "C" void CodeGenerator_EmitWritePrimitiveValue_m799865557 ();
+extern "C" void CodeGenerator_EnumToUnderlying_m3186142121 ();
+extern "C" void MemberTypeMetadata__ctor_m2555872271 ();
+extern "C" void MemberTypeMetadata_WriteAssemblies_m1974093883 ();
+extern "C" void MemberTypeMetadata_WriteTypeData_m2502957154 ();
+extern "C" void MemberTypeMetadata_WriteObjectData_m698591502 ();
+extern "C" void MessageFormatter_WriteMethodCall_m422932223 ();
+extern "C" void MessageFormatter_WriteMethodResponse_m3855499772 ();
 extern "C" void MessageFormatter_ReadMethodCall_m3773075223 ();
 extern "C" void MessageFormatter_ReadMethodResponse_m1841037205 ();
+extern "C" void MessageFormatter_AllTypesArePrimitive_m3926975387 ();
+extern "C" void MessageFormatter_IsMethodPrimitive_m3463040103 ();
+extern "C" void MessageFormatter_GetExtraProperties_m1259624667 ();
+extern "C" void MessageFormatter_IsInternalKey_m2159509102 ();
 extern "C" void ObjectReader__ctor_m1992894345 ();
 extern "C" void ObjectReader_ReadObjectGraph_m1835146551 ();
 extern "C" void ObjectReader_ReadObjectGraph_m2201506625 ();
@@ -3993,10 +4290,59 @@ extern "C" void ObjectReader_ReadType_m524105739 ();
 extern "C" void ObjectReader_ReadPrimitiveTypeValue_m3787758564 ();
 extern "C" void ArrayNullFiller__ctor_m241052615 ();
 extern "C" void TypeMetadata__ctor_m2168678135 ();
+extern "C" void ObjectWriter__ctor_m381946506 ();
+extern "C" void ObjectWriter__cctor_m3965119238 ();
+extern "C" void ObjectWriter_WriteObjectGraph_m1495072729 ();
+extern "C" void ObjectWriter_QueueObject_m2473573471 ();
+extern "C" void ObjectWriter_WriteQueuedObjects_m2511231202 ();
+extern "C" void ObjectWriter_WriteObjectInstance_m971580148 ();
+extern "C" void ObjectWriter_WriteSerializationEnd_m1314927090 ();
+extern "C" void ObjectWriter_WriteObject_m3567310656 ();
+extern "C" void ObjectWriter_GetObjectData_m2156431818 ();
+extern "C" void ObjectWriter_CreateMemberTypeMetadata_m2890061644 ();
+extern "C" void ObjectWriter_WriteArray_m1513238702 ();
+extern "C" void ObjectWriter_WriteGenericArray_m621377085 ();
+extern "C" void ObjectWriter_WriteObjectArray_m120109231 ();
+extern "C" void ObjectWriter_WriteStringArray_m2755688349 ();
+extern "C" void ObjectWriter_WritePrimitiveTypeArray_m360539603 ();
+extern "C" void ObjectWriter_BlockWrite_m817303837 ();
+extern "C" void ObjectWriter_WriteSingleDimensionArrayElements_m2757598982 ();
+extern "C" void ObjectWriter_WriteNullFiller_m518213209 ();
+extern "C" void ObjectWriter_WriteObjectReference_m2251958827 ();
+extern "C" void ObjectWriter_WriteValue_m2747102579 ();
+extern "C" void ObjectWriter_WriteString_m3827047068 ();
+extern "C" void ObjectWriter_WriteAssembly_m2789424019 ();
+extern "C" void ObjectWriter_WriteAssemblyName_m1777729680 ();
+extern "C" void ObjectWriter_GetAssemblyId_m1900776174 ();
+extern "C" void ObjectWriter_GetAssemblyNameId_m218712095 ();
+extern "C" void ObjectWriter_RegisterAssembly_m3637201543 ();
+extern "C" void ObjectWriter_WritePrimitiveValue_m2267947199 ();
+extern "C" void ObjectWriter_WriteTypeCode_m2289062049 ();
+extern "C" void ObjectWriter_GetTypeTag_m835100856 ();
+extern "C" void ObjectWriter_WriteTypeSpec_m4250094447 ();
+extern "C" void MetadataReference__ctor_m2491385060 ();
+extern "C" void SerializableTypeMetadata__ctor_m4014682835 ();
+extern "C" void SerializableTypeMetadata_IsCompatible_m828851263 ();
+extern "C" void SerializableTypeMetadata_WriteAssemblies_m355185654 ();
+extern "C" void SerializableTypeMetadata_WriteTypeData_m2677462151 ();
+extern "C" void SerializableTypeMetadata_WriteObjectData_m1813279113 ();
+extern "C" void SerializableTypeMetadata_get_RequiresTypes_m2353291923 ();
+extern "C" void TypeMetadata__ctor_m1058507632 ();
+extern "C" void TypeMetadata_IsCompatible_m2727362622 ();
+extern "C" void FormatterServices_GetObjectData_m3974152299 ();
+extern "C" void FormatterServices_GetSerializableMembers_m1124071069 ();
+extern "C" void FormatterServices_GetFields_m1400403013 ();
 extern "C" void FormatterServices_GetUninitializedObject_m113523001 ();
 extern "C" void FormatterServices_GetSafeUninitializedObject_m133866342 ();
 extern "C" void MultiArrayFixupRecord__ctor_m3677967923 ();
 extern "C" void MultiArrayFixupRecord_FixupImpl_m2043330103 ();
+extern "C" void ObjectIDGenerator__ctor_m3765306348 ();
+extern "C" void ObjectIDGenerator__cctor_m278283585 ();
+extern "C" void ObjectIDGenerator_GetId_m3537711781 ();
+extern "C" void ObjectIDGenerator_get_NextId_m3787286380 ();
+extern "C" void InstanceComparer__ctor_m1346640169 ();
+extern "C" void InstanceComparer_System_Collections_IComparer_Compare_m1925901326 ();
+extern "C" void InstanceComparer_System_Collections_IHashCodeProvider_GetHashCode_m2240686773 ();
 extern "C" void ObjectManager__ctor_m2952664102 ();
 extern "C" void ObjectManager_DoFixups_m109839835 ();
 extern "C" void ObjectManager_GetObjectRecord_m2090112317 ();
@@ -4027,9 +4373,12 @@ extern "C" void ObjectRecord_get_HasPendingFixups_m2308927162 ();
 extern "C" void SerializationBinder__ctor_m3744708139 ();
 extern "C" void SerializationCallbacks__ctor_m2320337270 ();
 extern "C" void SerializationCallbacks__cctor_m562445802 ();
+extern "C" void SerializationCallbacks_get_HasSerializedCallbacks_m1064335224 ();
 extern "C" void SerializationCallbacks_get_HasDeserializedCallbacks_m4051490391 ();
 extern "C" void SerializationCallbacks_GetMethodsByAttribute_m1743114550 ();
 extern "C" void SerializationCallbacks_Invoke_m807932308 ();
+extern "C" void SerializationCallbacks_RaiseOnSerializing_m4133985485 ();
+extern "C" void SerializationCallbacks_RaiseOnSerialized_m1158955600 ();
 extern "C" void SerializationCallbacks_RaiseOnDeserializing_m873572750 ();
 extern "C" void SerializationCallbacks_RaiseOnDeserialized_m361044335 ();
 extern "C" void SerializationCallbacks_GetSerializationCallbacks_m1535695330 ();
@@ -4039,11 +4388,15 @@ extern "C" void CallbackHandler_BeginInvoke_m1384672208 ();
 extern "C" void CallbackHandler_EndInvoke_m522922181 ();
 extern "C" void SerializationEntry__ctor_m2883191396_AdjustorThunk ();
 extern "C" void SerializationEntry_get_Name_m929676406_AdjustorThunk ();
+extern "C" void SerializationEntry_get_ObjectType_m3299705261_AdjustorThunk ();
 extern "C" void SerializationEntry_get_Value_m522021722_AdjustorThunk ();
 extern "C" void SerializationException__ctor_m136694722 ();
 extern "C" void SerializationException__ctor_m4216356480 ();
 extern "C" void SerializationException__ctor_m987964931 ();
 extern "C" void SerializationInfo__ctor_m2583224808 ();
+extern "C" void SerializationInfo_get_AssemblyName_m2611339962 ();
+extern "C" void SerializationInfo_get_FullTypeName_m3001564413 ();
+extern "C" void SerializationInfo_get_MemberCount_m3387713493 ();
 extern "C" void SerializationInfo_AddValue_m3341936982 ();
 extern "C" void SerializationInfo_GetValue_m4125471336 ();
 extern "C" void SerializationInfo_SetType_m3215055064 ();
@@ -4065,11 +4418,18 @@ extern "C" void SerializationInfoEnumerator__ctor_m1782497732 ();
 extern "C" void SerializationInfoEnumerator_System_Collections_IEnumerator_get_Current_m1751158349 ();
 extern "C" void SerializationInfoEnumerator_get_Current_m1674825235 ();
 extern "C" void SerializationInfoEnumerator_get_Name_m4156977240 ();
+extern "C" void SerializationInfoEnumerator_get_ObjectType_m1119292125 ();
 extern "C" void SerializationInfoEnumerator_get_Value_m4259496148 ();
 extern "C" void SerializationInfoEnumerator_MoveNext_m4116766855 ();
 extern "C" void SerializationInfoEnumerator_Reset_m1660715632 ();
+extern "C" void SerializationObjectManager__ctor_m1459970863 ();
+extern "C" void SerializationObjectManager_RegisterObject_m337810129 ();
+extern "C" void SerializationObjectManager_RaiseOnSerializedEvent_m3729458860 ();
+extern "C" void U3CRegisterObjectU3Ec__AnonStorey3__ctor_m959661704 ();
+extern "C" void U3CRegisterObjectU3Ec__AnonStorey3_U3CU3Em__2_m1750539087 ();
 extern "C" void StreamingContext__ctor_m165676124_AdjustorThunk ();
 extern "C" void StreamingContext__ctor_m404323882_AdjustorThunk ();
+extern "C" void StreamingContext_get_Context_m2263457517_AdjustorThunk ();
 extern "C" void StreamingContext_get_State_m334223851_AdjustorThunk ();
 extern "C" void StreamingContext_Equals_m3567411783_AdjustorThunk ();
 extern "C" void StreamingContext_GetHashCode_m1804520735_AdjustorThunk ();
@@ -4583,6 +4943,7 @@ extern "C" void SecurityContext__ctor_m1345715454 ();
 extern "C" void SecurityContext_Capture_m3640798635 ();
 extern "C" void SecurityContext_get_FlowSuppressed_m2046518873 ();
 extern "C" void SecurityContext_get_CompressedStack_m649521097 ();
+extern "C" void SecurityCriticalAttribute__ctor_m2297330502 ();
 extern "C" void SecurityElement__ctor_m3616501115 ();
 extern "C" void SecurityElement__ctor_m2591154807 ();
 extern "C" void SecurityElement__cctor_m429967270 ();
@@ -5102,6 +5463,7 @@ extern "C" void ExecutionContext_set_SecurityContext_m3974986970 ();
 extern "C" void ExecutionContext_get_FlowSuppressed_m927554565 ();
 extern "C" void ExecutionContext_IsFlowSuppressed_m2941747654 ();
 extern "C" void Interlocked_CompareExchange_m1859820752 ();
+extern "C" void Interlocked_Increment_m2829412809 ();
 extern "C" void ManualResetEvent__ctor_m927697317 ();
 extern "C" void Monitor_Enter_m476686225 ();
 extern "C" void Monitor_Exit_m2088237919 ();
@@ -5118,6 +5480,9 @@ extern "C" void NativeEventCalls_CreateEvent_internal_m3209574737 ();
 extern "C" void NativeEventCalls_SetEvent_internal_m2769880995 ();
 extern "C" void NativeEventCalls_ResetEvent_internal_m2004196566 ();
 extern "C" void NativeEventCalls_CloseEvent_internal_m996370063 ();
+extern "C" void RegisteredWaitHandle__ctor_m3130282384 ();
+extern "C" void RegisteredWaitHandle_Wait_m4214353403 ();
+extern "C" void RegisteredWaitHandle_DoCallBack_m3198153280 ();
 extern "C" void SynchronizationLockException__ctor_m1728496155 ();
 extern "C" void SynchronizationLockException__ctor_m1850368199 ();
 extern "C" void SynchronizationLockException__ctor_m221922524 ();
@@ -5127,6 +5492,7 @@ extern "C" void Thread_get_CurrentContext_m1613403838 ();
 extern "C" void Thread_CurrentThread_internal_m3803103476 ();
 extern "C" void Thread_get_CurrentThread_m1523593825 ();
 extern "C" void Thread_FreeLocalSlotValues_m3189496250 ();
+extern "C" void Thread_GetDomain_m1860535634 ();
 extern "C" void Thread_GetDomainID_m3584395396 ();
 extern "C" void Thread_Thread_internal_m1309677628 ();
 extern "C" void Thread_Thread_init_m3945232696 ();
@@ -5157,13 +5523,17 @@ extern "C" void ThreadAbortException__ctor_m4220973367 ();
 extern "C" void ThreadInterruptedException__ctor_m2298757640 ();
 extern "C" void ThreadInterruptedException__ctor_m3158304585 ();
 extern "C" void ThreadPool_QueueUserWorkItem_m3855506648 ();
+extern "C" void ThreadPool_RegisterWaitForSingleObject_m2307848074 ();
+extern "C" void ThreadPool_RegisterWaitForSingleObject_m3955614434 ();
 extern "C" void ThreadStart__ctor_m346361139 ();
 extern "C" void ThreadStart_Invoke_m225334093 ();
 extern "C" void ThreadStart_BeginInvoke_m4084423702 ();
 extern "C" void ThreadStart_EndInvoke_m3441234115 ();
 extern "C" void ThreadStateException__ctor_m2201794583 ();
 extern "C" void ThreadStateException__ctor_m1680197848 ();
+extern "C" void Timer__ctor_m425594887 ();
 extern "C" void Timer__cctor_m1320176523 ();
+extern "C" void Timer_Init_m4201404395 ();
 extern "C" void Timer_Change_m4108080222 ();
 extern "C" void Timer_Dispose_m4229130271 ();
 extern "C" void Timer_Change_m4132562187 ();
@@ -5189,6 +5559,9 @@ extern "C" void WaitCallback_EndInvoke_m2361662125 ();
 extern "C" void WaitHandle__ctor_m4240939554 ();
 extern "C" void WaitHandle__cctor_m2138011083 ();
 extern "C" void WaitHandle_System_IDisposable_Dispose_m2431205053 ();
+extern "C" void WaitHandle_CheckArray_m2379645074 ();
+extern "C" void WaitHandle_WaitAny_internal_m1172254617 ();
+extern "C" void WaitHandle_WaitAny_m2033275004 ();
 extern "C" void WaitHandle_get_Handle_m383799166 ();
 extern "C" void WaitHandle_set_Handle_m2872485421 ();
 extern "C" void WaitHandle_WaitOne_internal_m2364279439 ();
@@ -5197,6 +5570,10 @@ extern "C" void WaitHandle_WaitOne_m1178289523 ();
 extern "C" void WaitHandle_WaitOne_m467737785 ();
 extern "C" void WaitHandle_CheckDisposed_m3718910029 ();
 extern "C" void WaitHandle_Finalize_m1174780672 ();
+extern "C" void WaitOrTimerCallback__ctor_m1555455757 ();
+extern "C" void WaitOrTimerCallback_Invoke_m2987100304 ();
+extern "C" void WaitOrTimerCallback_BeginInvoke_m3309359065 ();
+extern "C" void WaitOrTimerCallback_EndInvoke_m1912954781 ();
 extern "C" void ThreadStaticAttribute__ctor_m1966759021 ();
 extern "C" void TimeSpan__ctor_m477860848_AdjustorThunk ();
 extern "C" void TimeSpan__ctor_m4160332047_AdjustorThunk ();
@@ -5286,18 +5663,24 @@ extern "C" void Type_GetTypeFromHandle_m3806905434 ();
 extern "C" void Type_GetTypeHandle_m1914576243 ();
 extern "C" void Type_type_is_subtype_of_m3361675332 ();
 extern "C" void Type_type_is_assignable_from_m3046828961 ();
+extern "C" void Type_GetType_m1825468259 ();
 extern "C" void Type_IsSubclassOf_m1095320857 ();
 extern "C" void Type_IsAssignableFrom_m1817311413 ();
 extern "C" void Type_IsInstanceOfType_m2263809757 ();
+extern "C" void Type_GetArrayRank_m3230678780 ();
 extern "C" void Type_GetHashCode_m3471493766 ();
 extern "C" void Type_GetMethod_m2884801946 ();
 extern "C" void Type_GetMethod_m534507110 ();
+extern "C" void Type_GetMethod_m3977319851 ();
 extern "C" void Type_GetMethod_m527054833 ();
 extern "C" void Type_GetMethod_m2171093265 ();
+extern "C" void Type_GetMethodImplInternal_m4242537390 ();
+extern "C" void Type_GetProperty_m1904930970 ();
 extern "C" void Type_GetProperty_m3455595366 ();
 extern "C" void Type_GetProperty_m786720973 ();
 extern "C" void Type_GetProperty_m3045839774 ();
 extern "C" void Type_GetProperty_m3910337444 ();
+extern "C" void Type_GetPropertyImplInternal_m2680281703 ();
 extern "C" void Type_IsArrayImpl_m813148751 ();
 extern "C" void Type_IsValueTypeImpl_m4191583068 ();
 extern "C" void Type_IsContextfulImpl_m509765663 ();
@@ -5318,6 +5701,7 @@ extern "C" void Type_MakeGenericType_m2305919041 ();
 extern "C" void Type_get_IsGenericParameter_m1053942860 ();
 extern "C" void Type_get_IsNested_m2782386097 ();
 extern "C" void Type_GetPseudoCustomAttributes_m3344475752 ();
+extern "C" void Type_get_IsUserType_m623581855 ();
 extern "C" void TypedReference_Equals_m2626069127_AdjustorThunk ();
 extern "C" void TypedReference_GetHashCode_m1538911_AdjustorThunk ();
 extern "C" void TypeInitializationException__ctor_m679814589 ();
@@ -7378,6 +7762,7 @@ extern "C" void AnimatorTransitionInfo_get_exit_m2568505102_AdjustorThunk ();
 extern "C" void Application_get_isPlaying_m987993960 ();
 extern "C" void Application_get_isEditor_m1279348309 ();
 extern "C" void Application_get_platform_m2918632856 ();
+extern "C" void Application_get_persistentDataPath_m2554537447 ();
 extern "C" void Application_CallLogCallback_m419361836 ();
 extern "C" void LogCallback__ctor_m286543475 ();
 extern "C" void LogCallback_Invoke_m1886455446 ();
@@ -8237,6 +8622,7 @@ extern "C" void HumanBone_get_humanName_m1702517944_AdjustorThunk ();
 extern "C" void HumanBone_set_humanName_m1186126593_AdjustorThunk ();
 extern "C" void IL2CPPStructAlignmentAttribute__ctor_m55581643 ();
 extern "C" void Input__cctor_m1327041086 ();
+extern "C" void Input_GetAxis_m2027668530 ();
 extern "C" void Input_GetAxisRaw_m1900207208 ();
 extern "C" void Input_GetButtonDown_m1879002085 ();
 extern "C" void Input_GetMouseButton_m4080958081 ();
@@ -8247,8 +8633,6 @@ extern "C" void Input_INTERNAL_get_mousePosition_m4008828427 ();
 extern "C" void Input_get_mouseScrollDelta_m3050122505 ();
 extern "C" void Input_INTERNAL_get_mouseScrollDelta_m2726147504 ();
 extern "C" void Input_get_mousePresent_m3235491246 ();
-extern "C" void Input_get_acceleration_m3697865796 ();
-extern "C" void Input_INTERNAL_get_acceleration_m3372612331 ();
 extern "C" void Input_GetTouch_m2282421092 ();
 extern "C" void Input_INTERNAL_CALL_GetTouch_m1845826650 ();
 extern "C" void Input_get_touchCount_m1430909390 ();
@@ -8803,6 +9187,7 @@ extern "C" void RectTransformUtility_ScreenPointToRay_m1216104542 ();
 extern "C" void RectTransformUtility_FlipLayoutOnAxis_m3487429352 ();
 extern "C" void RectTransformUtility_FlipLayoutAxes_m2163490602 ();
 extern "C" void RectTransformUtility_GetTransposed_m2060823533 ();
+extern "C" void Renderer_set_enabled_m2514140131 ();
 extern "C" void Renderer_get_sortingLayerID_m1954594923 ();
 extern "C" void Renderer_get_sortingOrder_m3623465101 ();
 extern "C" void RenderTexture_Internal_GetWidth_m1030655936 ();
@@ -8825,6 +9210,9 @@ extern "C" void RPC__ctor_m281827604 ();
 extern "C" void Scene_get_handle_m2277248521_AdjustorThunk ();
 extern "C" void Scene_GetHashCode_m2000109307_AdjustorThunk ();
 extern "C" void Scene_Equals_m93578403_AdjustorThunk ();
+extern "C" void SceneManager_LoadScene_m2167814033 ();
+extern "C" void SceneManager_LoadScene_m3907168970 ();
+extern "C" void SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569 ();
 extern "C" void SceneManager_Internal_SceneLoaded_m1398790415 ();
 extern "C" void SceneManager_Internal_SceneUnloaded_m3773648285 ();
 extern "C" void SceneManager_Internal_ActiveSceneChanged_m3583151927 ();
@@ -10706,6 +11094,14 @@ extern "C" void VerticalLayoutGroup_SetLayoutVertical_m2764536540 ();
 extern "C" void CameraController__ctor_m1305907962 ();
 extern "C" void CameraController_Start_m253045754 ();
 extern "C" void CameraController_LateUpdate_m786793369 ();
+extern "C" void GameData__ctor_m2338417471 ();
+extern "C" void GameData_updateRanking_m3503270680 ();
+extern "C" void HomeCameraController__ctor_m2818976475 ();
+extern "C" void HomeCameraController_startGame_m3288212109 ();
+extern "C" void LoadResults__ctor_m3793159515 ();
+extern "C" void LoadResults_Start_m2740297307 ();
+extern "C" void LoadSceneScript__ctor_m947080954 ();
+extern "C" void LoadSceneScript_startGame_m1391337260 ();
 extern "C" void LoopBugMoving__ctor_m1436713389 ();
 extern "C" void LoopBugMoving_Start_m383851181 ();
 extern "C" void LoopBugMoving_Update_m3315304192 ();
@@ -10717,7 +11113,10 @@ extern "C" void PlayerController_OnCollisionEnter_m387453836 ();
 extern "C" void PlayerController_SetCountText_m1021738208 ();
 extern "C" void Rotator__ctor_m1971779198 ();
 extern "C" void Rotator_Update_m2722475087 ();
-extern const Il2CppMethodPointer g_MethodPointers[10706] = 
+extern "C" void SaveLoad__cctor_m798927061 ();
+extern "C" void SaveLoad_Save_m804063913 ();
+extern "C" void SaveLoad_Load_m615962578 ();
+extern const Il2CppMethodPointer g_MethodPointers[11105] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -10936,7 +11335,10 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ASN1Convert_ToOid_m1584150353,
 	ASN1Convert_ToDateTime_m1541196208,
 	BitConverterLE_GetUIntBytes_m2711216227,
+	BitConverterLE_GetULongBytes_m2225593860,
 	BitConverterLE_GetBytes_m3726708497,
+	BitConverterLE_GetBytes_m3996835819,
+	BitConverterLE_GetBytes_m3747273090,
 	BitConverterLE_UShortFromBytes_m2244877436,
 	BitConverterLE_UIntFromBytes_m318761967,
 	BitConverterLE_ULongFromBytes_m2716396614,
@@ -10953,10 +11355,14 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	CryptoConvert_ToInt32LE_m2023521787,
 	CryptoConvert_ToUInt32LE_m558101659,
 	CryptoConvert_GetBytesLE_m62772046,
+	CryptoConvert_Trim_m4105167672,
+	CryptoConvert_FromCapiPrivateKeyBlob_m1079413163,
 	CryptoConvert_ToCapiPrivateKeyBlob_m1139689325,
 	CryptoConvert_FromCapiPublicKeyBlob_m2773702008,
 	CryptoConvert_FromCapiPublicKeyBlob_m1285057119,
 	CryptoConvert_ToCapiPublicKeyBlob_m4141543943,
+	CryptoConvert_FromCapiKeyBlob_m3062702575,
+	CryptoConvert_FromCapiKeyBlob_m2059589448,
 	CryptoConvert_ToCapiKeyBlob_m2611438349,
 	DSAManaged__ctor_m1342239545,
 	DSAManaged_add_KeyGenerated_m1677002343,
@@ -11093,7 +11499,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	EncryptedData__ctor_m816185204,
 	EncryptedData_get_EncryptionAlgorithm_m2635090815,
 	EncryptedData_get_EncryptedContent_m1390437900,
+	StrongName__ctor_m2367078620,
+	StrongName__ctor_m3580701056,
 	StrongName__cctor_m1937985856,
+	StrongName_InvalidateCache_m757934578,
+	StrongName_set_RSA_m2703412289,
 	StrongName_get_PublicKey_m4163536910,
 	StrongName_get_PublicKeyToken_m1378294189,
 	StrongName_get_TokenAlgorithm_m1030232697,
@@ -11245,6 +11655,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	AppDomain_getFriendlyName_m290133299,
 	AppDomain_getCurDomain_m2514231979,
 	AppDomain_get_CurrentDomain_m3448347417,
+	AppDomain_DefineInternalDynamicAssembly_m2942189295,
+	AppDomain_InitializeLifetimeService_m3976192241,
 	AppDomain_LoadAssembly_m4215712056,
 	AppDomain_Load_m3534527363,
 	AppDomain_Load_m2577869746,
@@ -11822,6 +12234,26 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	SyncHashtable_Remove_m1658619584,
 	SyncHashtable_ContainsKey_m3017313540,
 	SyncHashtable_Clone_m1874575834,
+	Queue__ctor_m1954446073,
+	Queue__ctor_m748061386,
+	Queue__ctor_m3810010794,
+	Queue__ctor_m3198641199,
+	Queue_get_Count_m626402273,
+	Queue_get_IsSynchronized_m219192020,
+	Queue_get_SyncRoot_m109028870,
+	Queue_CopyTo_m3860803222,
+	Queue_GetEnumerator_m2695541627,
+	Queue_Clone_m2633244255,
+	Queue_Clear_m3655546660,
+	Queue_Dequeue_m1667531058,
+	Queue_Enqueue_m643439957,
+	Queue_Peek_m727449659,
+	Queue_grow_m3648280158,
+	QueueEnumerator__ctor_m12538362,
+	QueueEnumerator_Clone_m4107858841,
+	QueueEnumerator_get_Current_m1929476812,
+	QueueEnumerator_MoveNext_m913793047,
+	QueueEnumerator_Reset_m1352298720,
 	SortedList__ctor_m3703218657,
 	SortedList__ctor_m3028782514,
 	SortedList__ctor_m690679828,
@@ -11965,6 +12397,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Convert_ToDouble_m3920053607,
 	Convert_ToDouble_m4165920249,
 	Convert_ToDouble_m3920048864,
+	Convert_ToDouble_m1719184653,
 	Convert_ToDouble_m4191850823,
 	Convert_ToDouble_m2259713797,
 	Convert_ToDouble_m2259716742,
@@ -12153,6 +12586,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	DateTime_CompareTo_m246114144_AdjustorThunk,
 	DateTime_CompareTo_m1522800900_AdjustorThunk,
 	DateTime_Equals_m1479384337_AdjustorThunk,
+	DateTime_ToBinary_m1940170345_AdjustorThunk,
 	DateTime_FromBinary_m1447091502,
 	DateTime_SpecifyKind_m2123544880,
 	DateTime_DaysInMonth_m1394183022,
@@ -12189,6 +12623,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	DateTime_op_Inequality_m3446449971,
 	DateTime_op_LessThan_m35073816,
 	DateTime_op_LessThanOrEqual_m354447689,
+	DateTime_op_Subtraction_m3612355463,
 	DateTime_op_Subtraction_m3609021319,
 	DateTimeOffset__ctor_m206991153_AdjustorThunk,
 	DateTimeOffset__ctor_m2612619655_AdjustorThunk,
@@ -12472,6 +12907,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Environment_get_Platform_m977128040,
 	Environment_GetOSVersionString_m2885926456,
 	Environment_get_OSVersion_m2506362029,
+	Environment_get_TickCount_m2991349545,
 	Environment_internalGetEnvironmentVariable_m1433380067,
 	Environment_GetEnvironmentVariable_m3419218304,
 	Environment_GetWindowsFolderPath_m274642490,
@@ -12503,6 +12939,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Exception_GetFullNameForStackTrace_m130874526,
 	Exception_GetType_m913902486,
 	ExecutionEngineException__ctor_m303736736,
+	ExecutionEngineException__ctor_m1470913378,
 	ExecutionEngineException__ctor_m2979248353,
 	FieldAccessException__ctor_m4068849444,
 	FieldAccessException__ctor_m843948638,
@@ -12725,6 +13162,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Guid_GetHashCode_m885349207_AdjustorThunk,
 	Guid_ToHex_m1518905113,
 	Guid_NewGuid_m3560729310,
+	Guid_FastNewGuidArray_m3654390746,
 	Guid_AppendInt_m60474956,
 	Guid_AppendShort_m2766674707,
 	Guid_AppendByte_m1375613333,
@@ -12889,6 +13327,31 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	BinaryReader_ReadUInt32_m3616500457,
 	BinaryReader_ReadUInt64_m4114149001,
 	BinaryReader_CheckBuffer_m244572668,
+	BinaryWriter__ctor_m3320479349,
+	BinaryWriter__ctor_m3820043020,
+	BinaryWriter__ctor_m3271046021,
+	BinaryWriter__cctor_m3668515800,
+	BinaryWriter_System_IDisposable_Dispose_m3902299210,
+	BinaryWriter_Dispose_m1210247017,
+	BinaryWriter_Flush_m3404426647,
+	BinaryWriter_Write_m3041269161,
+	BinaryWriter_Write_m1743996025,
+	BinaryWriter_Write_m942985559,
+	BinaryWriter_Write_m748689399,
+	BinaryWriter_Write_m1744395243,
+	BinaryWriter_Write_m1326634057,
+	BinaryWriter_Write_m1600738208,
+	BinaryWriter_Write_m2432552144,
+	BinaryWriter_Write_m2714465021,
+	BinaryWriter_Write_m2714466819,
+	BinaryWriter_Write_m2714469764,
+	BinaryWriter_Write_m2960336406,
+	BinaryWriter_Write_m2682114873,
+	BinaryWriter_Write_m3000791184,
+	BinaryWriter_Write_m3541318530,
+	BinaryWriter_Write_m3541320328,
+	BinaryWriter_Write_m3541323273,
+	BinaryWriter_Write7BitEncodedInt_m1552112122,
 	Directory_CreateDirectory_m677877474,
 	Directory_CreateDirectoriesInternal_m1545778887,
 	Directory_Exists_m4117375188,
@@ -12908,12 +13371,15 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	DirectoryNotFoundException__ctor_m2829292855,
 	EndOfStreamException__ctor_m2858794028,
 	EndOfStreamException__ctor_m1615815533,
+	File_Create_m3497726217,
+	File_Create_m2847392366,
 	File_Delete_m760984832,
 	File_Exists_m1326262381,
 	File_Open_m1918038371,
 	File_OpenRead_m3104031109,
 	File_OpenText_m396847893,
 	FileNotFoundException__ctor_m1040614905,
+	FileNotFoundException__ctor_m4237579689,
 	FileNotFoundException__ctor_m2788024869,
 	FileNotFoundException__ctor_m3117006778,
 	FileNotFoundException_get_Message_m1881278936,
@@ -12922,6 +13388,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	FileStream__ctor_m3655381520,
 	FileStream__ctor_m3377505172,
 	FileStream__ctor_m3657053030,
+	FileStream__ctor_m3371310897,
 	FileStream__ctor_m3446221265,
 	FileStream__ctor_m1468472351,
 	FileStream_get_CanRead_m3703756390,
@@ -13050,6 +13517,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Path_Combine_m4122812896,
 	Path_CleanPath_m233704309,
 	Path_GetDirectoryName_m1772680861,
+	Path_GetExtension_m2722066454,
 	Path_GetFileName_m26786182,
 	Path_GetFullPath_m435799225,
 	Path_WindowsDriveAdjustment_m578050859,
@@ -13058,6 +13526,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Path_GetPathRoot_m2659954950,
 	Path_IsPathRooted_m3347626992,
 	Path_GetInvalidPathChars_m737233085,
+	Path_findExtension_m3495715222,
 	Path_GetServerAndShare_m2796958082,
 	Path_SameRoot_m1004668564,
 	Path_CanonicalizePath_m3829459706,
@@ -13210,6 +13679,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	LocalDataStoreSlot_Finalize_m2044082711,
 	MarshalByRefObject__ctor_m2306543480,
 	MarshalByRefObject_get_ObjectIdentity_m426029982,
+	MarshalByRefObject_set_ObjectIdentity_m3718301103,
+	MarshalByRefObject_CreateObjRef_m574784494,
+	MarshalByRefObject_InitializeLifetimeService_m3037236935,
 	Math_Abs_m4017239106,
 	Math_Abs_m2633004394,
 	Math_Abs_m651703468,
@@ -13282,6 +13754,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ShortComparer__ctor_m2202587209,
 	ShortComparer_Compare_m2284602042,
 	ShortComparer_Compare_m2275424446,
+	MonoLimitationAttribute__ctor_m947459152,
 	MonoTODOAttribute__ctor_m3523127742,
 	MonoTODOAttribute__ctor_m3185129988,
 	MonoTouchAOTHelper__cctor_m2104929136,
@@ -13326,6 +13799,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MonoType_get_DeclaringType_m3073537512,
 	MonoType_get_ReflectedType_m2303984285,
 	MonoType_get_TypeHandle_m2428845255,
+	MonoType_GetArrayRank_m1675113855,
 	MonoType_GetObjectData_m2425175414,
 	MonoType_ToString_m4069763221,
 	MonoType_GetGenericArguments_m3677840611,
@@ -13514,6 +13988,10 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Assembly_UnprotectedGetName_m1786225822,
 	Assembly_ToString_m395441739,
 	Assembly_Load_m4081902495,
+	Assembly_LoadWithPartialName_m3055769661,
+	Assembly_load_with_partial_name_m4063128548,
+	Assembly_LoadWithPartialName_m2365700389,
+	Assembly_LoadWithPartialName_m3213527992,
 	Assembly_GetModule_m2523306005,
 	Assembly_GetModulesInternal_m1897302435,
 	Assembly_GetModules_m3104205309,
@@ -13531,11 +14009,15 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	AssemblyName__ctor_m2021574845,
 	AssemblyName__ctor_m1431164030,
 	AssemblyName_get_Name_m1123490526,
+	AssemblyName_set_Name_m3808734003,
+	AssemblyName_get_CultureInfo_m1466641171,
 	AssemblyName_get_Flags_m841716984,
 	AssemblyName_get_FullName_m2880072013,
+	AssemblyName_get_KeyPair_m1615351883,
 	AssemblyName_get_Version_m700434552,
 	AssemblyName_set_Version_m1560254941,
 	AssemblyName_ToString_m485215606,
+	AssemblyName_GetPublicKey_m511710865,
 	AssemblyName_get_IsPublicKeyValid_m65110050,
 	AssemblyName_InternalGetPublicKeyToken_m1116912397,
 	AssemblyName_ComputePublicKeyToken_m1248936939,
@@ -13591,11 +14073,19 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	CustomAttributeTypedArgument_GetHashCode_m1079175269_AdjustorThunk,
 	DefaultMemberAttribute__ctor_m66421301,
 	DefaultMemberAttribute_get_MemberName_m2366986664,
+	AssemblyBuilder__ctor_m558768500,
+	AssemblyBuilder_basic_init_m2666501043,
 	AssemblyBuilder_get_Location_m2002209681,
+	AssemblyBuilder_DefineDynamicModule_m1810872554,
+	AssemblyBuilder_DefineDynamicModule_m3735477071,
 	AssemblyBuilder_GetModulesInternal_m2718782039,
 	AssemblyBuilder_GetTypes_m3461115874,
 	AssemblyBuilder_get_IsCompilerContext_m332025933,
+	AssemblyBuilder_get_IsSave_m1537194370,
+	AssemblyBuilder_get_IsRun_m1296175624,
+	AssemblyBuilder_get_AssemblyDir_m1726853645,
 	AssemblyBuilder_not_supported_m186391929,
+	AssemblyBuilder_check_name_and_filename_m153452157,
 	AssemblyBuilder_UnprotectedGetName_m3388533202,
 	ConstructorBuilder__ctor_m3776339611,
 	ConstructorBuilder_get_CallingConvention_m1759375919,
@@ -13623,6 +14113,25 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ConstructorBuilder_get_IsCompilerContext_m884160345,
 	ConstructorBuilder_not_supported_m993826647,
 	ConstructorBuilder_not_created_m1839318289,
+	DynamicMethod_create_dynamic_method_m1649915426,
+	DynamicMethod_destroy_dynamic_method_m1269513496,
+	DynamicMethod_CreateDynMethod_m3438208709,
+	DynamicMethod_Finalize_m2361736761,
+	DynamicMethod_GetBaseDefinition_m1000253417,
+	DynamicMethod_GetCustomAttributes_m885664777,
+	DynamicMethod_GetCustomAttributes_m1932918,
+	DynamicMethod_GetParameters_m4076757737,
+	DynamicMethod_Invoke_m1504415078,
+	DynamicMethod_IsDefined_m1520191624,
+	DynamicMethod_ToString_m1996022506,
+	DynamicMethod_get_Attributes_m2374936618,
+	DynamicMethod_get_CallingConvention_m3873003882,
+	DynamicMethod_get_DeclaringType_m1927904293,
+	DynamicMethod_get_MethodHandle_m88284214,
+	DynamicMethod_get_Module_m1463487787,
+	DynamicMethod_get_Name_m2634297426,
+	DynamicMethod_get_ReflectedType_m1158351066,
+	DynamicMethod_get_ReturnType_m2140318216,
 	EnumBuilder_get_Assembly_m953263493,
 	EnumBuilder_get_AssemblyQualifiedName_m4073403554,
 	EnumBuilder_get_BaseType_m1867673731,
@@ -13723,10 +14232,31 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ILGenerator_make_room_m3150005908,
 	ILGenerator_emit_int_m1452131359,
 	ILGenerator_ll_emit_m2322068804,
+	ILGenerator_target_len_m3025186431,
+	ILGenerator_DeclareLocal_m431075649,
+	ILGenerator_DeclareLocal_m1507842076,
+	ILGenerator_DefineLabel_m2892013666,
 	ILGenerator_Emit_m1513421455,
+	ILGenerator_Emit_m1177588532,
 	ILGenerator_Emit_m726728631,
+	ILGenerator_Emit_m899075895,
+	ILGenerator_Emit_m2335703720,
+	ILGenerator_Emit_m628373050,
+	ILGenerator_Emit_m3548472916,
+	ILGenerator_Emit_m1087212740,
+	ILGenerator_Emit_m1535602323,
+	ILGenerator_Emit_m4144037003,
+	ILGenerator_Emit_m1194208066,
+	ILGenerator_EmitCall_m3720990163,
+	ILGenerator_MarkLabel_m2628862049,
 	ILGenerator_label_fixup_m2969084380,
 	ILGenerator_Mono_GetCurrentOffset_m436459828,
+	LabelData__ctor_m3230547036_AdjustorThunk,
+	Label__ctor_m1931948774_AdjustorThunk,
+	Label_Equals_m383261700_AdjustorThunk,
+	Label_GetHashCode_m4062306408_AdjustorThunk,
+	LocalBuilder__ctor_m639159553,
+	MethodBuilder__ctor_m531243935,
 	MethodBuilder_get_ContainsGenericParameters_m3420227972,
 	MethodBuilder_get_MethodHandle_m1281364144,
 	MethodBuilder_get_ReturnType_m1886811394,
@@ -13735,6 +14265,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MethodBuilder_get_Name_m3413262028,
 	MethodBuilder_get_Attributes_m2121429796,
 	MethodBuilder_get_CallingConvention_m3756269872,
+	MethodBuilder_GetToken_m920069858,
 	MethodBuilder_GetBaseDefinition_m3625992879,
 	MethodBuilder_GetParameters_m1297633455,
 	MethodBuilder_GetParameterCount_m1078755501,
@@ -13742,12 +14273,15 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MethodBuilder_IsDefined_m3379756494,
 	MethodBuilder_GetCustomAttributes_m1111063247,
 	MethodBuilder_GetCustomAttributes_m3294549052,
+	MethodBuilder_GetILGenerator_m2927401921,
+	MethodBuilder_GetILGenerator_m281130898,
 	MethodBuilder_check_override_m3740987736,
 	MethodBuilder_fixup_m526432253,
 	MethodBuilder_ToString_m2774987108,
 	MethodBuilder_Equals_m341293246,
 	MethodBuilder_GetHashCode_m2330513698,
 	MethodBuilder_get_next_table_index_m3631261195,
+	MethodBuilder_set_override_m3395137323,
 	MethodBuilder_NotSupported_m538712043,
 	MethodBuilder_MakeGenericMethod_m3048833464,
 	MethodBuilder_get_IsGenericMethodDefinition_m2676161411,
@@ -13759,28 +14293,55 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MethodToken_Equals_m1986642400_AdjustorThunk,
 	MethodToken_GetHashCode_m1919356356_AdjustorThunk,
 	MethodToken_get_Token_m1317996739_AdjustorThunk,
+	ModuleBuilder__ctor_m2747545556,
 	ModuleBuilder__cctor_m1218472467,
+	ModuleBuilder_basic_init_m2717692595,
+	ModuleBuilder_set_wrappers_type_m3721446447,
+	ModuleBuilder_IsTransient_m233883382,
+	ModuleBuilder_DefineType_m1318627618,
+	ModuleBuilder_AddType_m2719739433,
+	ModuleBuilder_DefineType_m913734295,
+	ModuleBuilder_DefineType_m4205468467,
+	ModuleBuilder_GetType_m624865332,
+	ModuleBuilder_search_in_array_m695084018,
+	ModuleBuilder_search_nested_in_array_m2114996452,
+	ModuleBuilder_create_modified_type_m337888899,
+	ModuleBuilder_GetMaybeNested_m2935224806,
+	ModuleBuilder_GetType_m3034338196,
 	ModuleBuilder_get_next_table_index_m3600803990,
 	ModuleBuilder_GetTypes_m2017043429,
+	ModuleBuilder_getUSIndex_m2438061448,
 	ModuleBuilder_getToken_m242473055,
+	ModuleBuilder_getMethodToken_m628227796,
+	ModuleBuilder_GetToken_m2742869337,
 	ModuleBuilder_GetToken_m1580574749,
+	ModuleBuilder_GetToken_m1483830599,
 	ModuleBuilder_RegisterToken_m2593402065,
 	ModuleBuilder_GetTokenGenerator_m4211747974,
+	ModuleBuilder_get_FileName_m1846030717,
+	ModuleBuilder_CreateGlobalType_m3592496387,
 	ModuleBuilderTokenGenerator__ctor_m3538557064,
+	ModuleBuilderTokenGenerator_GetToken_m1745023583,
 	ModuleBuilderTokenGenerator_GetToken_m2106467927,
+	ModuleBuilderTokenGenerator_GetToken_m399214081,
 	OpCode__ctor_m742870391_AdjustorThunk,
 	OpCode_GetHashCode_m1885918234_AdjustorThunk,
 	OpCode_Equals_m3328690754_AdjustorThunk,
 	OpCode_ToString_m4043065278_AdjustorThunk,
 	OpCode_get_Name_m386372902_AdjustorThunk,
 	OpCode_get_Size_m2313922819_AdjustorThunk,
+	OpCode_get_OperandType_m1363502342_AdjustorThunk,
 	OpCode_get_StackBehaviourPop_m4109383719_AdjustorThunk,
 	OpCode_get_StackBehaviourPush_m2842535718_AdjustorThunk,
+	OpCode_get_Value_m440952459_AdjustorThunk,
+	OpCode_op_Equality_m1885827501,
 	OpCodeNames__cctor_m1465031614,
 	OpCodes__cctor_m1331312969,
 	ParameterBuilder_get_Attributes_m2640139997,
 	ParameterBuilder_get_Name_m1429816234,
 	ParameterBuilder_get_Position_m388196207,
+	TypeBuilder__ctor_m2701930902,
+	TypeBuilder__ctor_m2838836864,
 	TypeBuilder_GetAttributeFlagsImpl_m2415994065,
 	TypeBuilder_setup_internal_class_m1841540458,
 	TypeBuilder_create_generic_class_m1633445577,
@@ -13789,6 +14350,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	TypeBuilder_get_BaseType_m1785398826,
 	TypeBuilder_get_DeclaringType_m1033527492,
 	TypeBuilder_get_UnderlyingSystemType_m301071877,
+	TypeBuilder_GetFullName_m2368980531,
 	TypeBuilder_get_FullName_m1311381250,
 	TypeBuilder_get_Module_m1380149676,
 	TypeBuilder_get_Name_m225700627,
@@ -13801,6 +14363,11 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	TypeBuilder_DefineConstructor_m2901130055,
 	TypeBuilder_DefineConstructor_m467278373,
 	TypeBuilder_DefineDefaultConstructor_m4180060431,
+	TypeBuilder_append_method_m2404188841,
+	TypeBuilder_DefineMethod_m1271641900,
+	TypeBuilder_DefineMethod_m1021339424,
+	TypeBuilder_DefineMethod_m775963488,
+	TypeBuilder_DefineMethodOverride_m608613282,
 	TypeBuilder_create_runtime_class_m3021676378,
 	TypeBuilder_is_nested_in_m2129219235,
 	TypeBuilder_has_ctor_method_m2530448875,
@@ -13832,6 +14399,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	TypeBuilder_not_supported_m2004582477,
 	TypeBuilder_check_not_created_m4283406443,
 	TypeBuilder_check_created_m3022374359,
+	TypeBuilder_check_name_m566175072,
 	TypeBuilder_ToString_m3882393003,
 	TypeBuilder_IsAssignableFrom_m2834740190,
 	TypeBuilder_IsSubclassOf_m919862466,
@@ -13854,6 +14422,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	FieldInfo_get_MemberType_m1921984537,
 	FieldInfo_get_IsLiteral_m2099153292,
 	FieldInfo_get_IsStatic_m24721619,
+	FieldInfo_get_IsPublic_m2574,
 	FieldInfo_get_IsNotSerialized_m3868603028,
 	FieldInfo_SetValue_m1669444927,
 	FieldInfo_internal_from_handle_type_m449136039,
@@ -13862,6 +14431,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	FieldInfo_GetUnmanagedMarshal_m3736180640,
 	FieldInfo_get_UMarshal_m3592475906,
 	FieldInfo_GetPseudoCustomAttributes_m3219838173,
+	LocalVariableInfo__ctor_m2779200515,
+	LocalVariableInfo_ToString_m1214843402,
 	MemberFilter__ctor_m1519003110,
 	MemberFilter_Invoke_m1252503396,
 	MemberFilter_BeginInvoke_m1668252761,
@@ -13904,9 +14475,12 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Module__ctor_m1944669826,
 	Module__cctor_m3968093547,
 	Module_get_Assembly_m4154223570,
+	Module_get_Name_m2964298041,
 	Module_get_ScopeName_m724946931,
 	Module_GetCustomAttributes_m2375287279,
 	Module_GetObjectData_m8314144,
+	Module_GetType_m461877388,
+	Module_GetType_m1969891820,
 	Module_InternalGetTypes_m2940532442,
 	Module_GetTypes_m134489405,
 	Module_IsDefined_m3759276225,
@@ -13960,6 +14534,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MonoField_ToString_m4218032780,
 	MonoField_SetValueInternal_m1841098555,
 	MonoField_SetValue_m1189993934,
+	MonoField_Clone_m2100853670,
 	MonoField_GetObjectData_m2261672671,
 	MonoField_CheckGeneric_m3068937042,
 	MonoGenericCMethod__ctor_m673538526,
@@ -13967,6 +14542,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MonoGenericMethod__ctor_m883290339,
 	MonoGenericMethod_get_ReflectedType_m162977832,
 	MonoMethod__ctor_m370255050,
+	MonoMethod__ctor_m2200429992,
 	MonoMethod_get_name_m439428219,
 	MonoMethod_get_base_definition_m1389391157,
 	MonoMethod_GetBaseDefinition_m3877450154,
@@ -14052,6 +14628,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Pointer_System_Runtime_Serialization_ISerializable_GetObjectData_m448849360,
 	PropertyInfo__ctor_m539791979,
 	PropertyInfo_get_MemberType_m3698268270,
+	PropertyInfo_GetGetMethod_m1125167762,
 	PropertyInfo_GetValue_m396207607,
 	PropertyInfo_SetValue_m3226288870,
 	PropertyInfo_GetOptionalCustomModifiers_m1611882438,
@@ -14059,14 +14636,48 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	StrongNameKeyPair__ctor_m583813794,
 	StrongNameKeyPair_System_Runtime_Serialization_ISerializable_GetObjectData_m285619594,
 	StrongNameKeyPair_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m3690645877,
+	StrongNameKeyPair_GetRSA_m987209039,
+	StrongNameKeyPair_StrongName_m2125236127,
 	TargetException__ctor_m983503354,
 	TargetException__ctor_m1662849864,
 	TargetException__ctor_m1050912827,
 	TargetInvocationException__ctor_m2876037082,
+	TargetInvocationException__ctor_m534921246,
 	TargetInvocationException__ctor_m706824555,
 	TargetParameterCountException__ctor_m2437752064,
 	TargetParameterCountException__ctor_m2555943426,
 	TargetParameterCountException__ctor_m2385733185,
+	TypeDelegator__ctor_m3978235567,
+	TypeDelegator_get_Assembly_m793822499,
+	TypeDelegator_get_AssemblyQualifiedName_m1620996616,
+	TypeDelegator_get_BaseType_m2734895567,
+	TypeDelegator_get_FullName_m3758650933,
+	TypeDelegator_get_Module_m945912623,
+	TypeDelegator_get_Name_m2498747334,
+	TypeDelegator_get_Namespace_m767650018,
+	TypeDelegator_get_TypeHandle_m2316493264,
+	TypeDelegator_get_UnderlyingSystemType_m3809794602,
+	TypeDelegator_GetAttributeFlagsImpl_m239890692,
+	TypeDelegator_GetConstructorImpl_m1507578863,
+	TypeDelegator_GetConstructors_m1969957987,
+	TypeDelegator_GetCustomAttributes_m1964226805,
+	TypeDelegator_GetCustomAttributes_m2738817378,
+	TypeDelegator_GetElementType_m3058042619,
+	TypeDelegator_GetEvent_m939809480,
+	TypeDelegator_GetField_m967065480,
+	TypeDelegator_GetFields_m4208158627,
+	TypeDelegator_GetInterfaces_m1212899157,
+	TypeDelegator_GetMethodImpl_m1514695301,
+	TypeDelegator_GetMethods_m3579300117,
+	TypeDelegator_GetPropertyImpl_m162740912,
+	TypeDelegator_HasElementTypeImpl_m454977167,
+	TypeDelegator_InvokeMember_m4150481760,
+	TypeDelegator_IsArrayImpl_m3068003486,
+	TypeDelegator_IsByRefImpl_m598031553,
+	TypeDelegator_IsDefined_m2954211570,
+	TypeDelegator_IsPointerImpl_m3273979010,
+	TypeDelegator_IsPrimitiveImpl_m951679660,
+	TypeDelegator_IsValueTypeImpl_m1433978640,
 	TypeFilter__ctor_m3304815558,
 	TypeFilter_Invoke_m3691842469,
 	TypeFilter_BeginInvoke_m1184564418,
@@ -14201,6 +14812,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	AppDomainLevelActivator__ctor_m1573275682,
 	ConstructionLevelActivator__ctor_m1053422160,
 	ContextLevelActivator__ctor_m1237745936,
+	RemoteActivator_InitializeLifetimeService_m2396507050,
 	UrlAttribute_get_UrlValue_m2943225223,
 	UrlAttribute_Equals_m3166584024,
 	UrlAttribute_GetHashCode_m1694018096,
@@ -14239,7 +14851,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	SinkProviderData__ctor_m1196460420,
 	SinkProviderData_get_Children_m2238346578,
 	SinkProviderData_get_Properties_m3058815806,
+	ClientActivatedIdentity__ctor_m3634684463,
 	ClientActivatedIdentity_GetServerObject_m1626506643,
+	ClientActivatedIdentity_OnLifetimeExpired_m1622186081,
 	ClientIdentity__ctor_m3595127653,
 	ClientIdentity_get_ClientProxy_m4126686292,
 	ClientIdentity_set_ClientProxy_m12327679,
@@ -14343,21 +14957,49 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Identity_get_ChannelSink_m1983774607,
 	Identity_set_ChannelSink_m3130847940,
 	Identity_get_ObjectUri_m2443444253,
+	Identity_set_ObjectUri_m3325545942,
+	Identity_get_IsConnected_m3070245296,
 	Identity_get_Disposed_m1911726198,
 	Identity_set_Disposed_m1071218783,
 	Identity_get_ClientDynamicProperties_m2301648525,
 	Identity_get_ServerDynamicProperties_m841334805,
 	InternalRemotingServices__cctor_m2124821007,
 	InternalRemotingServices_GetCachedSoapAttribute_m1251902514,
+	Lease__ctor_m3651721351,
+	Lease_get_CurrentLeaseTime_m2209505713,
+	Lease_get_CurrentState_m2238924555,
+	Lease_Activate_m904773136,
+	Lease_set_InitialLeaseTime_m3110663295,
+	Lease_set_RenewOnCallTime_m2263653821,
+	Lease_set_SponsorshipTimeout_m2163989751,
+	Lease_Renew_m235269479,
+	Lease_Unregister_m2597910745,
+	Lease_UpdateState_m2503061997,
+	Lease_CheckNextSponsor_m4694172,
+	Lease_ProcessSponsorResponse_m1073931474,
+	RenewalDelegate__ctor_m3640898857,
+	RenewalDelegate_Invoke_m2399620050,
+	RenewalDelegate_BeginInvoke_m3159291988,
+	RenewalDelegate_EndInvoke_m331344822,
 	LeaseManager__ctor_m2522116882,
 	LeaseManager_SetPollTime_m4066717374,
+	LeaseManager_TrackLifetime_m1439053293,
+	LeaseManager_StartManager_m4134605085,
+	LeaseManager_StopManager_m1415465851,
+	LeaseManager_ManageLeases_m1070826756,
 	LeaseSink__ctor_m1766448707,
 	LifetimeServices__cctor_m2116108847,
+	LifetimeServices_get_LeaseManagerPollTime_m1057706673,
 	LifetimeServices_set_LeaseManagerPollTime_m511253658,
+	LifetimeServices_get_LeaseTime_m2300863223,
 	LifetimeServices_set_LeaseTime_m1820419926,
+	LifetimeServices_get_RenewOnCallTime_m2356100903,
 	LifetimeServices_set_RenewOnCallTime_m3204084838,
+	LifetimeServices_get_SponsorshipTimeout_m536018909,
 	LifetimeServices_set_SponsorshipTimeout_m2472745390,
+	LifetimeServices_TrackLifetime_m3270280985,
 	ArgInfo__ctor_m2209263080,
+	ArgInfo_GetInOutArgCount_m691975428,
 	ArgInfo_GetInOutArgs_m2515374049,
 	AsyncResult__ctor_m4145929563,
 	AsyncResult_get_AsyncState_m1982026226,
@@ -14408,6 +15050,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	HeaderHandler_EndInvoke_m4263089894,
 	LogicalCallContext__ctor_m122858570,
 	LogicalCallContext__ctor_m2483628683,
+	LogicalCallContext_get_HasInfo_m172784805,
 	LogicalCallContext_GetObjectData_m3064510184,
 	LogicalCallContext_SetData_m91070972,
 	LogicalCallContext_Clone_m3487936816,
@@ -14417,6 +15060,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MethodCall_System_Runtime_Remoting_Messaging_IInternalMessage_set_Uri_m75118319,
 	MethodCall_InitMethodProperty_m2379029369,
 	MethodCall_GetObjectData_m3092930065,
+	MethodCall_get_ArgCount_m4283522991,
 	MethodCall_get_Args_m2777349738,
 	MethodCall_get_LogicalCallContext_m3758703237,
 	MethodCall_get_MethodBase_m1563575745,
@@ -14427,6 +15071,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MethodCall_get_TypeName_m2818536578,
 	MethodCall_get_Uri_m110584337,
 	MethodCall_set_Uri_m3629049250,
+	MethodCall_GetArg_m1395351319,
 	MethodCall_Init_m1334986753,
 	MethodCall_ResolveMethod_m2191435710,
 	MethodCall_CastTo_m2140135600,
@@ -14461,6 +15106,8 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	DictionaryEnumerator_get_Value_m60906749,
 	MethodReturnDictionary__ctor_m1989303198,
 	MethodReturnDictionary__cctor_m131783842,
+	MonoMethodMessage_get_Properties_m3514695691,
+	MonoMethodMessage_get_ArgCount_m4260271705,
 	MonoMethodMessage_get_Args_m2372385990,
 	MonoMethodMessage_get_LogicalCallContext_m4081651649,
 	MonoMethodMessage_get_MethodBase_m1950873241,
@@ -14469,13 +15116,17 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	MonoMethodMessage_get_TypeName_m2637395646,
 	MonoMethodMessage_get_Uri_m2730617429,
 	MonoMethodMessage_set_Uri_m1005536772,
+	MonoMethodMessage_GetArg_m2012069871,
 	MonoMethodMessage_get_Exception_m1373061008,
 	MonoMethodMessage_get_OutArgCount_m1218080105,
 	MonoMethodMessage_get_OutArgs_m754565220,
 	MonoMethodMessage_get_ReturnValue_m2245026524,
+	MonoMethodMessage_get_CallType_m4294813921,
 	ObjRefSurrogate__ctor_m2681375704,
+	ObjRefSurrogate_GetObjectData_m413440296,
 	ObjRefSurrogate_SetObjectData_m1124693972,
 	RemotingSurrogate__ctor_m1724131135,
+	RemotingSurrogate_GetObjectData_m1763816655,
 	RemotingSurrogate_SetObjectData_m3663110203,
 	RemotingSurrogateSelector__ctor_m1480647200,
 	RemotingSurrogateSelector__cctor_m2468294029,
@@ -14483,6 +15134,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ReturnMessage__ctor_m1311493117,
 	ReturnMessage__ctor_m3758991866,
 	ReturnMessage_System_Runtime_Remoting_Messaging_IInternalMessage_set_Uri_m1208934489,
+	ReturnMessage_get_ArgCount_m3659914957,
 	ReturnMessage_get_Args_m1415412666,
 	ReturnMessage_get_LogicalCallContext_m2558823349,
 	ReturnMessage_get_MethodBase_m1896590733,
@@ -14492,7 +15144,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ReturnMessage_get_TypeName_m3911062450,
 	ReturnMessage_get_Uri_m1363018977,
 	ReturnMessage_set_Uri_m4046194808,
+	ReturnMessage_GetArg_m3031162083,
 	ReturnMessage_get_Exception_m564038940,
+	ReturnMessage_get_OutArgCount_m234020981,
 	ReturnMessage_get_OutArgs_m1555180784,
 	ReturnMessage_get_ReturnValue_m4052519528,
 	ServerContextTerminatorSink__ctor_m1506077966,
@@ -14546,7 +15200,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	RealProxy__ctor_m3053042265,
 	RealProxy_InternalGetProxyType_m1321633559,
 	RealProxy_GetProxiedType_m3786182287,
+	RealProxy_GetObjectData_m3219256218,
 	RealProxy_get_ObjectIdentity_m347429559,
+	RealProxy_set_ObjectIdentity_m3694655214,
 	RealProxy_InternalGetTransparentProxy_m1628758334,
 	RealProxy_GetTransparentProxy_m1295804673,
 	RealProxy_SetTargetDomain_m1954293026,
@@ -14581,10 +15237,16 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	RemotingServices_GetServerTypeForUri_m2370855021,
 	RemotingServices_Unmarshal_m3453424695,
 	RemotingServices_Unmarshal_m3493161574,
+	RemotingServices_Marshal_m164736248,
+	RemotingServices_Marshal_m1652368487,
+	RemotingServices_NewUri_m1542850328,
 	RemotingServices_GetRealProxy_m469180406,
 	RemotingServices_GetMethodBaseFromMethodMessage_m589251925,
 	RemotingServices_GetMethodBaseFromName_m1109362245,
 	RemotingServices_FindInterfaceMethod_m1641296449,
+	RemotingServices_GetObjectData_m3187488043,
+	RemotingServices_IsMethodOverloaded_m3152869778,
+	RemotingServices_IsOneWay_m1063600040,
 	RemotingServices_CreateClientProxy_m1188122341,
 	RemotingServices_CreateClientProxy_m1887308374,
 	RemotingServices_CreateClientProxyForContextBound_m9934294,
@@ -14592,6 +15254,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	RemotingServices_RemoveAppNameFromUri_m1113505532,
 	RemotingServices_GetOrCreateClientIdentity_m3862611826,
 	RemotingServices_GetClientChannelSinkChain_m3823167339,
+	RemotingServices_CreateClientActivatedServerIdentity_m1542292198,
 	RemotingServices_CreateWellKnownServerIdentity_m2420008897,
 	RemotingServices_RegisterServerIdentity_m3253238710,
 	RemotingServices_GetProxyForRemoteObject_m1565953531,
@@ -14601,9 +15264,16 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	RemotingServices_GetNormalizedUri_m2995472567,
 	ServerIdentity__ctor_m2878147351,
 	ServerIdentity_get_ObjectType_m2513984357,
+	ServerIdentity_StartTrackingLifetime_m3780129911,
+	ServerIdentity_OnLifetimeExpired_m3354721750,
 	ServerIdentity_CreateObjRef_m4237980959,
+	ServerIdentity_AttachServerObject_m3921472677,
+	ServerIdentity_get_Lease_m1464633578,
+	ServerIdentity_DisposeServerObject_m1713667002,
 	TrackingServices__cctor_m1041791976,
+	TrackingServices_NotifyMarshaledObject_m2408179062,
 	TrackingServices_NotifyUnmarshaledObject_m1221428029,
+	TrackingServices_NotifyDisconnectedObject_m3316648914,
 	SingleCallIdentity__ctor_m4127814196,
 	SingletonIdentity__ctor_m2376592061,
 	SoapServices__cctor_m3438713338,
@@ -14657,7 +15327,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	FormatterConverter_ToString_m1400688178,
 	BinaryCommon__cctor_m1035902784,
 	BinaryCommon_IsPrimitive_m1612386671,
+	BinaryCommon_GetTypeCode_m4280837317,
 	BinaryCommon_GetTypeFromCode_m4044019293,
+	BinaryCommon_CheckSerializable_m2938012638,
 	BinaryCommon_SwapBytes_m2472266694,
 	BinaryFormatter__ctor_m1913171908,
 	BinaryFormatter__ctor_m203421689,
@@ -14669,9 +15341,33 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	BinaryFormatter_get_FilterLevel_m123523474,
 	BinaryFormatter_Deserialize_m3942088227,
 	BinaryFormatter_NoCheckDeserialize_m2451994899,
+	BinaryFormatter_Serialize_m2138605799,
+	BinaryFormatter_Serialize_m982420848,
+	BinaryFormatter_WriteBinaryHeader_m244536491,
 	BinaryFormatter_ReadBinaryHeader_m258242310,
+	ClrTypeMetadata__ctor_m3683396926,
+	ClrTypeMetadata_get_RequiresTypes_m3923820025,
+	CodeGenerator__cctor_m2748236614,
+	CodeGenerator_GenerateMetadataType_m706666128,
+	CodeGenerator_GenerateMetadataTypeInternal_m697276819,
+	CodeGenerator_LoadFromPtr_m1949607997,
+	CodeGenerator_EmitWriteTypeSpec_m3895903836,
+	CodeGenerator_EmitLoadTypeAssembly_m1819466316,
+	CodeGenerator_EmitWrite_m2268787179,
+	CodeGenerator_EmitWritePrimitiveValue_m799865557,
+	CodeGenerator_EnumToUnderlying_m3186142121,
+	MemberTypeMetadata__ctor_m2555872271,
+	MemberTypeMetadata_WriteAssemblies_m1974093883,
+	MemberTypeMetadata_WriteTypeData_m2502957154,
+	MemberTypeMetadata_WriteObjectData_m698591502,
+	MessageFormatter_WriteMethodCall_m422932223,
+	MessageFormatter_WriteMethodResponse_m3855499772,
 	MessageFormatter_ReadMethodCall_m3773075223,
 	MessageFormatter_ReadMethodResponse_m1841037205,
+	MessageFormatter_AllTypesArePrimitive_m3926975387,
+	MessageFormatter_IsMethodPrimitive_m3463040103,
+	MessageFormatter_GetExtraProperties_m1259624667,
+	MessageFormatter_IsInternalKey_m2159509102,
 	ObjectReader__ctor_m1992894345,
 	ObjectReader_ReadObjectGraph_m1835146551,
 	ObjectReader_ReadObjectGraph_m2201506625,
@@ -14701,10 +15397,59 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ObjectReader_ReadPrimitiveTypeValue_m3787758564,
 	ArrayNullFiller__ctor_m241052615,
 	TypeMetadata__ctor_m2168678135,
+	ObjectWriter__ctor_m381946506,
+	ObjectWriter__cctor_m3965119238,
+	ObjectWriter_WriteObjectGraph_m1495072729,
+	ObjectWriter_QueueObject_m2473573471,
+	ObjectWriter_WriteQueuedObjects_m2511231202,
+	ObjectWriter_WriteObjectInstance_m971580148,
+	ObjectWriter_WriteSerializationEnd_m1314927090,
+	ObjectWriter_WriteObject_m3567310656,
+	ObjectWriter_GetObjectData_m2156431818,
+	ObjectWriter_CreateMemberTypeMetadata_m2890061644,
+	ObjectWriter_WriteArray_m1513238702,
+	ObjectWriter_WriteGenericArray_m621377085,
+	ObjectWriter_WriteObjectArray_m120109231,
+	ObjectWriter_WriteStringArray_m2755688349,
+	ObjectWriter_WritePrimitiveTypeArray_m360539603,
+	ObjectWriter_BlockWrite_m817303837,
+	ObjectWriter_WriteSingleDimensionArrayElements_m2757598982,
+	ObjectWriter_WriteNullFiller_m518213209,
+	ObjectWriter_WriteObjectReference_m2251958827,
+	ObjectWriter_WriteValue_m2747102579,
+	ObjectWriter_WriteString_m3827047068,
+	ObjectWriter_WriteAssembly_m2789424019,
+	ObjectWriter_WriteAssemblyName_m1777729680,
+	ObjectWriter_GetAssemblyId_m1900776174,
+	ObjectWriter_GetAssemblyNameId_m218712095,
+	ObjectWriter_RegisterAssembly_m3637201543,
+	ObjectWriter_WritePrimitiveValue_m2267947199,
+	ObjectWriter_WriteTypeCode_m2289062049,
+	ObjectWriter_GetTypeTag_m835100856,
+	ObjectWriter_WriteTypeSpec_m4250094447,
+	MetadataReference__ctor_m2491385060,
+	SerializableTypeMetadata__ctor_m4014682835,
+	SerializableTypeMetadata_IsCompatible_m828851263,
+	SerializableTypeMetadata_WriteAssemblies_m355185654,
+	SerializableTypeMetadata_WriteTypeData_m2677462151,
+	SerializableTypeMetadata_WriteObjectData_m1813279113,
+	SerializableTypeMetadata_get_RequiresTypes_m2353291923,
+	TypeMetadata__ctor_m1058507632,
+	TypeMetadata_IsCompatible_m2727362622,
+	FormatterServices_GetObjectData_m3974152299,
+	FormatterServices_GetSerializableMembers_m1124071069,
+	FormatterServices_GetFields_m1400403013,
 	FormatterServices_GetUninitializedObject_m113523001,
 	FormatterServices_GetSafeUninitializedObject_m133866342,
 	MultiArrayFixupRecord__ctor_m3677967923,
 	MultiArrayFixupRecord_FixupImpl_m2043330103,
+	ObjectIDGenerator__ctor_m3765306348,
+	ObjectIDGenerator__cctor_m278283585,
+	ObjectIDGenerator_GetId_m3537711781,
+	ObjectIDGenerator_get_NextId_m3787286380,
+	InstanceComparer__ctor_m1346640169,
+	InstanceComparer_System_Collections_IComparer_Compare_m1925901326,
+	InstanceComparer_System_Collections_IHashCodeProvider_GetHashCode_m2240686773,
 	ObjectManager__ctor_m2952664102,
 	ObjectManager_DoFixups_m109839835,
 	ObjectManager_GetObjectRecord_m2090112317,
@@ -14735,9 +15480,12 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	SerializationBinder__ctor_m3744708139,
 	SerializationCallbacks__ctor_m2320337270,
 	SerializationCallbacks__cctor_m562445802,
+	SerializationCallbacks_get_HasSerializedCallbacks_m1064335224,
 	SerializationCallbacks_get_HasDeserializedCallbacks_m4051490391,
 	SerializationCallbacks_GetMethodsByAttribute_m1743114550,
 	SerializationCallbacks_Invoke_m807932308,
+	SerializationCallbacks_RaiseOnSerializing_m4133985485,
+	SerializationCallbacks_RaiseOnSerialized_m1158955600,
 	SerializationCallbacks_RaiseOnDeserializing_m873572750,
 	SerializationCallbacks_RaiseOnDeserialized_m361044335,
 	SerializationCallbacks_GetSerializationCallbacks_m1535695330,
@@ -14747,11 +15495,15 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	CallbackHandler_EndInvoke_m522922181,
 	SerializationEntry__ctor_m2883191396_AdjustorThunk,
 	SerializationEntry_get_Name_m929676406_AdjustorThunk,
+	SerializationEntry_get_ObjectType_m3299705261_AdjustorThunk,
 	SerializationEntry_get_Value_m522021722_AdjustorThunk,
 	SerializationException__ctor_m136694722,
 	SerializationException__ctor_m4216356480,
 	SerializationException__ctor_m987964931,
 	SerializationInfo__ctor_m2583224808,
+	SerializationInfo_get_AssemblyName_m2611339962,
+	SerializationInfo_get_FullTypeName_m3001564413,
+	SerializationInfo_get_MemberCount_m3387713493,
 	SerializationInfo_AddValue_m3341936982,
 	SerializationInfo_GetValue_m4125471336,
 	SerializationInfo_SetType_m3215055064,
@@ -14773,11 +15525,18 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	SerializationInfoEnumerator_System_Collections_IEnumerator_get_Current_m1751158349,
 	SerializationInfoEnumerator_get_Current_m1674825235,
 	SerializationInfoEnumerator_get_Name_m4156977240,
+	SerializationInfoEnumerator_get_ObjectType_m1119292125,
 	SerializationInfoEnumerator_get_Value_m4259496148,
 	SerializationInfoEnumerator_MoveNext_m4116766855,
 	SerializationInfoEnumerator_Reset_m1660715632,
+	SerializationObjectManager__ctor_m1459970863,
+	SerializationObjectManager_RegisterObject_m337810129,
+	SerializationObjectManager_RaiseOnSerializedEvent_m3729458860,
+	U3CRegisterObjectU3Ec__AnonStorey3__ctor_m959661704,
+	U3CRegisterObjectU3Ec__AnonStorey3_U3CU3Em__2_m1750539087,
 	StreamingContext__ctor_m165676124_AdjustorThunk,
 	StreamingContext__ctor_m404323882_AdjustorThunk,
+	StreamingContext_get_Context_m2263457517_AdjustorThunk,
 	StreamingContext_get_State_m334223851_AdjustorThunk,
 	StreamingContext_Equals_m3567411783_AdjustorThunk,
 	StreamingContext_GetHashCode_m1804520735_AdjustorThunk,
@@ -15291,6 +16050,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	SecurityContext_Capture_m3640798635,
 	SecurityContext_get_FlowSuppressed_m2046518873,
 	SecurityContext_get_CompressedStack_m649521097,
+	SecurityCriticalAttribute__ctor_m2297330502,
 	SecurityElement__ctor_m3616501115,
 	SecurityElement__ctor_m2591154807,
 	SecurityElement__cctor_m429967270,
@@ -15810,6 +16570,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ExecutionContext_get_FlowSuppressed_m927554565,
 	ExecutionContext_IsFlowSuppressed_m2941747654,
 	Interlocked_CompareExchange_m1859820752,
+	Interlocked_Increment_m2829412809,
 	ManualResetEvent__ctor_m927697317,
 	Monitor_Enter_m476686225,
 	Monitor_Exit_m2088237919,
@@ -15826,6 +16587,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	NativeEventCalls_SetEvent_internal_m2769880995,
 	NativeEventCalls_ResetEvent_internal_m2004196566,
 	NativeEventCalls_CloseEvent_internal_m996370063,
+	RegisteredWaitHandle__ctor_m3130282384,
+	RegisteredWaitHandle_Wait_m4214353403,
+	RegisteredWaitHandle_DoCallBack_m3198153280,
 	SynchronizationLockException__ctor_m1728496155,
 	SynchronizationLockException__ctor_m1850368199,
 	SynchronizationLockException__ctor_m221922524,
@@ -15835,6 +16599,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Thread_CurrentThread_internal_m3803103476,
 	Thread_get_CurrentThread_m1523593825,
 	Thread_FreeLocalSlotValues_m3189496250,
+	Thread_GetDomain_m1860535634,
 	Thread_GetDomainID_m3584395396,
 	Thread_Thread_internal_m1309677628,
 	Thread_Thread_init_m3945232696,
@@ -15865,13 +16630,17 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	ThreadInterruptedException__ctor_m2298757640,
 	ThreadInterruptedException__ctor_m3158304585,
 	ThreadPool_QueueUserWorkItem_m3855506648,
+	ThreadPool_RegisterWaitForSingleObject_m2307848074,
+	ThreadPool_RegisterWaitForSingleObject_m3955614434,
 	ThreadStart__ctor_m346361139,
 	ThreadStart_Invoke_m225334093,
 	ThreadStart_BeginInvoke_m4084423702,
 	ThreadStart_EndInvoke_m3441234115,
 	ThreadStateException__ctor_m2201794583,
 	ThreadStateException__ctor_m1680197848,
+	Timer__ctor_m425594887,
 	Timer__cctor_m1320176523,
+	Timer_Init_m4201404395,
 	Timer_Change_m4108080222,
 	Timer_Dispose_m4229130271,
 	Timer_Change_m4132562187,
@@ -15897,6 +16666,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	WaitHandle__ctor_m4240939554,
 	WaitHandle__cctor_m2138011083,
 	WaitHandle_System_IDisposable_Dispose_m2431205053,
+	WaitHandle_CheckArray_m2379645074,
+	WaitHandle_WaitAny_internal_m1172254617,
+	WaitHandle_WaitAny_m2033275004,
 	WaitHandle_get_Handle_m383799166,
 	WaitHandle_set_Handle_m2872485421,
 	WaitHandle_WaitOne_internal_m2364279439,
@@ -15905,6 +16677,10 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	WaitHandle_WaitOne_m467737785,
 	WaitHandle_CheckDisposed_m3718910029,
 	WaitHandle_Finalize_m1174780672,
+	WaitOrTimerCallback__ctor_m1555455757,
+	WaitOrTimerCallback_Invoke_m2987100304,
+	WaitOrTimerCallback_BeginInvoke_m3309359065,
+	WaitOrTimerCallback_EndInvoke_m1912954781,
 	ThreadStaticAttribute__ctor_m1966759021,
 	TimeSpan__ctor_m477860848_AdjustorThunk,
 	TimeSpan__ctor_m4160332047_AdjustorThunk,
@@ -15994,18 +16770,24 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Type_GetTypeHandle_m1914576243,
 	Type_type_is_subtype_of_m3361675332,
 	Type_type_is_assignable_from_m3046828961,
+	Type_GetType_m1825468259,
 	Type_IsSubclassOf_m1095320857,
 	Type_IsAssignableFrom_m1817311413,
 	Type_IsInstanceOfType_m2263809757,
+	Type_GetArrayRank_m3230678780,
 	Type_GetHashCode_m3471493766,
 	Type_GetMethod_m2884801946,
 	Type_GetMethod_m534507110,
+	Type_GetMethod_m3977319851,
 	Type_GetMethod_m527054833,
 	Type_GetMethod_m2171093265,
+	Type_GetMethodImplInternal_m4242537390,
+	Type_GetProperty_m1904930970,
 	Type_GetProperty_m3455595366,
 	Type_GetProperty_m786720973,
 	Type_GetProperty_m3045839774,
 	Type_GetProperty_m3910337444,
+	Type_GetPropertyImplInternal_m2680281703,
 	Type_IsArrayImpl_m813148751,
 	Type_IsValueTypeImpl_m4191583068,
 	Type_IsContextfulImpl_m509765663,
@@ -16026,6 +16808,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Type_get_IsGenericParameter_m1053942860,
 	Type_get_IsNested_m2782386097,
 	Type_GetPseudoCustomAttributes_m3344475752,
+	Type_get_IsUserType_m623581855,
 	TypedReference_Equals_m2626069127_AdjustorThunk,
 	TypedReference_GetHashCode_m1538911_AdjustorThunk,
 	TypeInitializationException__ctor_m679814589,
@@ -18086,6 +18869,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Application_get_isPlaying_m987993960,
 	Application_get_isEditor_m1279348309,
 	Application_get_platform_m2918632856,
+	Application_get_persistentDataPath_m2554537447,
 	Application_CallLogCallback_m419361836,
 	LogCallback__ctor_m286543475,
 	LogCallback_Invoke_m1886455446,
@@ -18945,6 +19729,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	HumanBone_set_humanName_m1186126593_AdjustorThunk,
 	IL2CPPStructAlignmentAttribute__ctor_m55581643,
 	Input__cctor_m1327041086,
+	Input_GetAxis_m2027668530,
 	Input_GetAxisRaw_m1900207208,
 	Input_GetButtonDown_m1879002085,
 	Input_GetMouseButton_m4080958081,
@@ -18955,8 +19740,6 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Input_get_mouseScrollDelta_m3050122505,
 	Input_INTERNAL_get_mouseScrollDelta_m2726147504,
 	Input_get_mousePresent_m3235491246,
-	Input_get_acceleration_m3697865796,
-	Input_INTERNAL_get_acceleration_m3372612331,
 	Input_GetTouch_m2282421092,
 	Input_INTERNAL_CALL_GetTouch_m1845826650,
 	Input_get_touchCount_m1430909390,
@@ -19511,6 +20294,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	RectTransformUtility_FlipLayoutOnAxis_m3487429352,
 	RectTransformUtility_FlipLayoutAxes_m2163490602,
 	RectTransformUtility_GetTransposed_m2060823533,
+	Renderer_set_enabled_m2514140131,
 	Renderer_get_sortingLayerID_m1954594923,
 	Renderer_get_sortingOrder_m3623465101,
 	RenderTexture_Internal_GetWidth_m1030655936,
@@ -19533,6 +20317,9 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	Scene_get_handle_m2277248521_AdjustorThunk,
 	Scene_GetHashCode_m2000109307_AdjustorThunk,
 	Scene_Equals_m93578403_AdjustorThunk,
+	SceneManager_LoadScene_m2167814033,
+	SceneManager_LoadScene_m3907168970,
+	SceneManager_LoadSceneAsyncNameIndexInternal_m3775081569,
 	SceneManager_Internal_SceneLoaded_m1398790415,
 	SceneManager_Internal_SceneUnloaded_m3773648285,
 	SceneManager_Internal_ActiveSceneChanged_m3583151927,
@@ -21414,6 +22201,14 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	CameraController__ctor_m1305907962,
 	CameraController_Start_m253045754,
 	CameraController_LateUpdate_m786793369,
+	GameData__ctor_m2338417471,
+	GameData_updateRanking_m3503270680,
+	HomeCameraController__ctor_m2818976475,
+	HomeCameraController_startGame_m3288212109,
+	LoadResults__ctor_m3793159515,
+	LoadResults_Start_m2740297307,
+	LoadSceneScript__ctor_m947080954,
+	LoadSceneScript_startGame_m1391337260,
 	LoopBugMoving__ctor_m1436713389,
 	LoopBugMoving_Start_m383851181,
 	LoopBugMoving_Update_m3315304192,
@@ -21425,4 +22220,7 @@ extern const Il2CppMethodPointer g_MethodPointers[10706] =
 	PlayerController_SetCountText_m1021738208,
 	Rotator__ctor_m1971779198,
 	Rotator_Update_m2722475087,
+	SaveLoad__cctor_m798927061,
+	SaveLoad_Save_m804063913,
+	SaveLoad_Load_m615962578,
 };

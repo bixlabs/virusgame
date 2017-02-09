@@ -43,7 +43,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 74 classes
+	//Total: 75 classes
 	//0. Renderer
 	void RegisterClass_Renderer();
 	RegisterClass_Renderer();
@@ -232,111 +232,115 @@ void RegisterAllClasses()
 	void RegisterClass_MeshFilter();
 	RegisterClass_MeshFilter();
 
-	//47. QualitySettings
+	//47. Skybox
+	void RegisterClass_Skybox();
+	RegisterClass_Skybox();
+
+	//48. QualitySettings
 	void RegisterClass_QualitySettings();
 	RegisterClass_QualitySettings();
 
-	//48. PhysicsManager
+	//49. PhysicsManager
 	void RegisterClass_PhysicsManager();
 	RegisterClass_PhysicsManager();
 
-	//49. MeshCollider
+	//50. MeshCollider
 	void RegisterClass_MeshCollider();
 	RegisterClass_MeshCollider();
 
-	//50. BoxCollider
+	//51. BoxCollider
 	void RegisterClass_BoxCollider();
 	RegisterClass_BoxCollider();
 
-	//51. TagManager
+	//52. TagManager
 	void RegisterClass_TagManager();
 	RegisterClass_TagManager();
 
-	//52. AudioListener
+	//53. AudioListener
 	void RegisterClass_AudioListener();
 	RegisterClass_AudioListener();
 
-	//53. AudioBehaviour
+	//54. AudioBehaviour
 	void RegisterClass_AudioBehaviour();
 	RegisterClass_AudioBehaviour();
 
-	//54. Avatar
+	//55. Avatar
 	void RegisterClass_Avatar();
 	RegisterClass_Avatar();
 
-	//55. ScriptMapper
+	//56. ScriptMapper
 	void RegisterClass_ScriptMapper();
 	RegisterClass_ScriptMapper();
 
-	//56. DelayedCallManager
+	//57. DelayedCallManager
 	void RegisterClass_DelayedCallManager();
 	RegisterClass_DelayedCallManager();
 
-	//57. RenderSettings
+	//58. RenderSettings
 	void RegisterClass_RenderSettings();
 	RegisterClass_RenderSettings();
 
-	//58. Light
+	//59. Light
 	void RegisterClass_Light();
 	RegisterClass_Light();
 
-	//59. MonoScript
+	//60. MonoScript
 	void RegisterClass_MonoScript();
 	RegisterClass_MonoScript();
 
-	//60. MonoManager
+	//61. MonoManager
 	void RegisterClass_MonoManager();
 	RegisterClass_MonoManager();
 
-	//61. FlareLayer
+	//62. FlareLayer
 	void RegisterClass_FlareLayer();
 	RegisterClass_FlareLayer();
 
-	//62. PlayerSettings
+	//63. PlayerSettings
 	void RegisterClass_PlayerSettings();
 	RegisterClass_PlayerSettings();
 
-	//63. SphereCollider
+	//64. SphereCollider
 	void RegisterClass_SphereCollider();
 	RegisterClass_SphereCollider();
 
-	//64. BuildSettings
+	//65. BuildSettings
 	void RegisterClass_BuildSettings();
 	RegisterClass_BuildSettings();
 
-	//65. ResourceManager
+	//66. ResourceManager
 	void RegisterClass_ResourceManager();
 	RegisterClass_ResourceManager();
 
-	//66. NetworkManager
+	//67. NetworkManager
 	void RegisterClass_NetworkManager();
 	RegisterClass_NetworkManager();
 
-	//67. MasterServerInterface
+	//68. MasterServerInterface
 	void RegisterClass_MasterServerInterface();
 	RegisterClass_MasterServerInterface();
 
-	//68. LightmapSettings
+	//69. LightmapSettings
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//69. LightProbes
+	//70. LightProbes
 	void RegisterClass_LightProbes();
 	RegisterClass_LightProbes();
 
-	//70. RuntimeInitializeOnLoadManager
+	//71. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 
-	//71. CloudWebServicesManager
+	//72. CloudWebServicesManager
 	void RegisterClass_CloudWebServicesManager();
 	RegisterClass_CloudWebServicesManager();
 
-	//72. UnityAnalyticsManager
+	//73. UnityAnalyticsManager
 	void RegisterClass_UnityAnalyticsManager();
 	RegisterClass_UnityAnalyticsManager();
 
-	//73. UnityConnectSettings
+	//74. UnityConnectSettings
 	void RegisterClass_UnityConnectSettings();
 	RegisterClass_UnityConnectSettings();
 

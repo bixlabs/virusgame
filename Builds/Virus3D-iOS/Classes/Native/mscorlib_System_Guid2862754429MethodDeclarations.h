@@ -61,6 +61,8 @@ extern "C"  int32_t Guid_GetHashCode_m885349207 (Guid_t2862754429 * __this, cons
 extern "C"  Il2CppChar Guid_ToHex_m1518905113 (Il2CppObject * __this /* static, unused */, int32_t ___b0, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Guid System.Guid::NewGuid()
 extern "C"  Guid_t2862754429  Guid_NewGuid_m3560729310 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Byte[] System.Guid::FastNewGuidArray()
+extern "C"  ByteU5BU5D_t4260760469* Guid_FastNewGuidArray_m3654390746 (Il2CppObject * __this /* static, unused */, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Guid::AppendInt(System.Text.StringBuilder,System.Int32)
 extern "C"  void Guid_AppendInt_m60474956 (Il2CppObject * __this /* static, unused */, StringBuilder_t243639308 * ___builder0, int32_t ___value1, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Guid::AppendShort(System.Text.StringBuilder,System.Int16)

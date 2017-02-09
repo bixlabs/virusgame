@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{5DDB2F4D-6A33-A091-0FEE-6C285F424843}") = "Virus 3D", "Assembly-CSharp.csproj", "{034DA7F7-A583-578A-9A19-F7B0575C1509}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Virus 3D", "Assembly-CSharp.csproj", "{034DA7F7-A583-578A-9A19-F7B0575C1509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

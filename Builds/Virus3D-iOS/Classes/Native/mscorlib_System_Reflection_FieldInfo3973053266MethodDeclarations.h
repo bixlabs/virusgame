@@ -35,6 +35,8 @@ extern "C"  int32_t FieldInfo_get_MemberType_m1921984537 (FieldInfo_t * __this, 
 extern "C"  bool FieldInfo_get_IsLiteral_m2099153292 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.FieldInfo::get_IsStatic()
 extern "C"  bool FieldInfo_get_IsStatic_m24721619 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Boolean System.Reflection.FieldInfo::get_IsPublic()
+extern "C"  bool FieldInfo_get_IsPublic_m2574 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.FieldInfo::get_IsNotSerialized()
 extern "C"  bool FieldInfo_get_IsNotSerialized_m3868603028 (FieldInfo_t * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Reflection.FieldInfo::SetValue(System.Object,System.Object)

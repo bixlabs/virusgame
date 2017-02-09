@@ -1613,6 +1613,15 @@ extern "C"  int32_t Application_get_platform_m2918632856 (Il2CppObject * __this 
 	_il2cpp_icall_func = (Application_get_platform_m2918632856_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_platform()");
 	return _il2cpp_icall_func();
 }
+// System.String UnityEngine.Application::get_persistentDataPath()
+extern "C"  String_t* Application_get_persistentDataPath_m2554537447 (Il2CppObject * __this /* static, unused */, const MethodInfo* method)
+{
+	typedef String_t* (*Application_get_persistentDataPath_m2554537447_ftn) ();
+	static Application_get_persistentDataPath_m2554537447_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Application_get_persistentDataPath_m2554537447_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_persistentDataPath()");
+	return _il2cpp_icall_func();
+}
 // System.Void UnityEngine.Application::CallLogCallback(System.String,System.String,UnityEngine.LogType,System.Boolean)
 extern Il2CppClass* Application_t2856536070_il2cpp_TypeInfo_var;
 extern const uint32_t Application_CallLogCallback_m419361836_MetadataUsageId;
@@ -8710,7 +8719,7 @@ IL_0039:
 		ArrayElementTypeCheck (L_11, L_12);
 		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(0), (Type_t *)L_12);
 		NullCheck(L_10);
-		Type_t * L_13 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3339007067* >::Invoke(77 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_10, L_11);
+		Type_t * L_13 = VirtFuncInvoker1< Type_t *, TypeU5BU5D_t3339007067* >::Invoke(81 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_10, L_11);
 		V_2 = L_13;
 		Type_t * L_14 = V_2;
 		TypeU5BU5D_t3339007067* L_15 = ((TypeU5BU5D_t3339007067*)SZArrayNew(TypeU5BU5D_t3339007067_il2cpp_TypeInfo_var, (uint32_t)3));
@@ -8752,7 +8761,7 @@ IL_0039:
 		NullCheck(L_27);
 		Type_t * L_28 = Object_GetType_m2022236990(L_27, /*hidden argument*/NULL);
 		NullCheck(L_26);
-		bool L_29 = VirtFuncInvoker1< bool, Type_t * >::Invoke(40 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_28);
+		bool L_29 = VirtFuncInvoker1< bool, Type_t * >::Invoke(41 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_28);
 		if (L_29)
 		{
 			goto IL_00aa;
